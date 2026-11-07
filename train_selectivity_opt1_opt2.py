@@ -20,6 +20,9 @@ Assumptions:
       robust dataset-file resolution and WKT/BZ2 polygon loading helpers.
     - Labels CSV contains:
         dataset,rq_minx,rq_miny,rq_maxx,rq_maxy,rq_sel
+      Column names and separator are configurable; the default configuration
+      reads AIDA range-query results (rqR_*.csv):
+        datasetName;...;minX;minY;maxX;maxY;...;cardinality;...
 """
 
 from __future__ import annotations
@@ -50,13 +53,19 @@ from spatial_data_loading import resolve_dataset_file, read_polygons, run_datase
 # User configuration
 # ---------------------------------------------------------------------
 
-DATASETS_DIR = Path("./data/synthetic_datasets")
-RANGE_QUERY_LABELS_CSV = Path("./data/rq_result_66087_balanced.csv")
-OUTPUT_DIR = Path("./outputs_selectivity")
+# Datasets and labels generated with AIDA (one subfolder of ./data per size tier).
+# Paper configuration: DATASETS_DIR = Path("./data/synthetic_datasets"),
+# RANGE_QUERY_LABELS_CSV = Path("./data/rq_result_66087_balanced.csv"), separator ",".
+DATA_TIER = "small"
+DATASETS_DIR = Path("./data") / DATA_TIER
+RANGE_QUERY_LABELS_CSV = DATASETS_DIR / f"rqR_{DATA_TIER}.csv"
+RANGE_QUERY_LABELS_SEPARATOR = ";"
 
-DATASET_NAME_COLUMN = "dataset"
-RANGE_QUERY_COLUMNS = ("rq_minx", "rq_miny", "rq_maxx", "rq_maxy")
-TARGET_COLUMN = "rq_sel"
+# AIDA column names (paper: "dataset", "rq_minx", ..., "rq_sel").
+# AIDA's "cardinality" column holds the selectivity in [0, 1].
+DATASET_NAME_COLUMN = "datasetName"
+RANGE_QUERY_COLUMNS = ("minX", "minY", "maxX", "maxY")
+TARGET_COLUMN = "cardinality"
 
 WKT_COLUMN = None
 DATASET_FILE_NAME = None
@@ -68,6 +77,9 @@ DATASET_FILE_NAME = None
 # safety limits. The safety limits are still random-sampling caps for pathological
 # datasets, but sparse attention is the main scalability mechanism.
 ATTENTION_STRATEGY = "sampling"  # "sampling" or "sparse"
+
+# One output folder per data tier and attention strategy.
+OUTPUT_DIR = Path("./outputs_selectivity") / f"{DATA_TIER}_{ATTENTION_STRATEGY}"
 
 POLYGON_BATCH_SIZE = 1
 
@@ -508,7 +520,7 @@ def sample_polygons_for_phase(
 def load_labels() -> pd.DataFrame:
     log(f"Loading labels from: {RANGE_QUERY_LABELS_CSV}")
     with timed_phase("load_labels", log_start=False):
-        df = pd.read_csv(RANGE_QUERY_LABELS_CSV, compression="infer")
+        df = pd.read_csv(RANGE_QUERY_LABELS_CSV, sep=RANGE_QUERY_LABELS_SEPARATOR, compression="infer")
     log(f"Loaded labels: {len(df)} rows")
     required = [DATASET_NAME_COLUMN, *RANGE_QUERY_COLUMNS, TARGET_COLUMN]
     missing = [c for c in required if c not in df.columns]

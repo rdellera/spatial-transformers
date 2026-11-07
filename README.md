@@ -75,6 +75,14 @@ where:
 - `rq_minx`, `rq_miny`, `rq_maxx`, `rq_maxy` define the range-query window;
 - `rq_sel` is the selectivity target.
 
+Column names and separator are configurable through `DATASET_NAME_COLUMN`, `RANGE_QUERY_COLUMNS`, `TARGET_COLUMN` and `RANGE_QUERY_LABELS_SEPARATOR`. The current configuration reads range-query results produced by the AIDA tool (`rqR_<tier>.csv`, separator `;`):
+
+```text
+datasetName;numQuery;queryArea;minX;minY;maxX;maxY;areaint;cardinality;...
+```
+
+where `cardinality` is the selectivity (fraction of geometries intersecting the query window).
+
 ## Installation
 
 Create and activate a virtual environment:
@@ -98,12 +106,16 @@ For CUDA-enabled PyTorch, install the PyTorch build matching your CUDA version f
 Edit the configuration block at the top of `train_selectivity_opt1_opt2.py`:
 
 ```python
-DATASETS_DIR = Path("./data/synthetic_datasets")
-RANGE_QUERY_LABELS_CSV = Path("./data/rq_result_66087_balanced.csv")
-OUTPUT_DIR = Path("./outputs_selectivity")
+DATA_TIER = "small"
+DATASETS_DIR = Path("./data") / DATA_TIER
+RANGE_QUERY_LABELS_CSV = DATASETS_DIR / f"rqR_{DATA_TIER}.csv"
+RANGE_QUERY_LABELS_SEPARATOR = ";"
 
 ATTENTION_STRATEGY = "sampling"  # "sampling" or "sparse"
+OUTPUT_DIR = Path("./outputs_selectivity") / f"{DATA_TIER}_{ATTENTION_STRATEGY}"
 ```
+
+The paper experiments used `DATASETS_DIR = Path("./data/synthetic_datasets")`, `RANGE_QUERY_LABELS_CSV = Path("./data/rq_result_66087_balanced.csv")` and separator `,`.
 
 Then run:
 
@@ -230,7 +242,7 @@ WMAPE
 It also records timing statistics for loading, training, evaluation, and frozen-embedding computation. A timing summary is printed at the end and written to:
 
 ```text
-outputs_selectivity/timing_summary.csv
+outputs_selectivity/<tier>_<strategy>/timing_summary.csv
 ```
 
 ## Utility scripts
