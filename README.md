@@ -33,6 +33,7 @@ collate_utils.py                 Polygon and dataset collation utilities
 spatial_utils.py                 Polygon normalization and geometry feature extraction
 spatial_io.py                    Basic WKT I/O helpers
 embedding.py                     Precomputation helpers
+benchmark_embedding.py           Time/memory benchmark for building dataset embeddings
 convert_csv_to_wkt.py            Utility: convert MBR CSV files to WKT polygons
 process_osm_file.py              Utility: extract first-column WKT geometries from tab-separated files
 ```
@@ -244,6 +245,34 @@ It also records timing statistics for loading, training, evaluation, and frozen-
 ```text
 outputs_selectivity/<tier>_<strategy>/timing_summary.csv
 ```
+
+## Embedding resource benchmark
+
+`benchmark_embedding.py` measures the time and memory needed to build a dataset embedding `z_D`, without training. It follows the same path as `compute_frozen_embeddings` (polygon reading, sampling caps, polygon encoder, dataset encoder), with the paper model configuration and random weights.
+
+Datasets are generated with the AIDA tool and stored as:
+
+```text
+data/benchmark/g<geometries>_v<maxseg>/uniform_<replica>.wkt
+```
+
+where `maxseg` is the maximum number of vertices per polygon (AIDA draws 4..maxseg vertices). Every dataset is measured with four configurations: `sampling` and `sparse` attention, each with the paper sampling caps (`caps = paper`) and without them (`caps = none`). Each measurement runs in a separate process, with a limit of `MAX_SECONDS_PER_RUN` seconds.
+
+Run:
+
+```bash
+python -u benchmark_embedding.py 2>&1 | tee outputs_benchmark/run.log
+```
+
+Results are written to `outputs_benchmark/embedding_benchmark.csv`, one row per measurement:
+
+```text
+group, dataset, geometries, max_vertices, strategy, caps, status,
+polygons_read, polygons_used, vertices_used, max_vertices_used,
+read_s, stage1_s, stage2_s, total_s, gpu_peak_mb, ram_peak_mb
+```
+
+`status` is one of `ok`, `oom_gpu`, `oom_ram`, `crash`, `timeout`, `skipped` (the same configuration already failed on a smaller input). Test results are collected in `benchmark.md`.
 
 ## Utility scripts
 
