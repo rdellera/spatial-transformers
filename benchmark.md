@@ -88,3 +88,40 @@ Ogni cella riporta **tempo totale medio (s) / picco GPU (MB)**, con media sulle 
    - Il picco GPU cresce in modo lineare con G, circa 0,1 MB per geometria, per i tensori dei vicini dello stadio 2 (G × 64). Estrapolando, a 100 000 geometrie servirebbero circa 10 GB, oltre i 4 GB disponibili: da verificare nel Test 2.
 5. **Il tempo è dominato dallo stadio 1 (oltre l'85%) a causa di `POLYGON_BATCH_SIZE = 1`.** Ogni poligono viene codificato da solo, con un costo fisso di circa 10 ms indipendente da V fino a 200 vertici. Quindi oggi il tempo misura il numero di chiamate più che il calcolo.
 6. **La RAM non è mai stata il limite.** Il picco è tra 1,15 e 1,45 GB, di cui circa 1,1 GB dovuti a torch e CUDA. L'unica eccezione è il caso del punto 3 (7,4 GB), dovuto alla memoria GPU spostata in RAM.
+
+---
+
+## Test 2 – 100 000 geometrie
+
+- **Data:** 2026-11-07
+- **Codice:** commit `bfc2bc3`, con due costanti cambiate solo per questa esecuzione e poi ripristinate: `GEOMETRY_COUNTS = (100000,)` e `OUTPUT_CSV = outputs_benchmark/embedding_benchmark_g100000.csv`
+- **Griglia:** G = 100 000 × `maxseg` ∈ {5, 10, 20, 200, 2000} × 3 repliche, cioè 15 dataset × 4 configurazioni = 60 misure. I file `g100000_v2000` occupano 3,7 GB ciascuno.
+- **Esiti:** 30 `ok`, 2 `oom_gpu`, 28 `skipped`
+
+Ogni cella riporta **tempo totale medio (s) / picco GPU (MB)**; tra parentesi il tempo di sola lettura del file.
+
+| Configurazione \ maxseg | 5 | 10 | 20 | 200 | 2000 |
+|---|---|---|---|---|---|
+| `sampling`, limiti del paper | 9.46 / 358 (5.4) | 9.97 / 358 (5.8) | 10.22 / 358 (6.2) | 22.84 / 358 (17.9) | 126.89 / 358 (123.3) |
+| `sparse`, limiti del paper | 15.65 / 108 (5.4) | 17.94 / 108 (6.0) | 16.21 / 108 (6.1) | 26.42 / 108 (16.6) | 121.71 / 108 (111.5) |
+| `sampling`, senza limiti | `oom_gpu` | `skipped` | `skipped` | `skipped` | `skipped` |
+| `sparse`, senza limiti | `oom_gpu` (picco 8 825 MB, RAM 6,9 GB) | `skipped` | `skipped` | `skipped` | `skipped` |
+
+### Osservazioni
+1. **Con 100 000 geometrie nessuna configurazione senza limiti riesce, nemmeno con poligoni da ≤5 vertici.**
+   - Con `sampling` lo stadio 2 dovrebbe creare tensori 100 000 × 100 000: la richiesta è impossibile e fallisce subito.
+   - Con `sparse` si conferma la previsione del Test 1 (circa 0,1 MB per geometria, quindi circa 10 GB). La memoria GPU sale fino a 8,8 GB, in buona parte spostata nella RAM condivisa (RAM di processo a 6,9 GB), poi l'allocazione fallisce.
+   - Il limite del portatile per `sparse` senza limiti è quindi tra 10 000 e 100 000 geometrie, ed è dovuto alla **memoria dello stadio 2**, non ai vertici.
+2. **Con i limiti del paper si arriva sempre in fondo, ma usando solo 512 (`sampling`) o 1024 (`sparse`) geometrie su 100 000**, cioè l'1% circa del dataset. La memoria GPU resta costante (358 MB e 108 MB).
+3. **A questa scala il collo di bottiglia del tempo diventa la lettura del file.**
+   - Per `g100000_v2000` la lettura e l'interpretazione del WKT richiedono 111–123 s su circa 122–127 s totali.
+   - La RAM sale a 2,2 GB con `sparse`, il cui limite di lettura è più alto: 4096 vertici contro 256.
+
+## Sintesi dei limiti sul portatile di riferimento
+
+| Configurazione | Regge fino a | Cede a | Risorsa che finisce per prima |
+|---|---|---|---|
+| `sampling`, limiti del paper | tutta la griglia (100 000 × ≤2000) | — | nessuna, ma usa ≤512 geometrie × ≤128 vertici |
+| `sparse`, limiti del paper | tutta la griglia (100 000 × ≤2000) | — | nessuna, ma usa ≤1024 geometrie × ≤512 vertici |
+| `sampling`, senza limiti | 1 000 geometrie × ≤200 vertici (100 × ≤2000 in 812 s) | 10 000 geometrie; 1 000 × ≤2000 vertici | memoria GPU (stadio 2 per G, stadio 1 per V) |
+| `sparse`, senza limiti | 10 000 geometrie × ≤2000 vertici (circa 10 milioni di vertici, 153 s) | 100 000 geometrie | memoria GPU dello stadio 2 (circa 0,1 MB per geometria) |
