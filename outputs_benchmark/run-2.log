@@ -1,0 +1,73 @@
+g100000_v5 uniform_1 sampling/paper: ok total=9.77s gpu=358MB ram=1286MB
+g100000_v5 uniform_2 sampling/paper: ok total=9.44s gpu=358MB ram=1287MB
+g100000_v5 uniform_3 sampling/paper: ok total=9.17s gpu=358MB ram=1286MB
+g100000_v5 uniform_1 sparse/paper: ok total=14.98s gpu=108MB ram=1440MB
+g100000_v5 uniform_2 sparse/paper: ok total=16.18s gpu=108MB ram=1440MB
+g100000_v5 uniform_3 sparse/paper: ok total=15.78s gpu=108MB ram=1441MB
+g100000_v5 uniform_1 sampling/none: oom_gpu total=nans gpu=256MB ram=1558MB
+g100000_v5 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v5 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v5 uniform_1 sparse/none: oom_gpu total=nans gpu=8825MB ram=6872MB
+g100000_v5 uniform_2 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v5 uniform_3 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v10 uniform_1 sampling/paper: ok total=10.03s gpu=358MB ram=1301MB
+g100000_v10 uniform_2 sampling/paper: ok total=9.70s gpu=358MB ram=1300MB
+g100000_v10 uniform_3 sampling/paper: ok total=10.17s gpu=358MB ram=1301MB
+g100000_v10 uniform_1 sparse/paper: ok total=17.44s gpu=108MB ram=1455MB
+g100000_v10 uniform_2 sparse/paper: ok total=20.41s gpu=108MB ram=1454MB
+g100000_v10 uniform_3 sparse/paper: ok total=15.96s gpu=108MB ram=1456MB
+g100000_v10 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v10 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v10 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v10 uniform_1 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v10 uniform_2 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v10 uniform_3 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v20 uniform_1 sampling/paper: ok total=10.39s gpu=358MB ram=1302MB
+g100000_v20 uniform_2 sampling/paper: ok total=10.18s gpu=358MB ram=1304MB
+g100000_v20 uniform_3 sampling/paper: ok total=10.11s gpu=358MB ram=1303MB
+g100000_v20 uniform_1 sparse/paper: ok total=15.79s gpu=108MB ram=1459MB
+g100000_v20 uniform_2 sparse/paper: ok total=16.22s gpu=108MB ram=1458MB
+g100000_v20 uniform_3 sparse/paper: ok total=16.63s gpu=108MB ram=1459MB
+g100000_v20 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v20 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v20 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v20 uniform_1 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v20 uniform_2 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v20 uniform_3 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+    vertex subset: sampled 209 polygons; max vertices 200 -> 128
+g100000_v200 uniform_1 sampling/paper: ok total=23.56s gpu=358MB ram=1372MB
+    vertex subset: sampled 201 polygons; max vertices 200 -> 128
+g100000_v200 uniform_2 sampling/paper: ok total=23.50s gpu=358MB ram=1371MB
+    vertex subset: sampled 168 polygons; max vertices 200 -> 128
+g100000_v200 uniform_3 sampling/paper: ok total=21.44s gpu=358MB ram=1290MB
+g100000_v200 uniform_1 sparse/paper: ok total=26.23s gpu=108MB ram=1529MB
+g100000_v200 uniform_2 sparse/paper: ok total=26.53s gpu=108MB ram=1531MB
+g100000_v200 uniform_3 sparse/paper: ok total=26.51s gpu=108MB ram=1532MB
+g100000_v200 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v200 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v200 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v200 uniform_1 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v200 uniform_2 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v200 uniform_3 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+Randomly sampled vertices for 87296 polygons with more than 256 vertices in uniform_1.wkt
+    vertex subset: sampled 488 polygons; max vertices 256 -> 128
+g100000_v2000 uniform_1 sampling/paper: ok total=127.10s gpu=358MB ram=1394MB
+Randomly sampled vertices for 87485 polygons with more than 256 vertices in uniform_2.wkt
+    vertex subset: sampled 472 polygons; max vertices 256 -> 128
+g100000_v2000 uniform_2 sampling/paper: ok total=126.76s gpu=358MB ram=1395MB
+Randomly sampled vertices for 87121 polygons with more than 256 vertices in uniform_3.wkt
+    vertex subset: sampled 479 polygons; max vertices 256 -> 128
+g100000_v2000 uniform_3 sampling/paper: ok total=126.81s gpu=358MB ram=1395MB
+    vertex subset: sampled 772 polygons; max vertices 1998 -> 512
+g100000_v2000 uniform_1 sparse/paper: ok total=119.06s gpu=108MB ram=2217MB
+    vertex subset: sampled 773 polygons; max vertices 2000 -> 512
+g100000_v2000 uniform_2 sparse/paper: ok total=123.24s gpu=108MB ram=2240MB
+    vertex subset: sampled 749 polygons; max vertices 2000 -> 512
+g100000_v2000 uniform_3 sparse/paper: ok total=122.82s gpu=108MB ram=2220MB
+g100000_v2000 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v2000 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v2000 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v2000 uniform_1 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v2000 uniform_2 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g100000_v2000 uniform_3 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+Saved benchmark results to: outputs_benchmark\embedding_benchmark-2.csv

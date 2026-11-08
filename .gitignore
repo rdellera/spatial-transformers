@@ -1,0 +1,8 @@
+.venv/
+.idea/
+__pycache__/
+data/**
+!data/**/
+!data/benchmark/*/commands.log
+!data/benchmark/*/sum_*.csv
+outputs_selectivity/

@@ -33,6 +33,7 @@ collate_utils.py                 Polygon and dataset collation utilities
 spatial_utils.py                 Polygon normalization and geometry feature extraction
 spatial_io.py                    Basic WKT I/O helpers
 embedding.py                     Precomputation helpers
+benchmark_embedding.py           Time/memory benchmark for building dataset embeddings
 convert_csv_to_wkt.py            Utility: convert MBR CSV files to WKT polygons
 process_osm_file.py              Utility: extract first-column WKT geometries from tab-separated files
 ```
@@ -75,6 +76,14 @@ where:
 - `rq_minx`, `rq_miny`, `rq_maxx`, `rq_maxy` define the range-query window;
 - `rq_sel` is the selectivity target.
 
+Column names and separator are configurable through `DATASET_NAME_COLUMN`, `RANGE_QUERY_COLUMNS`, `TARGET_COLUMN` and `RANGE_QUERY_LABELS_SEPARATOR`. The current configuration reads range-query results produced by the AIDA tool (`rqR_<tier>.csv`, separator `;`):
+
+```text
+datasetName;numQuery;queryArea;minX;minY;maxX;maxY;areaint;cardinality;...
+```
+
+where `cardinality` is the selectivity (fraction of geometries intersecting the query window).
+
 ## Installation
 
 Create and activate a virtual environment:
@@ -88,7 +97,7 @@ python -m pip install --upgrade pip
 Install dependencies:
 
 ```bash
-pip install torch pandas numpy shapely
+pip install -r requirements.txt
 ```
 
 For CUDA-enabled PyTorch, install the PyTorch build matching your CUDA version from the official PyTorch installation selector, then install the remaining dependencies.
@@ -98,12 +107,16 @@ For CUDA-enabled PyTorch, install the PyTorch build matching your CUDA version f
 Edit the configuration block at the top of `train_selectivity_opt1_opt2.py`:
 
 ```python
-DATASETS_DIR = Path("./data/synthetic_datasets")
-RANGE_QUERY_LABELS_CSV = Path("./data/rq_result_66087_balanced.csv")
-OUTPUT_DIR = Path("./outputs_selectivity")
+DATA_TIER = "small"
+DATASETS_DIR = Path("./data") / DATA_TIER
+RANGE_QUERY_LABELS_CSV = DATASETS_DIR / f"rqR_{DATA_TIER}.csv"
+RANGE_QUERY_LABELS_SEPARATOR = ";"
 
 ATTENTION_STRATEGY = "sampling"  # "sampling" or "sparse"
+OUTPUT_DIR = Path("./outputs_selectivity") / f"{DATA_TIER}_{ATTENTION_STRATEGY}"
 ```
+
+The paper experiments used `DATASETS_DIR = Path("./data/synthetic_datasets")`, `RANGE_QUERY_LABELS_CSV = Path("./data/rq_result_66087_balanced.csv")` and separator `,`.
 
 Then run:
 
@@ -230,8 +243,56 @@ WMAPE
 It also records timing statistics for loading, training, evaluation, and frozen-embedding computation. A timing summary is printed at the end and written to:
 
 ```text
-outputs_selectivity/timing_summary.csv
+outputs_selectivity/<tier>_<strategy>/timing_summary.csv
 ```
+
+## Embedding resource benchmark
+
+`benchmark_embedding.py` measures the time and memory needed to build a dataset embedding `z_D`, without training. It follows the same path as `compute_frozen_embeddings` (polygon reading, sampling caps, polygon encoder, dataset encoder), with the paper model configuration and random weights.
+
+Datasets are generated with the AIDA tool and stored as:
+
+```text
+data/benchmark/g<geometries>_v<maxseg>/uniform_<replica>.wkt
+```
+
+where `maxseg` is the maximum number of vertices per polygon (AIDA draws 4..maxseg vertices). Every dataset is measured with four configurations: `sampling` and `sparse` attention, each with the paper sampling caps (`caps = paper`) and without them (`caps = none`). Each measurement runs in a separate process, with a limit of `MAX_SECONDS_PER_RUN` seconds.
+
+### Generating the benchmark datasets
+
+The `.wkt` files are not versioned (about 13 GB, 11 GB of which for `g100000_v2000`). Each `data/benchmark/<group>/` folder contains the AIDA summary (`sum_<group>.csv`) and `commands.log`, where line `n` is the `Generator.py` command that produced `uniform_<n>.wkt`.
+
+Datasets are generated with `Generator.py` from the [AIDA tool](https://github.com/smigliorini/aida-augumentation-tool), branch `main` (commit `e4a2548`). It only uses the Python standard library, but it imports `cgi`, so it needs Python 3.12 or older. From this repository root:
+
+```bash
+AIDA=/path/to/aida-augumentation-tool
+for dir in data/benchmark/*/; do
+  n=1
+  tr -d '\r' < "$dir/commands.log" | while read -r command; do
+    (cd "$AIDA" && $command) > "$dir/uniform_$n.wkt"
+    n=$((n + 1))
+  done
+done
+```
+
+Alternatively, run AIDA's `GeneratorCSV.py` on each `sum_<group>.csv`, after editing its `MODIFICA` constants. AIDA does not fix a random seed, so regenerated polygons differ from the original ones, but the number of geometries and vertices per polygon (which determine the cost) follow the same parameters.
+
+### Running the benchmark
+
+```bash
+mkdir -p outputs_benchmark
+python -u benchmark_embedding.py 2>&1 | tee outputs_benchmark/run.log
+```
+
+On the reference laptop (see `benchmark.md`) the full grid takes about 2.5–3 hours. Results are written to `outputs_benchmark/embedding_benchmark.csv`, one row per measurement, overwriting the versioned results of the thesis:
+
+```text
+group, dataset, geometries, max_vertices, strategy, caps, status,
+polygons_read, polygons_used, vertices_used, max_vertices_used,
+read_s, stage1_s, stage2_s, total_s, gpu_peak_mb, ram_peak_mb
+```
+
+`status` is one of `ok`, `oom_gpu`, `oom_ram`, `crash`, `timeout`, `skipped` (the same configuration already failed on a smaller input). Test results are collected in `benchmark.md`; `embedding_benchmark-2.csv` and `run-2.log` hold the second test (100000 geometries).
 
 ## Utility scripts
 
