@@ -97,7 +97,7 @@ python -m pip install --upgrade pip
 Install dependencies:
 
 ```bash
-pip install torch pandas numpy shapely
+pip install -r requirements.txt
 ```
 
 For CUDA-enabled PyTorch, install the PyTorch build matching your CUDA version from the official PyTorch installation selector, then install the remaining dependencies.
@@ -258,13 +258,33 @@ data/benchmark/g<geometries>_v<maxseg>/uniform_<replica>.wkt
 
 where `maxseg` is the maximum number of vertices per polygon (AIDA draws 4..maxseg vertices). Every dataset is measured with four configurations: `sampling` and `sparse` attention, each with the paper sampling caps (`caps = paper`) and without them (`caps = none`). Each measurement runs in a separate process, with a limit of `MAX_SECONDS_PER_RUN` seconds.
 
-Run:
+### Generating the benchmark datasets
+
+The `.wkt` files are not versioned (about 13 GB, 11 GB of which for `g100000_v2000`). Each `data/benchmark/<group>/` folder contains the AIDA summary (`sum_<group>.csv`) and `commands.log`, where line `n` is the `Generator.py` command that produced `uniform_<n>.wkt`.
+
+Datasets are generated with `Generator.py` from the [AIDA tool](https://github.com/smigliorini/aida-augumentation-tool), branch `main` (commit `e4a2548`). It only uses the Python standard library, but it imports `cgi`, so it needs Python 3.12 or older. From this repository root:
 
 ```bash
+AIDA=/path/to/aida-augumentation-tool
+for dir in data/benchmark/*/; do
+  n=1
+  tr -d '\r' < "$dir/commands.log" | while read -r command; do
+    (cd "$AIDA" && $command) > "$dir/uniform_$n.wkt"
+    n=$((n + 1))
+  done
+done
+```
+
+Alternatively, run AIDA's `GeneratorCSV.py` on each `sum_<group>.csv`, after editing its `MODIFICA` constants. AIDA does not fix a random seed, so regenerated polygons differ from the original ones, but the number of geometries and vertices per polygon (which determine the cost) follow the same parameters.
+
+### Running the benchmark
+
+```bash
+mkdir -p outputs_benchmark
 python -u benchmark_embedding.py 2>&1 | tee outputs_benchmark/run.log
 ```
 
-Results are written to `outputs_benchmark/embedding_benchmark.csv`, one row per measurement:
+On the reference laptop (see `benchmark.md`) the full grid takes about 2.5–3 hours. Results are written to `outputs_benchmark/embedding_benchmark.csv`, one row per measurement, overwriting the versioned results of the thesis:
 
 ```text
 group, dataset, geometries, max_vertices, strategy, caps, status,
@@ -272,7 +292,7 @@ polygons_read, polygons_used, vertices_used, max_vertices_used,
 read_s, stage1_s, stage2_s, total_s, gpu_peak_mb, ram_peak_mb
 ```
 
-`status` is one of `ok`, `oom_gpu`, `oom_ram`, `crash`, `timeout`, `skipped` (the same configuration already failed on a smaller input). Test results are collected in `benchmark.md`.
+`status` is one of `ok`, `oom_gpu`, `oom_ram`, `crash`, `timeout`, `skipped` (the same configuration already failed on a smaller input). Test results are collected in `benchmark.md`; `embedding_benchmark-2.csv` and `run-2.log` hold the second test (100000 geometries).
 
 ## Utility scripts
 
