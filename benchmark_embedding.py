@@ -38,8 +38,8 @@ from spatial_data_loading import read_polygons
 BENCHMARK_DIR = Path("./data/benchmark")
 OUTPUT_CSV = Path("./outputs_benchmark/embedding_benchmark.csv")
 
-GEOMETRY_COUNTS = (100, 1000, 10000, 100000)
-VERTEX_BANDS = (5, 10, 20, 200, 2000)  # AIDA maxseg: each polygon has 4..maxseg vertices
+GEOMETRY_COUNTS = (100, 200, 400, 1000, 2000, 4000, 10000, 20000, 40000)
+VERTEX_BANDS = (5, 10, 20, 200, 2000)
 
 # (attention strategy, use the paper sampling caps)
 CONFIGURATIONS = (
@@ -54,7 +54,8 @@ MAX_SECONDS_PER_RUN = 1800
 CSV_FIELDS = [
     "group", "dataset", "geometries", "max_vertices", "strategy", "caps", "status",
     "polygons_read", "polygons_used", "vertices_used", "max_vertices_used",
-    "read_s", "stage1_s", "stage2_s", "total_s", "gpu_peak_mb", "ram_peak_mb",
+    "read_s", "stage1_s", "stage2_s", "total_s",
+    "gpu_peak_mb", "gpu_stage1_mb", "gpu_stage2_mb", "ram_peak_mb",
 ]
 
 
@@ -93,6 +94,13 @@ def measure_embedding(dataset_file: Path, strategy: str, use_paper_caps: bool, r
     cache_vertices, cache_geometries = caps("cache")
     frozen_vertices, frozen_geometries = caps("frozen")
     result: dict = {"status": "ok"}
+
+    def start_stage2(module, args) -> None:
+        # The dataset encoder (stage 2, kNN neighbors included) starts here:
+        # store the stage 1 peak and measure stage 2 from zero.
+        result["gpu_stage1_mb"] = torch.cuda.max_memory_allocated(device) / 2**20
+        torch.cuda.reset_peak_memory_stats(device)
+
     try:
         with torch.no_grad():
             # Warm-up: CUDA context and kernels are initialized outside the measurement.
@@ -101,6 +109,7 @@ def measure_embedding(dataset_file: Path, strategy: str, use_paper_caps: bool, r
             paper.TIMINGS.counts.clear()
             if device.type == "cuda":
                 torch.cuda.reset_peak_memory_stats(device)
+                dataset_encoder.register_forward_pre_hook(start_stage2)
 
             t0 = time.perf_counter()
             polygons = read_polygons(dataset_file, max_vertices_per_polygon=cache_vertices)
@@ -124,7 +133,12 @@ def measure_embedding(dataset_file: Path, strategy: str, use_paper_caps: bool, r
         result["status"] = "oom_ram"
 
     if device.type == "cuda":
-        result["gpu_peak_mb"] = torch.cuda.max_memory_allocated(device) / 2**20
+        last_peak = torch.cuda.max_memory_allocated(device) / 2**20
+        if "gpu_stage1_mb" in result:
+            result["gpu_stage2_mb"] = last_peak
+        else:  # stage 2 never started (e.g. out of memory in stage 1)
+            result["gpu_stage1_mb"] = last_peak
+        result["gpu_peak_mb"] = max(result["gpu_stage1_mb"], result.get("gpu_stage2_mb", 0.0))
     memory = psutil.Process().memory_info()
     result["ram_peak_mb"] = getattr(memory, "peak_wset", memory.rss) / 2**20  # peak_wset exists on Windows
     results.put(result)
@@ -158,9 +172,17 @@ def main() -> None:
     OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     failures: list[tuple[str, bool, int, int]] = []  # (strategy, caps, geometries, max_vertices)
 
-    with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as fout:
+    # Resume: measurements already in OUTPUT_CSV are not repeated (delete the file to start over).
+    done: dict[tuple[str, str, str, str], dict] = {}
+    if OUTPUT_CSV.exists():
+        with open(OUTPUT_CSV, newline="", encoding="utf-8") as fin:
+            done = {(r["group"], r["dataset"], r["strategy"], r["caps"]): r for r in csv.DictReader(fin)}
+        paper.log(f"Resuming: {len(done)} measurements already in {OUTPUT_CSV}")
+
+    with open(OUTPUT_CSV, "a", newline="", encoding="utf-8") as fout:
         writer = csv.DictWriter(fout, fieldnames=CSV_FIELDS)
-        writer.writeheader()
+        if not done:
+            writer.writeheader()
 
         for geometries in GEOMETRY_COUNTS:
             for max_vertices in VERTEX_BANDS:
@@ -176,18 +198,28 @@ def main() -> None:
                         s == strategy and c == use_paper_caps and g <= geometries and v <= max_vertices
                         for s, c, g, v in failures
                     )
+                    caps_name = "paper" if use_paper_caps else "none"
                     for dataset_file in dataset_files:
-                        if already_failed:
+                        previous = done.get((group, dataset_file.stem, strategy, caps_name))
+                        if previous is not None:
+                            result = previous
+                        elif already_failed:
                             result = {"status": "skipped"}
                         else:
                             result = run_isolated(dataset_file, strategy, use_paper_caps)
+                        if result["status"] not in ("ok", "skipped"):
+                            failures.append((strategy, use_paper_caps, geometries, max_vertices))
+                            already_failed = True
+                        if previous is not None:
+                            continue
+
                         row = {
                             "group": group,
                             "dataset": dataset_file.stem,
                             "geometries": geometries,
                             "max_vertices": max_vertices,
                             "strategy": strategy,
-                            "caps": "paper" if use_paper_caps else "none",
+                            "caps": caps_name,
                             **result,
                         }
                         writer.writerow(row)
@@ -198,9 +230,6 @@ def main() -> None:
                             f"gpu={row.get('gpu_peak_mb', float('nan')):.0f}MB "
                             f"ram={row.get('ram_peak_mb', float('nan')):.0f}MB"
                         )
-                        if result["status"] not in ("ok", "skipped"):
-                            failures.append((strategy, use_paper_caps, geometries, max_vertices))
-                            already_failed = True
 
     paper.log(f"Saved benchmark results to: {OUTPUT_CSV}")
 
