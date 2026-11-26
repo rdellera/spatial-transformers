@@ -1,222 +1,2161 @@
-g100_v5 uniform_1 sampling/paper: ok total=0.82s gpu=19MB ram=1160MB
-g100_v5 uniform_2 sampling/paper: ok total=0.85s gpu=19MB ram=1160MB
-g100_v5 uniform_3 sampling/paper: ok total=0.82s gpu=19MB ram=1160MB
-g100_v5 uniform_1 sparse/paper: ok total=1.25s gpu=15MB ram=1309MB
-g100_v5 uniform_2 sparse/paper: ok total=1.06s gpu=15MB ram=1309MB
-g100_v5 uniform_3 sparse/paper: ok total=1.01s gpu=15MB ram=1309MB
-g100_v5 uniform_1 sampling/none: ok total=0.74s gpu=19MB ram=1159MB
-g100_v5 uniform_2 sampling/none: ok total=0.74s gpu=19MB ram=1160MB
-g100_v5 uniform_3 sampling/none: ok total=0.76s gpu=19MB ram=1160MB
-g100_v5 uniform_1 sparse/none: ok total=1.17s gpu=15MB ram=1309MB
-g100_v5 uniform_2 sparse/none: ok total=1.10s gpu=15MB ram=1309MB
-g100_v5 uniform_3 sparse/none: ok total=1.07s gpu=15MB ram=1309MB
-g100_v10 uniform_1 sampling/paper: ok total=0.75s gpu=19MB ram=1159MB
-g100_v10 uniform_2 sampling/paper: ok total=0.77s gpu=19MB ram=1161MB
-g100_v10 uniform_3 sampling/paper: ok total=0.71s gpu=19MB ram=1160MB
-g100_v10 uniform_1 sparse/paper: ok total=1.18s gpu=15MB ram=1308MB
-g100_v10 uniform_2 sparse/paper: ok total=1.00s gpu=15MB ram=1309MB
-g100_v10 uniform_3 sparse/paper: ok total=0.97s gpu=15MB ram=1308MB
-g100_v10 uniform_1 sampling/none: ok total=0.75s gpu=19MB ram=1161MB
-g100_v10 uniform_2 sampling/none: ok total=0.78s gpu=19MB ram=1160MB
-g100_v10 uniform_3 sampling/none: ok total=0.78s gpu=19MB ram=1160MB
-g100_v10 uniform_1 sparse/none: ok total=1.07s gpu=15MB ram=1309MB
-g100_v10 uniform_2 sparse/none: ok total=1.02s gpu=15MB ram=1308MB
-g100_v10 uniform_3 sparse/none: ok total=0.98s gpu=15MB ram=1309MB
-g100_v20 uniform_1 sampling/paper: ok total=0.74s gpu=19MB ram=1165MB
-g100_v20 uniform_2 sampling/paper: ok total=0.75s gpu=19MB ram=1165MB
-g100_v20 uniform_3 sampling/paper: ok total=0.74s gpu=19MB ram=1165MB
-g100_v20 uniform_1 sparse/paper: ok total=1.02s gpu=15MB ram=1314MB
-g100_v20 uniform_2 sparse/paper: ok total=0.96s gpu=15MB ram=1314MB
-g100_v20 uniform_3 sparse/paper: ok total=1.04s gpu=15MB ram=1315MB
-g100_v20 uniform_1 sampling/none: ok total=0.76s gpu=19MB ram=1165MB
-g100_v20 uniform_2 sampling/none: ok total=0.77s gpu=19MB ram=1166MB
-g100_v20 uniform_3 sampling/none: ok total=0.75s gpu=19MB ram=1166MB
-g100_v20 uniform_1 sparse/none: ok total=1.03s gpu=15MB ram=1314MB
-g100_v20 uniform_2 sparse/none: ok total=0.97s gpu=15MB ram=1314MB
-g100_v20 uniform_3 sparse/none: ok total=1.09s gpu=15MB ram=1315MB
-    vertex subset: sampled 27 polygons; max vertices 198 -> 128
-g100_v200 uniform_1 sampling/paper: ok total=0.75s gpu=38MB ram=1161MB
-    vertex subset: sampled 28 polygons; max vertices 200 -> 128
-g100_v200 uniform_2 sampling/paper: ok total=0.75s gpu=38MB ram=1160MB
-    vertex subset: sampled 35 polygons; max vertices 200 -> 128
-g100_v200 uniform_3 sampling/paper: ok total=0.73s gpu=38MB ram=1165MB
-g100_v200 uniform_1 sparse/paper: ok total=1.06s gpu=19MB ram=1309MB
-g100_v200 uniform_2 sparse/paper: ok total=1.05s gpu=19MB ram=1310MB
-g100_v200 uniform_3 sparse/paper: ok total=1.09s gpu=19MB ram=1315MB
-g100_v200 uniform_1 sampling/none: ok total=0.78s gpu=86MB ram=1162MB
-g100_v200 uniform_2 sampling/none: ok total=0.92s gpu=86MB ram=1160MB
-g100_v200 uniform_3 sampling/none: ok total=0.82s gpu=86MB ram=1167MB
-g100_v200 uniform_1 sparse/none: ok total=1.23s gpu=19MB ram=1310MB
-g100_v200 uniform_2 sparse/none: ok total=1.14s gpu=19MB ram=1310MB
-g100_v200 uniform_3 sparse/none: ok total=1.03s gpu=19MB ram=1315MB
-Randomly sampled vertices for 86 polygons with more than 256 vertices in uniform_1.wkt
-    vertex subset: sampled 93 polygons; max vertices 256 -> 128
-g100_v2000 uniform_1 sampling/paper: ok total=0.92s gpu=38MB ram=1159MB
-Randomly sampled vertices for 94 polygons with more than 256 vertices in uniform_2.wkt
-    vertex subset: sampled 98 polygons; max vertices 256 -> 128
-g100_v2000 uniform_2 sampling/paper: ok total=0.89s gpu=38MB ram=1159MB
-Randomly sampled vertices for 82 polygons with more than 256 vertices in uniform_3.wkt
+g100_v5 uniform_1 sampling/paper: ok total=0.77s gpu=19MB ram=1160MB
+g100_v5 uniform_10 sampling/paper: ok total=0.72s gpu=19MB ram=1160MB
+g100_v5 uniform_2 sampling/paper: ok total=0.67s gpu=19MB ram=1161MB
+g100_v5 uniform_3 sampling/paper: ok total=0.65s gpu=19MB ram=1160MB
+g100_v5 uniform_4 sampling/paper: ok total=0.65s gpu=19MB ram=1160MB
+g100_v5 uniform_5 sampling/paper: ok total=0.66s gpu=19MB ram=1161MB
+g100_v5 uniform_6 sampling/paper: ok total=0.68s gpu=19MB ram=1160MB
+g100_v5 uniform_7 sampling/paper: ok total=0.72s gpu=19MB ram=1161MB
+g100_v5 uniform_8 sampling/paper: ok total=0.65s gpu=19MB ram=1160MB
+g100_v5 uniform_9 sampling/paper: ok total=0.64s gpu=19MB ram=1161MB
+g100_v5 uniform_1 sparse/paper: ok total=0.95s gpu=15MB ram=1309MB
+g100_v5 uniform_10 sparse/paper: ok total=0.89s gpu=15MB ram=1309MB
+g100_v5 uniform_2 sparse/paper: ok total=0.89s gpu=15MB ram=1309MB
+g100_v5 uniform_3 sparse/paper: ok total=0.93s gpu=15MB ram=1309MB
+g100_v5 uniform_4 sparse/paper: ok total=0.88s gpu=15MB ram=1309MB
+g100_v5 uniform_5 sparse/paper: ok total=0.88s gpu=15MB ram=1309MB
+g100_v5 uniform_6 sparse/paper: ok total=1.02s gpu=15MB ram=1309MB
+g100_v5 uniform_7 sparse/paper: ok total=0.91s gpu=15MB ram=1309MB
+g100_v5 uniform_8 sparse/paper: ok total=0.93s gpu=15MB ram=1309MB
+g100_v5 uniform_9 sparse/paper: ok total=0.93s gpu=15MB ram=1309MB
+g100_v5 uniform_1 sampling/none: ok total=0.65s gpu=19MB ram=1161MB
+g100_v5 uniform_10 sampling/none: ok total=0.63s gpu=19MB ram=1160MB
+g100_v5 uniform_2 sampling/none: ok total=0.65s gpu=19MB ram=1160MB
+g100_v5 uniform_3 sampling/none: ok total=0.65s gpu=19MB ram=1161MB
+g100_v5 uniform_4 sampling/none: ok total=0.65s gpu=19MB ram=1160MB
+g100_v5 uniform_5 sampling/none: ok total=0.66s gpu=19MB ram=1159MB
+g100_v5 uniform_6 sampling/none: ok total=0.65s gpu=19MB ram=1160MB
+g100_v5 uniform_7 sampling/none: ok total=0.72s gpu=19MB ram=1161MB
+g100_v5 uniform_8 sampling/none: ok total=0.69s gpu=19MB ram=1161MB
+g100_v5 uniform_9 sampling/none: ok total=0.64s gpu=19MB ram=1160MB
+g100_v5 uniform_1 sparse/none: ok total=0.89s gpu=15MB ram=1310MB
+g100_v5 uniform_10 sparse/none: ok total=0.90s gpu=15MB ram=1308MB
+g100_v5 uniform_2 sparse/none: ok total=0.84s gpu=15MB ram=1309MB
+g100_v5 uniform_3 sparse/none: ok total=0.88s gpu=15MB ram=1309MB
+g100_v5 uniform_4 sparse/none: ok total=0.84s gpu=15MB ram=1309MB
+g100_v5 uniform_5 sparse/none: ok total=0.89s gpu=15MB ram=1308MB
+g100_v5 uniform_6 sparse/none: ok total=0.87s gpu=15MB ram=1309MB
+g100_v5 uniform_7 sparse/none: ok total=0.85s gpu=15MB ram=1309MB
+g100_v5 uniform_8 sparse/none: ok total=0.88s gpu=15MB ram=1310MB
+g100_v5 uniform_9 sparse/none: ok total=0.86s gpu=15MB ram=1309MB
+g100_v10 uniform_1 sampling/paper: ok total=0.69s gpu=19MB ram=1160MB
+g100_v10 uniform_10 sampling/paper: ok total=0.65s gpu=19MB ram=1160MB
+g100_v10 uniform_2 sampling/paper: ok total=0.64s gpu=19MB ram=1161MB
+g100_v10 uniform_3 sampling/paper: ok total=0.69s gpu=19MB ram=1160MB
+g100_v10 uniform_4 sampling/paper: ok total=0.71s gpu=19MB ram=1161MB
+g100_v10 uniform_5 sampling/paper: ok total=0.71s gpu=19MB ram=1160MB
+g100_v10 uniform_6 sampling/paper: ok total=0.65s gpu=19MB ram=1160MB
+g100_v10 uniform_7 sampling/paper: ok total=0.65s gpu=19MB ram=1160MB
+g100_v10 uniform_8 sampling/paper: ok total=0.67s gpu=19MB ram=1160MB
+g100_v10 uniform_9 sampling/paper: ok total=0.64s gpu=19MB ram=1161MB
+g100_v10 uniform_1 sparse/paper: ok total=0.97s gpu=15MB ram=1309MB
+g100_v10 uniform_10 sparse/paper: ok total=0.91s gpu=15MB ram=1309MB
+g100_v10 uniform_2 sparse/paper: ok total=0.87s gpu=15MB ram=1309MB
+g100_v10 uniform_3 sparse/paper: ok total=0.95s gpu=15MB ram=1310MB
+g100_v10 uniform_4 sparse/paper: ok total=0.87s gpu=15MB ram=1309MB
+g100_v10 uniform_5 sparse/paper: ok total=0.88s gpu=15MB ram=1308MB
+g100_v10 uniform_6 sparse/paper: ok total=0.93s gpu=15MB ram=1310MB
+g100_v10 uniform_7 sparse/paper: ok total=0.93s gpu=15MB ram=1309MB
+g100_v10 uniform_8 sparse/paper: ok total=0.86s gpu=15MB ram=1310MB
+g100_v10 uniform_9 sparse/paper: ok total=0.87s gpu=15MB ram=1309MB
+g100_v10 uniform_1 sampling/none: ok total=0.70s gpu=19MB ram=1160MB
+g100_v10 uniform_10 sampling/none: ok total=0.65s gpu=19MB ram=1161MB
+g100_v10 uniform_2 sampling/none: ok total=0.72s gpu=19MB ram=1160MB
+g100_v10 uniform_3 sampling/none: ok total=0.68s gpu=19MB ram=1161MB
+g100_v10 uniform_4 sampling/none: ok total=0.72s gpu=19MB ram=1160MB
+g100_v10 uniform_5 sampling/none: ok total=0.74s gpu=19MB ram=1161MB
+g100_v10 uniform_6 sampling/none: ok total=0.68s gpu=19MB ram=1161MB
+g100_v10 uniform_7 sampling/none: ok total=0.69s gpu=19MB ram=1161MB
+g100_v10 uniform_8 sampling/none: ok total=0.72s gpu=19MB ram=1160MB
+g100_v10 uniform_9 sampling/none: ok total=0.68s gpu=19MB ram=1161MB
+g100_v10 uniform_1 sparse/none: ok total=1.01s gpu=15MB ram=1309MB
+g100_v10 uniform_10 sparse/none: ok total=0.93s gpu=15MB ram=1308MB
+g100_v10 uniform_2 sparse/none: ok total=0.91s gpu=15MB ram=1309MB
+g100_v10 uniform_3 sparse/none: ok total=0.91s gpu=15MB ram=1309MB
+g100_v10 uniform_4 sparse/none: ok total=0.87s gpu=15MB ram=1309MB
+g100_v10 uniform_5 sparse/none: ok total=0.90s gpu=15MB ram=1309MB
+g100_v10 uniform_6 sparse/none: ok total=0.93s gpu=15MB ram=1309MB
+g100_v10 uniform_7 sparse/none: ok total=0.87s gpu=15MB ram=1309MB
+g100_v10 uniform_8 sparse/none: ok total=0.91s gpu=15MB ram=1309MB
+g100_v10 uniform_9 sparse/none: ok total=0.90s gpu=15MB ram=1308MB
+g100_v20 uniform_1 sampling/paper: ok total=0.68s gpu=19MB ram=1166MB
+g100_v20 uniform_10 sampling/paper: ok total=0.68s gpu=19MB ram=1166MB
+g100_v20 uniform_2 sampling/paper: ok total=0.72s gpu=19MB ram=1165MB
+g100_v20 uniform_3 sampling/paper: ok total=0.67s gpu=19MB ram=1165MB
+g100_v20 uniform_4 sampling/paper: ok total=0.67s gpu=19MB ram=1166MB
+g100_v20 uniform_5 sampling/paper: ok total=0.69s gpu=19MB ram=1165MB
+g100_v20 uniform_6 sampling/paper: ok total=0.69s gpu=19MB ram=1166MB
+g100_v20 uniform_7 sampling/paper: ok total=0.67s gpu=19MB ram=1166MB
+g100_v20 uniform_8 sampling/paper: ok total=0.69s gpu=19MB ram=1166MB
+g100_v20 uniform_9 sampling/paper: ok total=0.67s gpu=19MB ram=1166MB
+g100_v20 uniform_1 sparse/paper: ok total=0.92s gpu=15MB ram=1315MB
+g100_v20 uniform_10 sparse/paper: ok total=0.89s gpu=15MB ram=1315MB
+g100_v20 uniform_2 sparse/paper: ok total=0.86s gpu=15MB ram=1315MB
+g100_v20 uniform_3 sparse/paper: ok total=0.89s gpu=15MB ram=1314MB
+g100_v20 uniform_4 sparse/paper: ok total=0.92s gpu=15MB ram=1315MB
+g100_v20 uniform_5 sparse/paper: ok total=0.90s gpu=15MB ram=1314MB
+g100_v20 uniform_6 sparse/paper: ok total=0.98s gpu=15MB ram=1315MB
+g100_v20 uniform_7 sparse/paper: ok total=0.91s gpu=15MB ram=1315MB
+g100_v20 uniform_8 sparse/paper: ok total=0.92s gpu=15MB ram=1314MB
+g100_v20 uniform_9 sparse/paper: ok total=0.91s gpu=15MB ram=1314MB
+g100_v20 uniform_1 sampling/none: ok total=0.64s gpu=19MB ram=1166MB
+g100_v20 uniform_10 sampling/none: ok total=0.67s gpu=19MB ram=1166MB
+g100_v20 uniform_2 sampling/none: ok total=0.63s gpu=19MB ram=1166MB
+g100_v20 uniform_3 sampling/none: ok total=0.72s gpu=19MB ram=1165MB
+g100_v20 uniform_4 sampling/none: ok total=0.67s gpu=19MB ram=1166MB
+g100_v20 uniform_5 sampling/none: ok total=0.68s gpu=19MB ram=1165MB
+g100_v20 uniform_6 sampling/none: ok total=0.70s gpu=19MB ram=1165MB
+g100_v20 uniform_7 sampling/none: ok total=0.67s gpu=19MB ram=1166MB
+g100_v20 uniform_8 sampling/none: ok total=0.73s gpu=19MB ram=1166MB
+g100_v20 uniform_9 sampling/none: ok total=0.68s gpu=19MB ram=1166MB
+g100_v20 uniform_1 sparse/none: ok total=0.94s gpu=15MB ram=1315MB
+g100_v20 uniform_10 sparse/none: ok total=0.89s gpu=15MB ram=1315MB
+g100_v20 uniform_2 sparse/none: ok total=0.89s gpu=15MB ram=1315MB
+g100_v20 uniform_3 sparse/none: ok total=0.91s gpu=15MB ram=1315MB
+g100_v20 uniform_4 sparse/none: ok total=0.90s gpu=15MB ram=1315MB
+g100_v20 uniform_5 sparse/none: ok total=0.88s gpu=15MB ram=1315MB
+g100_v20 uniform_6 sparse/none: ok total=0.91s gpu=15MB ram=1315MB
+g100_v20 uniform_7 sparse/none: ok total=0.90s gpu=15MB ram=1315MB
+g100_v20 uniform_8 sparse/none: ok total=0.93s gpu=15MB ram=1316MB
+g100_v20 uniform_9 sparse/none: ok total=0.90s gpu=15MB ram=1315MB
+    vertex subset: sampled 42 polygons; max vertices 199 -> 128
+g100_v200 uniform_1 sampling/paper: ok total=0.72s gpu=38MB ram=1161MB
+    vertex subset: sampled 36 polygons; max vertices 200 -> 128
+g100_v200 uniform_10 sampling/paper: ok total=0.71s gpu=38MB ram=1162MB
+    vertex subset: sampled 32 polygons; max vertices 199 -> 128
+g100_v200 uniform_2 sampling/paper: ok total=0.71s gpu=38MB ram=1166MB
+    vertex subset: sampled 36 polygons; max vertices 200 -> 128
+g100_v200 uniform_3 sampling/paper: ok total=0.70s gpu=38MB ram=1167MB
+    vertex subset: sampled 36 polygons; max vertices 198 -> 128
+g100_v200 uniform_4 sampling/paper: ok total=0.70s gpu=38MB ram=1166MB
+    vertex subset: sampled 46 polygons; max vertices 200 -> 128
+g100_v200 uniform_5 sampling/paper: ok total=0.72s gpu=38MB ram=1161MB
+    vertex subset: sampled 29 polygons; max vertices 194 -> 128
+g100_v200 uniform_6 sampling/paper: ok total=0.71s gpu=38MB ram=1167MB
+    vertex subset: sampled 37 polygons; max vertices 200 -> 128
+g100_v200 uniform_7 sampling/paper: ok total=0.72s gpu=38MB ram=1166MB
+    vertex subset: sampled 39 polygons; max vertices 199 -> 128
+g100_v200 uniform_8 sampling/paper: ok total=0.71s gpu=38MB ram=1166MB
+    vertex subset: sampled 29 polygons; max vertices 199 -> 128
+g100_v200 uniform_9 sampling/paper: ok total=0.72s gpu=38MB ram=1161MB
+g100_v200 uniform_1 sparse/paper: ok total=0.96s gpu=19MB ram=1309MB
+g100_v200 uniform_10 sparse/paper: ok total=0.92s gpu=19MB ram=1309MB
+g100_v200 uniform_2 sparse/paper: ok total=0.95s gpu=19MB ram=1315MB
+g100_v200 uniform_3 sparse/paper: ok total=0.98s gpu=19MB ram=1315MB
+g100_v200 uniform_4 sparse/paper: ok total=0.93s gpu=19MB ram=1315MB
+g100_v200 uniform_5 sparse/paper: ok total=0.97s gpu=19MB ram=1309MB
+g100_v200 uniform_6 sparse/paper: ok total=0.98s gpu=18MB ram=1316MB
+g100_v200 uniform_7 sparse/paper: ok total=0.93s gpu=19MB ram=1316MB
+g100_v200 uniform_8 sparse/paper: ok total=0.97s gpu=19MB ram=1315MB
+g100_v200 uniform_9 sparse/paper: ok total=1.05s gpu=19MB ram=1310MB
+g100_v200 uniform_1 sampling/none: ok total=0.69s gpu=87MB ram=1161MB
+g100_v200 uniform_10 sampling/none: ok total=0.70s gpu=86MB ram=1160MB
+g100_v200 uniform_2 sampling/none: ok total=0.68s gpu=86MB ram=1166MB
+g100_v200 uniform_3 sampling/none: ok total=0.78s gpu=86MB ram=1167MB
+g100_v200 uniform_4 sampling/none: ok total=0.76s gpu=86MB ram=1166MB
+g100_v200 uniform_5 sampling/none: ok total=0.72s gpu=86MB ram=1161MB
+g100_v200 uniform_6 sampling/none: ok total=0.72s gpu=81MB ram=1166MB
+g100_v200 uniform_7 sampling/none: ok total=0.70s gpu=86MB ram=1166MB
+g100_v200 uniform_8 sampling/none: ok total=0.70s gpu=86MB ram=1166MB
+g100_v200 uniform_9 sampling/none: ok total=0.72s gpu=87MB ram=1161MB
+g100_v200 uniform_1 sparse/none: ok total=0.97s gpu=19MB ram=1310MB
+g100_v200 uniform_10 sparse/none: ok total=0.93s gpu=19MB ram=1310MB
+g100_v200 uniform_2 sparse/none: ok total=0.94s gpu=19MB ram=1315MB
+g100_v200 uniform_3 sparse/none: ok total=0.95s gpu=19MB ram=1315MB
+g100_v200 uniform_4 sparse/none: ok total=0.97s gpu=19MB ram=1315MB
+g100_v200 uniform_5 sparse/none: ok total=0.96s gpu=19MB ram=1309MB
+g100_v200 uniform_6 sparse/none: ok total=0.96s gpu=18MB ram=1316MB
+g100_v200 uniform_7 sparse/none: ok total=0.98s gpu=19MB ram=1315MB
+g100_v200 uniform_8 sparse/none: ok total=0.95s gpu=19MB ram=1316MB
+g100_v200 uniform_9 sparse/none: ok total=0.95s gpu=19MB ram=1310MB
+Randomly sampled vertices for 92 polygons with more than 256 vertices in uniform_1.wkt
+    vertex subset: sampled 95 polygons; max vertices 256 -> 128
+g100_v2000 uniform_1 sampling/paper: ok total=0.89s gpu=38MB ram=1159MB
+Randomly sampled vertices for 87 polygons with more than 256 vertices in uniform_10.wkt
     vertex subset: sampled 92 polygons; max vertices 256 -> 128
-g100_v2000 uniform_3 sampling/paper: ok total=0.88s gpu=38MB ram=1160MB
-    vertex subset: sampled 75 polygons; max vertices 1998 -> 512
-g100_v2000 uniform_1 sparse/paper: ok total=1.10s gpu=40MB ram=1314MB
-    vertex subset: sampled 82 polygons; max vertices 1979 -> 512
-g100_v2000 uniform_2 sparse/paper: ok total=1.15s gpu=40MB ram=1315MB
-    vertex subset: sampled 62 polygons; max vertices 1990 -> 512
-g100_v2000 uniform_3 sparse/paper: ok total=1.23s gpu=40MB ram=1315MB
-g100_v2000 uniform_1 sampling/none: ok total=1081.12s gpu=7972MB ram=6562MB
-g100_v2000 uniform_2 sampling/none: ok total=739.68s gpu=7820MB ram=7398MB
-g100_v2000 uniform_3 sampling/none: ok total=615.67s gpu=7909MB ram=6901MB
-g100_v2000 uniform_1 sparse/none: ok total=1.87s gpu=140MB ram=1303MB
-g100_v2000 uniform_2 sparse/none: ok total=1.64s gpu=139MB ram=1316MB
-g100_v2000 uniform_3 sparse/none: ok total=1.47s gpu=139MB ram=1315MB
-g1000_v5 uniform_1 sampling/paper: ok total=3.64s gpu=358MB ram=1152MB
-g1000_v5 uniform_2 sampling/paper: ok total=3.65s gpu=358MB ram=1152MB
-g1000_v5 uniform_3 sampling/paper: ok total=3.61s gpu=358MB ram=1153MB
-g1000_v5 uniform_1 sparse/paper: ok total=9.08s gpu=108MB ram=1304MB
-g1000_v5 uniform_2 sparse/paper: ok total=9.31s gpu=108MB ram=1304MB
-g1000_v5 uniform_3 sparse/paper: ok total=10.36s gpu=108MB ram=1303MB
-g1000_v5 uniform_1 sampling/none: ok total=8.19s gpu=1347MB ram=1154MB
-g1000_v5 uniform_2 sampling/none: ok total=8.89s gpu=1347MB ram=1155MB
-g1000_v5 uniform_3 sampling/none: ok total=7.16s gpu=1347MB ram=1154MB
-g1000_v5 uniform_1 sparse/none: ok total=9.20s gpu=108MB ram=1304MB
-g1000_v5 uniform_2 sparse/none: ok total=9.10s gpu=108MB ram=1304MB
-g1000_v5 uniform_3 sparse/none: ok total=10.61s gpu=108MB ram=1304MB
-g1000_v10 uniform_1 sampling/paper: ok total=3.60s gpu=358MB ram=1167MB
-g1000_v10 uniform_2 sampling/paper: ok total=3.60s gpu=358MB ram=1167MB
-g1000_v10 uniform_3 sampling/paper: ok total=3.56s gpu=358MB ram=1167MB
-g1000_v10 uniform_1 sparse/paper: ok total=9.42s gpu=108MB ram=1318MB
-g1000_v10 uniform_2 sparse/paper: ok total=10.54s gpu=108MB ram=1319MB
-g1000_v10 uniform_3 sparse/paper: ok total=9.05s gpu=108MB ram=1318MB
-g1000_v10 uniform_1 sampling/none: ok total=7.26s gpu=1347MB ram=1168MB
-g1000_v10 uniform_2 sampling/none: ok total=7.26s gpu=1347MB ram=1169MB
-g1000_v10 uniform_3 sampling/none: ok total=7.29s gpu=1347MB ram=1168MB
-g1000_v10 uniform_1 sparse/none: ok total=9.02s gpu=108MB ram=1318MB
-g1000_v10 uniform_2 sparse/none: ok total=9.15s gpu=108MB ram=1318MB
-g1000_v10 uniform_3 sparse/none: ok total=9.29s gpu=108MB ram=1318MB
-g1000_v20 uniform_1 sampling/paper: ok total=3.77s gpu=358MB ram=1168MB
-g1000_v20 uniform_2 sampling/paper: ok total=3.72s gpu=358MB ram=1167MB
-g1000_v20 uniform_3 sampling/paper: ok total=3.70s gpu=358MB ram=1167MB
-g1000_v20 uniform_1 sparse/paper: ok total=10.41s gpu=108MB ram=1318MB
-g1000_v20 uniform_2 sparse/paper: ok total=9.13s gpu=108MB ram=1318MB
-g1000_v20 uniform_3 sparse/paper: ok total=9.28s gpu=108MB ram=1318MB
-g1000_v20 uniform_1 sampling/none: ok total=7.33s gpu=1347MB ram=1169MB
-g1000_v20 uniform_2 sampling/none: ok total=7.39s gpu=1347MB ram=1169MB
-g1000_v20 uniform_3 sampling/none: ok total=7.53s gpu=1347MB ram=1169MB
-g1000_v20 uniform_1 sparse/none: ok total=9.22s gpu=108MB ram=1317MB
-g1000_v20 uniform_2 sparse/none: ok total=9.10s gpu=108MB ram=1318MB
-g1000_v20 uniform_3 sparse/none: ok total=9.13s gpu=108MB ram=1318MB
-    vertex subset: sampled 189 polygons; max vertices 199 -> 128
-g1000_v200 uniform_1 sampling/paper: ok total=3.92s gpu=358MB ram=1168MB
-    vertex subset: sampled 191 polygons; max vertices 200 -> 128
-g1000_v200 uniform_2 sampling/paper: ok total=3.74s gpu=358MB ram=1168MB
-    vertex subset: sampled 184 polygons; max vertices 200 -> 128
-g1000_v200 uniform_3 sampling/paper: ok total=3.89s gpu=358MB ram=1168MB
-g1000_v200 uniform_1 sparse/paper: ok total=9.20s gpu=108MB ram=1319MB
-g1000_v200 uniform_2 sparse/paper: ok total=9.45s gpu=108MB ram=1319MB
-g1000_v200 uniform_3 sparse/paper: ok total=9.57s gpu=108MB ram=1320MB
-g1000_v200 uniform_1 sampling/none: ok total=7.36s gpu=1347MB ram=1171MB
-g1000_v200 uniform_2 sampling/none: ok total=7.27s gpu=1347MB ram=1171MB
-g1000_v200 uniform_3 sampling/none: ok total=7.26s gpu=1348MB ram=1170MB
-g1000_v200 uniform_1 sparse/none: ok total=9.28s gpu=108MB ram=1319MB
-g1000_v200 uniform_2 sparse/none: ok total=9.44s gpu=108MB ram=1319MB
-g1000_v200 uniform_3 sparse/none: ok total=9.86s gpu=108MB ram=1320MB
-Randomly sampled vertices for 877 polygons with more than 256 vertices in uniform_1.wkt
-    vertex subset: sampled 476 polygons; max vertices 256 -> 128
-g1000_v2000 uniform_1 sampling/paper: ok total=4.96s gpu=358MB ram=1169MB
-Randomly sampled vertices for 883 polygons with more than 256 vertices in uniform_2.wkt
-    vertex subset: sampled 486 polygons; max vertices 256 -> 128
-g1000_v2000 uniform_2 sampling/paper: ok total=5.15s gpu=358MB ram=1168MB
-Randomly sampled vertices for 882 polygons with more than 256 vertices in uniform_3.wkt
+g100_v2000 uniform_10 sampling/paper: ok total=0.81s gpu=38MB ram=1160MB
+Randomly sampled vertices for 87 polygons with more than 256 vertices in uniform_2.wkt
+    vertex subset: sampled 94 polygons; max vertices 256 -> 128
+g100_v2000 uniform_2 sampling/paper: ok total=0.83s gpu=38MB ram=1161MB
+Randomly sampled vertices for 90 polygons with more than 256 vertices in uniform_3.wkt
+    vertex subset: sampled 95 polygons; max vertices 256 -> 128
+g100_v2000 uniform_3 sampling/paper: ok total=0.86s gpu=38MB ram=1160MB
+Randomly sampled vertices for 89 polygons with more than 256 vertices in uniform_4.wkt
+    vertex subset: sampled 95 polygons; max vertices 256 -> 128
+g100_v2000 uniform_4 sampling/paper: ok total=0.84s gpu=38MB ram=1158MB
+Randomly sampled vertices for 83 polygons with more than 256 vertices in uniform_5.wkt
+    vertex subset: sampled 93 polygons; max vertices 256 -> 128
+g100_v2000 uniform_5 sampling/paper: ok total=0.86s gpu=38MB ram=1160MB
+Randomly sampled vertices for 91 polygons with more than 256 vertices in uniform_6.wkt
+    vertex subset: sampled 97 polygons; max vertices 256 -> 128
+g100_v2000 uniform_6 sampling/paper: ok total=0.81s gpu=38MB ram=1161MB
+Randomly sampled vertices for 89 polygons with more than 256 vertices in uniform_7.wkt
+    vertex subset: sampled 94 polygons; max vertices 256 -> 128
+g100_v2000 uniform_7 sampling/paper: ok total=0.86s gpu=38MB ram=1162MB
+Randomly sampled vertices for 81 polygons with more than 256 vertices in uniform_8.wkt
+    vertex subset: sampled 90 polygons; max vertices 256 -> 128
+g100_v2000 uniform_8 sampling/paper: ok total=0.82s gpu=38MB ram=1161MB
+Randomly sampled vertices for 85 polygons with more than 256 vertices in uniform_9.wkt
+    vertex subset: sampled 91 polygons; max vertices 256 -> 128
+g100_v2000 uniform_9 sampling/paper: ok total=0.85s gpu=38MB ram=1159MB
+    vertex subset: sampled 79 polygons; max vertices 1998 -> 512
+g100_v2000 uniform_1 sparse/paper: ok total=1.08s gpu=40MB ram=1315MB
+    vertex subset: sampled 76 polygons; max vertices 1997 -> 512
+g100_v2000 uniform_10 sparse/paper: ok total=1.06s gpu=40MB ram=1315MB
+    vertex subset: sampled 72 polygons; max vertices 1981 -> 512
+g100_v2000 uniform_2 sparse/paper: ok total=1.07s gpu=40MB ram=1316MB
+    vertex subset: sampled 77 polygons; max vertices 1988 -> 512
+g100_v2000 uniform_3 sparse/paper: ok total=1.10s gpu=40MB ram=1315MB
+    vertex subset: sampled 81 polygons; max vertices 1996 -> 512
+g100_v2000 uniform_4 sparse/paper: ok total=1.09s gpu=40MB ram=1316MB
+    vertex subset: sampled 69 polygons; max vertices 1994 -> 512
+g100_v2000 uniform_5 sparse/paper: ok total=1.18s gpu=40MB ram=1315MB
+    vertex subset: sampled 82 polygons; max vertices 1985 -> 512
+g100_v2000 uniform_6 sparse/paper: ok total=1.04s gpu=40MB ram=1315MB
+    vertex subset: sampled 76 polygons; max vertices 1990 -> 512
+g100_v2000 uniform_7 sparse/paper: ok total=1.18s gpu=40MB ram=1315MB
+    vertex subset: sampled 69 polygons; max vertices 1985 -> 512
+g100_v2000 uniform_8 sparse/paper: ok total=1.04s gpu=40MB ram=1316MB
+    vertex subset: sampled 73 polygons; max vertices 1993 -> 512
+g100_v2000 uniform_9 sparse/paper: ok total=1.09s gpu=40MB ram=1315MB
+g100_v2000 uniform_1 sampling/none: oom_gpu total=nans gpu=2746MB ram=1168MB
+g100_v2000 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100_v2000 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100_v2000 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100_v2000 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100_v2000 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100_v2000 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100_v2000 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100_v2000 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100_v2000 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g100_v2000 uniform_1 sparse/none: ok total=1.56s gpu=141MB ram=1316MB
+g100_v2000 uniform_10 sparse/none: ok total=1.41s gpu=140MB ram=1316MB
+g100_v2000 uniform_2 sparse/none: ok total=1.39s gpu=138MB ram=1316MB
+g100_v2000 uniform_3 sparse/none: ok total=1.50s gpu=139MB ram=1316MB
+g100_v2000 uniform_4 sparse/none: ok total=1.52s gpu=140MB ram=1316MB
+g100_v2000 uniform_5 sparse/none: ok total=1.44s gpu=141MB ram=1317MB
+g100_v2000 uniform_6 sparse/none: ok total=1.45s gpu=139MB ram=1316MB
+g100_v2000 uniform_7 sparse/none: ok total=1.49s gpu=139MB ram=1316MB
+g100_v2000 uniform_8 sparse/none: ok total=1.45s gpu=138MB ram=1316MB
+g100_v2000 uniform_9 sparse/none: ok total=1.47s gpu=140MB ram=1316MB
+g200_v5 uniform_1 sampling/paper: ok total=1.37s gpu=60MB ram=1161MB
+g200_v5 uniform_10 sampling/paper: ok total=1.32s gpu=60MB ram=1161MB
+g200_v5 uniform_2 sampling/paper: ok total=1.30s gpu=60MB ram=1161MB
+g200_v5 uniform_3 sampling/paper: ok total=1.29s gpu=60MB ram=1160MB
+g200_v5 uniform_4 sampling/paper: ok total=1.31s gpu=60MB ram=1161MB
+g200_v5 uniform_5 sampling/paper: ok total=1.33s gpu=60MB ram=1161MB
+g200_v5 uniform_6 sampling/paper: ok total=1.32s gpu=60MB ram=1161MB
+g200_v5 uniform_7 sampling/paper: ok total=1.33s gpu=60MB ram=1160MB
+g200_v5 uniform_8 sampling/paper: ok total=1.34s gpu=60MB ram=1160MB
+g200_v5 uniform_9 sampling/paper: ok total=1.33s gpu=60MB ram=1161MB
+g200_v5 uniform_1 sparse/paper: ok total=1.67s gpu=25MB ram=1309MB
+g200_v5 uniform_10 sparse/paper: ok total=1.70s gpu=25MB ram=1311MB
+g200_v5 uniform_2 sparse/paper: ok total=1.70s gpu=25MB ram=1309MB
+g200_v5 uniform_3 sparse/paper: ok total=1.71s gpu=25MB ram=1310MB
+g200_v5 uniform_4 sparse/paper: ok total=1.67s gpu=25MB ram=1309MB
+g200_v5 uniform_5 sparse/paper: ok total=1.71s gpu=25MB ram=1310MB
+g200_v5 uniform_6 sparse/paper: ok total=1.77s gpu=25MB ram=1309MB
+g200_v5 uniform_7 sparse/paper: ok total=1.71s gpu=25MB ram=1309MB
+g200_v5 uniform_8 sparse/paper: ok total=1.74s gpu=25MB ram=1310MB
+g200_v5 uniform_9 sparse/paper: ok total=1.73s gpu=25MB ram=1309MB
+g200_v5 uniform_1 sampling/none: ok total=1.35s gpu=60MB ram=1161MB
+g200_v5 uniform_10 sampling/none: ok total=1.32s gpu=60MB ram=1161MB
+g200_v5 uniform_2 sampling/none: ok total=1.35s gpu=60MB ram=1161MB
+g200_v5 uniform_3 sampling/none: ok total=1.29s gpu=60MB ram=1161MB
+g200_v5 uniform_4 sampling/none: ok total=1.32s gpu=60MB ram=1161MB
+g200_v5 uniform_5 sampling/none: ok total=1.32s gpu=60MB ram=1161MB
+g200_v5 uniform_6 sampling/none: ok total=1.33s gpu=60MB ram=1160MB
+g200_v5 uniform_7 sampling/none: ok total=1.30s gpu=60MB ram=1161MB
+g200_v5 uniform_8 sampling/none: ok total=1.29s gpu=60MB ram=1161MB
+g200_v5 uniform_9 sampling/none: ok total=1.30s gpu=60MB ram=1161MB
+g200_v5 uniform_1 sparse/none: ok total=1.72s gpu=25MB ram=1310MB
+g200_v5 uniform_10 sparse/none: ok total=1.73s gpu=25MB ram=1310MB
+g200_v5 uniform_2 sparse/none: ok total=1.72s gpu=25MB ram=1310MB
+g200_v5 uniform_3 sparse/none: ok total=1.79s gpu=25MB ram=1310MB
+g200_v5 uniform_4 sparse/none: ok total=1.77s gpu=25MB ram=1309MB
+g200_v5 uniform_5 sparse/none: ok total=1.71s gpu=25MB ram=1309MB
+g200_v5 uniform_6 sparse/none: ok total=1.71s gpu=25MB ram=1310MB
+g200_v5 uniform_7 sparse/none: ok total=1.74s gpu=25MB ram=1310MB
+g200_v5 uniform_8 sparse/none: ok total=1.73s gpu=25MB ram=1309MB
+g200_v5 uniform_9 sparse/none: ok total=1.75s gpu=25MB ram=1309MB
+g200_v10 uniform_1 sampling/paper: ok total=1.38s gpu=60MB ram=1161MB
+g200_v10 uniform_10 sampling/paper: ok total=1.30s gpu=60MB ram=1161MB
+g200_v10 uniform_2 sampling/paper: ok total=1.39s gpu=60MB ram=1161MB
+g200_v10 uniform_3 sampling/paper: ok total=1.30s gpu=60MB ram=1161MB
+g200_v10 uniform_4 sampling/paper: ok total=1.38s gpu=60MB ram=1160MB
+g200_v10 uniform_5 sampling/paper: ok total=1.41s gpu=60MB ram=1161MB
+g200_v10 uniform_6 sampling/paper: ok total=1.32s gpu=60MB ram=1160MB
+g200_v10 uniform_7 sampling/paper: ok total=1.30s gpu=60MB ram=1161MB
+g200_v10 uniform_8 sampling/paper: ok total=1.51s gpu=60MB ram=1161MB
+g200_v10 uniform_9 sampling/paper: ok total=1.42s gpu=60MB ram=1161MB
+g200_v10 uniform_1 sparse/paper: ok total=1.74s gpu=25MB ram=1310MB
+g200_v10 uniform_10 sparse/paper: ok total=1.81s gpu=25MB ram=1310MB
+g200_v10 uniform_2 sparse/paper: ok total=1.74s gpu=25MB ram=1309MB
+g200_v10 uniform_3 sparse/paper: ok total=1.80s gpu=25MB ram=1310MB
+g200_v10 uniform_4 sparse/paper: ok total=1.76s gpu=25MB ram=1310MB
+g200_v10 uniform_5 sparse/paper: ok total=1.73s gpu=25MB ram=1310MB
+g200_v10 uniform_6 sparse/paper: ok total=1.74s gpu=25MB ram=1309MB
+g200_v10 uniform_7 sparse/paper: ok total=1.73s gpu=25MB ram=1309MB
+g200_v10 uniform_8 sparse/paper: ok total=1.72s gpu=25MB ram=1309MB
+g200_v10 uniform_9 sparse/paper: ok total=1.72s gpu=25MB ram=1309MB
+g200_v10 uniform_1 sampling/none: ok total=1.31s gpu=60MB ram=1161MB
+g200_v10 uniform_10 sampling/none: ok total=1.35s gpu=60MB ram=1160MB
+g200_v10 uniform_2 sampling/none: ok total=1.30s gpu=60MB ram=1160MB
+g200_v10 uniform_3 sampling/none: ok total=1.42s gpu=60MB ram=1161MB
+g200_v10 uniform_4 sampling/none: ok total=1.43s gpu=60MB ram=1161MB
+g200_v10 uniform_5 sampling/none: ok total=1.44s gpu=60MB ram=1161MB
+g200_v10 uniform_6 sampling/none: ok total=1.32s gpu=60MB ram=1160MB
+g200_v10 uniform_7 sampling/none: ok total=1.41s gpu=60MB ram=1161MB
+g200_v10 uniform_8 sampling/none: ok total=1.32s gpu=60MB ram=1161MB
+g200_v10 uniform_9 sampling/none: ok total=1.33s gpu=60MB ram=1161MB
+g200_v10 uniform_1 sparse/none: ok total=1.81s gpu=25MB ram=1310MB
+g200_v10 uniform_10 sparse/none: ok total=1.76s gpu=25MB ram=1310MB
+g200_v10 uniform_2 sparse/none: ok total=1.71s gpu=25MB ram=1309MB
+g200_v10 uniform_3 sparse/none: ok total=1.71s gpu=25MB ram=1310MB
+g200_v10 uniform_4 sparse/none: ok total=1.73s gpu=25MB ram=1310MB
+g200_v10 uniform_5 sparse/none: ok total=1.74s gpu=25MB ram=1310MB
+g200_v10 uniform_6 sparse/none: ok total=1.87s gpu=25MB ram=1310MB
+g200_v10 uniform_7 sparse/none: ok total=1.86s gpu=25MB ram=1309MB
+g200_v10 uniform_8 sparse/none: ok total=1.74s gpu=25MB ram=1310MB
+g200_v10 uniform_9 sparse/none: ok total=1.76s gpu=25MB ram=1310MB
+g200_v20 uniform_1 sampling/paper: ok total=1.36s gpu=60MB ram=1167MB
+g200_v20 uniform_10 sampling/paper: ok total=1.33s gpu=60MB ram=1166MB
+g200_v20 uniform_2 sampling/paper: ok total=1.33s gpu=60MB ram=1167MB
+g200_v20 uniform_3 sampling/paper: ok total=1.31s gpu=60MB ram=1166MB
+g200_v20 uniform_4 sampling/paper: ok total=1.34s gpu=60MB ram=1167MB
+g200_v20 uniform_5 sampling/paper: ok total=1.35s gpu=60MB ram=1166MB
+g200_v20 uniform_6 sampling/paper: ok total=1.40s gpu=60MB ram=1165MB
+g200_v20 uniform_7 sampling/paper: ok total=1.38s gpu=60MB ram=1166MB
+g200_v20 uniform_8 sampling/paper: ok total=1.34s gpu=60MB ram=1166MB
+g200_v20 uniform_9 sampling/paper: ok total=1.37s gpu=60MB ram=1166MB
+g200_v20 uniform_1 sparse/paper: ok total=1.75s gpu=25MB ram=1315MB
+g200_v20 uniform_10 sparse/paper: ok total=1.72s gpu=25MB ram=1315MB
+g200_v20 uniform_2 sparse/paper: ok total=1.70s gpu=25MB ram=1315MB
+g200_v20 uniform_3 sparse/paper: ok total=1.76s gpu=25MB ram=1315MB
+g200_v20 uniform_4 sparse/paper: ok total=1.93s gpu=25MB ram=1315MB
+g200_v20 uniform_5 sparse/paper: ok total=1.78s gpu=25MB ram=1296MB
+g200_v20 uniform_6 sparse/paper: ok total=1.75s gpu=25MB ram=1315MB
+g200_v20 uniform_7 sparse/paper: ok total=1.72s gpu=25MB ram=1316MB
+g200_v20 uniform_8 sparse/paper: ok total=1.77s gpu=25MB ram=1315MB
+g200_v20 uniform_9 sparse/paper: ok total=1.78s gpu=25MB ram=1315MB
+g200_v20 uniform_1 sampling/none: ok total=1.32s gpu=60MB ram=1166MB
+g200_v20 uniform_10 sampling/none: ok total=1.35s gpu=60MB ram=1166MB
+g200_v20 uniform_2 sampling/none: ok total=1.33s gpu=60MB ram=1166MB
+g200_v20 uniform_3 sampling/none: ok total=1.32s gpu=60MB ram=1167MB
+g200_v20 uniform_4 sampling/none: ok total=1.42s gpu=60MB ram=1167MB
+g200_v20 uniform_5 sampling/none: ok total=1.51s gpu=60MB ram=1166MB
+g200_v20 uniform_6 sampling/none: ok total=1.46s gpu=60MB ram=1166MB
+g200_v20 uniform_7 sampling/none: ok total=1.45s gpu=60MB ram=1166MB
+g200_v20 uniform_8 sampling/none: ok total=1.40s gpu=60MB ram=1166MB
+g200_v20 uniform_9 sampling/none: ok total=1.33s gpu=60MB ram=1166MB
+g200_v20 uniform_1 sparse/none: ok total=1.88s gpu=25MB ram=1315MB
+g200_v20 uniform_10 sparse/none: ok total=1.74s gpu=25MB ram=1315MB
+g200_v20 uniform_2 sparse/none: ok total=1.78s gpu=25MB ram=1315MB
+g200_v20 uniform_3 sparse/none: ok total=1.75s gpu=25MB ram=1314MB
+g200_v20 uniform_4 sparse/none: ok total=1.78s gpu=25MB ram=1315MB
+g200_v20 uniform_5 sparse/none: ok total=1.75s gpu=25MB ram=1316MB
+g200_v20 uniform_6 sparse/none: ok total=1.76s gpu=25MB ram=1315MB
+g200_v20 uniform_7 sparse/none: ok total=1.72s gpu=25MB ram=1315MB
+g200_v20 uniform_8 sparse/none: ok total=1.74s gpu=25MB ram=1315MB
+g200_v20 uniform_9 sparse/none: ok total=1.75s gpu=25MB ram=1315MB
+    vertex subset: sampled 68 polygons; max vertices 200 -> 128
+g200_v200 uniform_1 sampling/paper: ok total=1.40s gpu=60MB ram=1167MB
+    vertex subset: sampled 83 polygons; max vertices 200 -> 128
+g200_v200 uniform_10 sampling/paper: ok total=1.39s gpu=60MB ram=1167MB
+    vertex subset: sampled 76 polygons; max vertices 200 -> 128
+g200_v200 uniform_2 sampling/paper: ok total=1.40s gpu=60MB ram=1165MB
+    vertex subset: sampled 82 polygons; max vertices 198 -> 128
+g200_v200 uniform_3 sampling/paper: ok total=1.42s gpu=60MB ram=1168MB
+    vertex subset: sampled 74 polygons; max vertices 199 -> 128
+g200_v200 uniform_4 sampling/paper: ok total=1.33s gpu=60MB ram=1162MB
+    vertex subset: sampled 73 polygons; max vertices 200 -> 128
+g200_v200 uniform_5 sampling/paper: ok total=1.37s gpu=60MB ram=1167MB
+    vertex subset: sampled 75 polygons; max vertices 197 -> 128
+g200_v200 uniform_6 sampling/paper: ok total=1.38s gpu=60MB ram=1167MB
+    vertex subset: sampled 77 polygons; max vertices 199 -> 128
+g200_v200 uniform_7 sampling/paper: ok total=1.43s gpu=60MB ram=1167MB
+    vertex subset: sampled 83 polygons; max vertices 200 -> 128
+g200_v200 uniform_8 sampling/paper: ok total=1.38s gpu=60MB ram=1167MB
+    vertex subset: sampled 68 polygons; max vertices 200 -> 128
+g200_v200 uniform_9 sampling/paper: ok total=1.43s gpu=60MB ram=1166MB
+g200_v200 uniform_1 sparse/paper: ok total=1.98s gpu=25MB ram=1316MB
+g200_v200 uniform_10 sparse/paper: ok total=1.80s gpu=25MB ram=1315MB
+g200_v200 uniform_2 sparse/paper: ok total=1.85s gpu=25MB ram=1316MB
+g200_v200 uniform_3 sparse/paper: ok total=1.94s gpu=25MB ram=1314MB
+g200_v200 uniform_4 sparse/paper: ok total=1.91s gpu=25MB ram=1311MB
+g200_v200 uniform_5 sparse/paper: ok total=1.83s gpu=25MB ram=1316MB
+g200_v200 uniform_6 sparse/paper: ok total=1.83s gpu=25MB ram=1314MB
+g200_v200 uniform_7 sparse/paper: ok total=1.87s gpu=25MB ram=1316MB
+g200_v200 uniform_8 sparse/paper: ok total=1.82s gpu=25MB ram=1316MB
+g200_v200 uniform_9 sparse/paper: ok total=1.80s gpu=25MB ram=1316MB
+g200_v200 uniform_1 sampling/none: ok total=1.51s gpu=86MB ram=1167MB
+g200_v200 uniform_10 sampling/none: ok total=1.48s gpu=86MB ram=1167MB
+g200_v200 uniform_2 sampling/none: ok total=1.38s gpu=86MB ram=1167MB
+g200_v200 uniform_3 sampling/none: ok total=1.41s gpu=86MB ram=1165MB
+g200_v200 uniform_4 sampling/none: ok total=1.37s gpu=86MB ram=1162MB
+g200_v200 uniform_5 sampling/none: ok total=1.41s gpu=86MB ram=1167MB
+g200_v200 uniform_6 sampling/none: ok total=1.41s gpu=83MB ram=1165MB
+g200_v200 uniform_7 sampling/none: ok total=1.36s gpu=86MB ram=1166MB
+g200_v200 uniform_8 sampling/none: ok total=1.38s gpu=86MB ram=1167MB
+g200_v200 uniform_9 sampling/none: ok total=1.41s gpu=86MB ram=1166MB
+g200_v200 uniform_1 sparse/none: ok total=1.89s gpu=25MB ram=1316MB
+g200_v200 uniform_10 sparse/none: ok total=1.83s gpu=25MB ram=1316MB
+g200_v200 uniform_2 sparse/none: ok total=1.83s gpu=25MB ram=1316MB
+g200_v200 uniform_3 sparse/none: ok total=1.84s gpu=25MB ram=1314MB
+g200_v200 uniform_4 sparse/none: ok total=1.79s gpu=25MB ram=1311MB
+g200_v200 uniform_5 sparse/none: ok total=1.87s gpu=25MB ram=1316MB
+g200_v200 uniform_6 sparse/none: ok total=1.83s gpu=25MB ram=1315MB
+g200_v200 uniform_7 sparse/none: ok total=1.87s gpu=25MB ram=1316MB
+g200_v200 uniform_8 sparse/none: ok total=1.80s gpu=25MB ram=1316MB
+g200_v200 uniform_9 sparse/none: ok total=1.85s gpu=25MB ram=1315MB
+Randomly sampled vertices for 166 polygons with more than 256 vertices in uniform_1.wkt
+    vertex subset: sampled 180 polygons; max vertices 256 -> 128
+g200_v2000 uniform_1 sampling/paper: ok total=1.65s gpu=60MB ram=1166MB
+Randomly sampled vertices for 174 polygons with more than 256 vertices in uniform_10.wkt
+    vertex subset: sampled 186 polygons; max vertices 256 -> 128
+g200_v2000 uniform_10 sampling/paper: ok total=1.64s gpu=60MB ram=1160MB
+Randomly sampled vertices for 172 polygons with more than 256 vertices in uniform_2.wkt
+    vertex subset: sampled 189 polygons; max vertices 256 -> 128
+g200_v2000 uniform_2 sampling/paper: ok total=1.70s gpu=60MB ram=1160MB
+Randomly sampled vertices for 174 polygons with more than 256 vertices in uniform_3.wkt
+    vertex subset: sampled 185 polygons; max vertices 256 -> 128
+g200_v2000 uniform_3 sampling/paper: ok total=1.79s gpu=60MB ram=1161MB
+Randomly sampled vertices for 175 polygons with more than 256 vertices in uniform_4.wkt
+    vertex subset: sampled 190 polygons; max vertices 256 -> 128
+g200_v2000 uniform_4 sampling/paper: ok total=1.64s gpu=60MB ram=1160MB
+Randomly sampled vertices for 175 polygons with more than 256 vertices in uniform_5.wkt
+    vertex subset: sampled 185 polygons; max vertices 256 -> 128
+g200_v2000 uniform_5 sampling/paper: ok total=1.70s gpu=60MB ram=1160MB
+Randomly sampled vertices for 180 polygons with more than 256 vertices in uniform_6.wkt
+    vertex subset: sampled 192 polygons; max vertices 256 -> 128
+g200_v2000 uniform_6 sampling/paper: ok total=1.64s gpu=60MB ram=1161MB
+Randomly sampled vertices for 173 polygons with more than 256 vertices in uniform_7.wkt
+    vertex subset: sampled 185 polygons; max vertices 256 -> 128
+g200_v2000 uniform_7 sampling/paper: ok total=1.66s gpu=60MB ram=1160MB
+Randomly sampled vertices for 171 polygons with more than 256 vertices in uniform_8.wkt
+    vertex subset: sampled 187 polygons; max vertices 256 -> 128
+g200_v2000 uniform_8 sampling/paper: ok total=1.63s gpu=60MB ram=1160MB
+Randomly sampled vertices for 173 polygons with more than 256 vertices in uniform_9.wkt
+    vertex subset: sampled 184 polygons; max vertices 256 -> 128
+g200_v2000 uniform_9 sampling/paper: ok total=1.59s gpu=60MB ram=1161MB
+    vertex subset: sampled 144 polygons; max vertices 1982 -> 512
+g200_v2000 uniform_1 sparse/paper: ok total=2.00s gpu=40MB ram=1317MB
+    vertex subset: sampled 150 polygons; max vertices 1988 -> 512
+g200_v2000 uniform_10 sparse/paper: ok total=2.06s gpu=40MB ram=1317MB
+    vertex subset: sampled 145 polygons; max vertices 1980 -> 512
+g200_v2000 uniform_2 sparse/paper: ok total=2.04s gpu=40MB ram=1316MB
+    vertex subset: sampled 145 polygons; max vertices 1983 -> 512
+g200_v2000 uniform_3 sparse/paper: ok total=2.07s gpu=40MB ram=1317MB
+    vertex subset: sampled 156 polygons; max vertices 1991 -> 512
+g200_v2000 uniform_4 sparse/paper: ok total=2.01s gpu=40MB ram=1316MB
+    vertex subset: sampled 145 polygons; max vertices 1982 -> 512
+g200_v2000 uniform_5 sparse/paper: ok total=2.05s gpu=40MB ram=1317MB
+    vertex subset: sampled 154 polygons; max vertices 1989 -> 512
+g200_v2000 uniform_6 sparse/paper: ok total=2.10s gpu=40MB ram=1316MB
+    vertex subset: sampled 153 polygons; max vertices 2000 -> 512
+g200_v2000 uniform_7 sparse/paper: ok total=2.06s gpu=40MB ram=1317MB
+    vertex subset: sampled 145 polygons; max vertices 1979 -> 512
+g200_v2000 uniform_8 sparse/paper: ok total=2.23s gpu=40MB ram=1316MB
+    vertex subset: sampled 148 polygons; max vertices 1995 -> 512
+g200_v2000 uniform_9 sparse/paper: ok total=2.09s gpu=40MB ram=1317MB
+g200_v2000 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g200_v2000 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g200_v2000 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g200_v2000 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g200_v2000 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g200_v2000 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g200_v2000 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g200_v2000 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g200_v2000 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g200_v2000 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g200_v2000 uniform_1 sparse/none: ok total=2.70s gpu=138MB ram=1317MB
+g200_v2000 uniform_10 sparse/none: ok total=2.89s gpu=139MB ram=1318MB
+g200_v2000 uniform_2 sparse/none: ok total=2.89s gpu=139MB ram=1318MB
+g200_v2000 uniform_3 sparse/none: ok total=2.73s gpu=139MB ram=1318MB
+g200_v2000 uniform_4 sparse/none: ok total=2.98s gpu=140MB ram=1317MB
+g200_v2000 uniform_5 sparse/none: ok total=2.82s gpu=138MB ram=1318MB
+g200_v2000 uniform_6 sparse/none: ok total=2.90s gpu=139MB ram=1317MB
+g200_v2000 uniform_7 sparse/none: ok total=2.78s gpu=141MB ram=1317MB
+g200_v2000 uniform_8 sparse/none: ok total=2.89s gpu=138MB ram=1318MB
+g200_v2000 uniform_9 sparse/none: ok total=2.91s gpu=140MB ram=1317MB
+g400_v5 uniform_1 sampling/paper: ok total=2.77s gpu=220MB ram=1153MB
+g400_v5 uniform_10 sampling/paper: ok total=2.66s gpu=220MB ram=1152MB
+g400_v5 uniform_2 sampling/paper: ok total=2.61s gpu=220MB ram=1153MB
+g400_v5 uniform_3 sampling/paper: ok total=2.64s gpu=220MB ram=1152MB
+g400_v5 uniform_4 sampling/paper: ok total=2.66s gpu=220MB ram=1152MB
+g400_v5 uniform_5 sampling/paper: ok total=2.61s gpu=220MB ram=1152MB
+g400_v5 uniform_6 sampling/paper: ok total=2.60s gpu=220MB ram=1152MB
+g400_v5 uniform_7 sampling/paper: ok total=2.62s gpu=220MB ram=1152MB
+g400_v5 uniform_8 sampling/paper: ok total=2.62s gpu=220MB ram=1152MB
+g400_v5 uniform_9 sampling/paper: ok total=2.78s gpu=220MB ram=1153MB
+g400_v5 uniform_1 sparse/paper: ok total=3.40s gpu=45MB ram=1302MB
+g400_v5 uniform_10 sparse/paper: ok total=3.39s gpu=45MB ram=1301MB
+g400_v5 uniform_2 sparse/paper: ok total=3.39s gpu=45MB ram=1302MB
+g400_v5 uniform_3 sparse/paper: ok total=3.51s gpu=45MB ram=1301MB
+g400_v5 uniform_4 sparse/paper: ok total=4.68s gpu=45MB ram=1301MB
+g400_v5 uniform_5 sparse/paper: ok total=4.20s gpu=45MB ram=1301MB
+g400_v5 uniform_6 sparse/paper: ok total=3.94s gpu=45MB ram=1302MB
+g400_v5 uniform_7 sparse/paper: ok total=4.22s gpu=45MB ram=1301MB
+g400_v5 uniform_8 sparse/paper: ok total=4.18s gpu=45MB ram=1302MB
+g400_v5 uniform_9 sparse/paper: ok total=4.54s gpu=45MB ram=1302MB
+g400_v5 uniform_1 sampling/none: ok total=3.18s gpu=220MB ram=1153MB
+g400_v5 uniform_10 sampling/none: ok total=3.12s gpu=220MB ram=1153MB
+g400_v5 uniform_2 sampling/none: ok total=3.22s gpu=220MB ram=1153MB
+g400_v5 uniform_3 sampling/none: ok total=3.22s gpu=220MB ram=1153MB
+g400_v5 uniform_4 sampling/none: ok total=4.20s gpu=220MB ram=1153MB
+g400_v5 uniform_5 sampling/none: ok total=3.14s gpu=220MB ram=1153MB
+g400_v5 uniform_6 sampling/none: ok total=3.55s gpu=220MB ram=1153MB
+g400_v5 uniform_7 sampling/none: ok total=3.10s gpu=220MB ram=1152MB
+g400_v5 uniform_8 sampling/none: ok total=3.02s gpu=220MB ram=1152MB
+g400_v5 uniform_9 sampling/none: ok total=3.13s gpu=220MB ram=1153MB
+g400_v5 uniform_1 sparse/none: ok total=4.48s gpu=45MB ram=1302MB
+g400_v5 uniform_10 sparse/none: ok total=4.23s gpu=45MB ram=1302MB
+g400_v5 uniform_2 sparse/none: ok total=3.87s gpu=45MB ram=1301MB
+g400_v5 uniform_3 sparse/none: ok total=3.99s gpu=45MB ram=1302MB
+g400_v5 uniform_4 sparse/none: ok total=4.02s gpu=45MB ram=1301MB
+g400_v5 uniform_5 sparse/none: ok total=4.19s gpu=45MB ram=1302MB
+g400_v5 uniform_6 sparse/none: ok total=4.35s gpu=45MB ram=1302MB
+g400_v5 uniform_7 sparse/none: ok total=4.20s gpu=45MB ram=1302MB
+g400_v5 uniform_8 sparse/none: ok total=4.24s gpu=45MB ram=1301MB
+g400_v5 uniform_9 sparse/none: ok total=4.30s gpu=45MB ram=1302MB
+g400_v10 uniform_1 sampling/paper: ok total=3.18s gpu=220MB ram=1166MB
+g400_v10 uniform_10 sampling/paper: ok total=3.14s gpu=220MB ram=1167MB
+g400_v10 uniform_2 sampling/paper: ok total=3.27s gpu=220MB ram=1166MB
+g400_v10 uniform_3 sampling/paper: ok total=3.16s gpu=220MB ram=1167MB
+g400_v10 uniform_4 sampling/paper: ok total=2.95s gpu=220MB ram=1167MB
+g400_v10 uniform_5 sampling/paper: ok total=4.04s gpu=220MB ram=1166MB
+g400_v10 uniform_6 sampling/paper: ok total=3.22s gpu=220MB ram=1167MB
+g400_v10 uniform_7 sampling/paper: ok total=3.18s gpu=220MB ram=1167MB
+g400_v10 uniform_8 sampling/paper: ok total=3.28s gpu=220MB ram=1167MB
+g400_v10 uniform_9 sampling/paper: ok total=3.26s gpu=220MB ram=1167MB
+g400_v10 uniform_1 sparse/paper: ok total=3.99s gpu=45MB ram=1317MB
+g400_v10 uniform_10 sparse/paper: ok total=5.07s gpu=45MB ram=1316MB
+g400_v10 uniform_2 sparse/paper: ok total=4.17s gpu=45MB ram=1316MB
+g400_v10 uniform_3 sparse/paper: ok total=4.53s gpu=45MB ram=1316MB
+g400_v10 uniform_4 sparse/paper: ok total=4.80s gpu=45MB ram=1316MB
+g400_v10 uniform_5 sparse/paper: ok total=4.31s gpu=45MB ram=1316MB
+g400_v10 uniform_6 sparse/paper: ok total=4.15s gpu=45MB ram=1316MB
+g400_v10 uniform_7 sparse/paper: ok total=4.18s gpu=45MB ram=1316MB
+g400_v10 uniform_8 sparse/paper: ok total=4.08s gpu=45MB ram=1315MB
+g400_v10 uniform_9 sparse/paper: ok total=4.07s gpu=45MB ram=1316MB
+g400_v10 uniform_1 sampling/none: ok total=3.08s gpu=220MB ram=1167MB
+g400_v10 uniform_10 sampling/none: ok total=3.37s gpu=220MB ram=1167MB
+g400_v10 uniform_2 sampling/none: ok total=3.18s gpu=220MB ram=1167MB
+g400_v10 uniform_3 sampling/none: ok total=3.17s gpu=220MB ram=1167MB
+g400_v10 uniform_4 sampling/none: ok total=3.19s gpu=220MB ram=1166MB
+g400_v10 uniform_5 sampling/none: ok total=6.75s gpu=220MB ram=1167MB
+g400_v10 uniform_6 sampling/none: ok total=3.07s gpu=220MB ram=1167MB
+g400_v10 uniform_7 sampling/none: ok total=3.09s gpu=220MB ram=1167MB
+g400_v10 uniform_8 sampling/none: ok total=3.40s gpu=220MB ram=1167MB
+g400_v10 uniform_9 sampling/none: ok total=3.47s gpu=220MB ram=1167MB
+g400_v10 uniform_1 sparse/none: ok total=4.04s gpu=45MB ram=1316MB
+g400_v10 uniform_10 sparse/none: ok total=4.17s gpu=45MB ram=1316MB
+g400_v10 uniform_2 sparse/none: ok total=4.17s gpu=45MB ram=1316MB
+g400_v10 uniform_3 sparse/none: ok total=4.17s gpu=45MB ram=1316MB
+g400_v10 uniform_4 sparse/none: ok total=4.26s gpu=45MB ram=1316MB
+g400_v10 uniform_5 sparse/none: ok total=4.61s gpu=45MB ram=1315MB
+g400_v10 uniform_6 sparse/none: ok total=4.49s gpu=45MB ram=1316MB
+g400_v10 uniform_7 sparse/none: ok total=4.43s gpu=45MB ram=1316MB
+g400_v10 uniform_8 sparse/none: ok total=4.20s gpu=45MB ram=1316MB
+g400_v10 uniform_9 sparse/none: ok total=3.90s gpu=45MB ram=1316MB
+g400_v20 uniform_1 sampling/paper: ok total=3.28s gpu=220MB ram=1166MB
+g400_v20 uniform_10 sampling/paper: ok total=3.14s gpu=220MB ram=1167MB
+g400_v20 uniform_2 sampling/paper: ok total=3.43s gpu=220MB ram=1167MB
+g400_v20 uniform_3 sampling/paper: ok total=2.89s gpu=220MB ram=1167MB
+g400_v20 uniform_4 sampling/paper: ok total=3.16s gpu=220MB ram=1167MB
+g400_v20 uniform_5 sampling/paper: ok total=3.20s gpu=220MB ram=1167MB
+g400_v20 uniform_6 sampling/paper: ok total=4.35s gpu=220MB ram=1167MB
+g400_v20 uniform_7 sampling/paper: ok total=3.20s gpu=220MB ram=1168MB
+g400_v20 uniform_8 sampling/paper: ok total=2.98s gpu=220MB ram=1167MB
+g400_v20 uniform_9 sampling/paper: ok total=3.07s gpu=220MB ram=1167MB
+g400_v20 uniform_1 sparse/paper: ok total=4.35s gpu=45MB ram=1316MB
+g400_v20 uniform_10 sparse/paper: ok total=4.44s gpu=45MB ram=1315MB
+g400_v20 uniform_2 sparse/paper: ok total=4.07s gpu=45MB ram=1316MB
+g400_v20 uniform_3 sparse/paper: ok total=4.40s gpu=45MB ram=1316MB
+g400_v20 uniform_4 sparse/paper: ok total=4.13s gpu=45MB ram=1315MB
+g400_v20 uniform_5 sparse/paper: ok total=4.57s gpu=45MB ram=1316MB
+g400_v20 uniform_6 sparse/paper: ok total=4.36s gpu=45MB ram=1316MB
+g400_v20 uniform_7 sparse/paper: ok total=4.42s gpu=45MB ram=1316MB
+g400_v20 uniform_8 sparse/paper: ok total=4.39s gpu=45MB ram=1316MB
+g400_v20 uniform_9 sparse/paper: ok total=4.23s gpu=45MB ram=1316MB
+g400_v20 uniform_1 sampling/none: ok total=3.79s gpu=220MB ram=1168MB
+g400_v20 uniform_10 sampling/none: ok total=3.40s gpu=220MB ram=1166MB
+g400_v20 uniform_2 sampling/none: ok total=5.68s gpu=220MB ram=1167MB
+g400_v20 uniform_3 sampling/none: ok total=4.32s gpu=220MB ram=1167MB
+g400_v20 uniform_4 sampling/none: ok total=3.58s gpu=220MB ram=1167MB
+g400_v20 uniform_5 sampling/none: ok total=3.32s gpu=220MB ram=1166MB
+g400_v20 uniform_6 sampling/none: ok total=3.53s gpu=220MB ram=1167MB
+g400_v20 uniform_7 sampling/none: ok total=3.48s gpu=220MB ram=1166MB
+g400_v20 uniform_8 sampling/none: ok total=3.06s gpu=220MB ram=1167MB
+g400_v20 uniform_9 sampling/none: ok total=3.29s gpu=220MB ram=1167MB
+g400_v20 uniform_1 sparse/none: ok total=4.88s gpu=45MB ram=1316MB
+g400_v20 uniform_10 sparse/none: ok total=4.46s gpu=45MB ram=1316MB
+g400_v20 uniform_2 sparse/none: ok total=4.55s gpu=45MB ram=1316MB
+g400_v20 uniform_3 sparse/none: ok total=4.56s gpu=45MB ram=1316MB
+g400_v20 uniform_4 sparse/none: ok total=4.83s gpu=45MB ram=1316MB
+g400_v20 uniform_5 sparse/none: ok total=4.44s gpu=45MB ram=1316MB
+g400_v20 uniform_6 sparse/none: ok total=4.16s gpu=45MB ram=1316MB
+g400_v20 uniform_7 sparse/none: ok total=4.22s gpu=45MB ram=1316MB
+g400_v20 uniform_8 sparse/none: ok total=4.55s gpu=45MB ram=1317MB
+g400_v20 uniform_9 sparse/none: ok total=4.39s gpu=45MB ram=1316MB
+    vertex subset: sampled 147 polygons; max vertices 200 -> 128
+g400_v200 uniform_1 sampling/paper: ok total=4.13s gpu=220MB ram=1166MB
+    vertex subset: sampled 144 polygons; max vertices 200 -> 128
+g400_v200 uniform_10 sampling/paper: ok total=3.28s gpu=220MB ram=1169MB
+    vertex subset: sampled 145 polygons; max vertices 200 -> 128
+g400_v200 uniform_2 sampling/paper: ok total=3.56s gpu=220MB ram=1167MB
+    vertex subset: sampled 152 polygons; max vertices 200 -> 128
+g400_v200 uniform_3 sampling/paper: ok total=3.60s gpu=220MB ram=1166MB
+    vertex subset: sampled 134 polygons; max vertices 200 -> 128
+g400_v200 uniform_4 sampling/paper: ok total=3.59s gpu=220MB ram=1167MB
+    vertex subset: sampled 162 polygons; max vertices 200 -> 128
+g400_v200 uniform_5 sampling/paper: ok total=3.92s gpu=220MB ram=1167MB
+    vertex subset: sampled 152 polygons; max vertices 200 -> 128
+g400_v200 uniform_6 sampling/paper: ok total=3.34s gpu=220MB ram=1166MB
+    vertex subset: sampled 143 polygons; max vertices 200 -> 128
+g400_v200 uniform_7 sampling/paper: ok total=4.58s gpu=220MB ram=1168MB
+    vertex subset: sampled 152 polygons; max vertices 200 -> 128
+g400_v200 uniform_8 sampling/paper: ok total=3.39s gpu=220MB ram=1166MB
+    vertex subset: sampled 140 polygons; max vertices 200 -> 128
+g400_v200 uniform_9 sampling/paper: ok total=3.36s gpu=220MB ram=1167MB
+g400_v200 uniform_1 sparse/paper: ok total=4.27s gpu=45MB ram=1316MB
+g400_v200 uniform_10 sparse/paper: ok total=4.41s gpu=45MB ram=1317MB
+g400_v200 uniform_2 sparse/paper: ok total=4.55s gpu=45MB ram=1316MB
+g400_v200 uniform_3 sparse/paper: ok total=4.66s gpu=45MB ram=1316MB
+g400_v200 uniform_4 sparse/paper: ok total=5.85s gpu=45MB ram=1317MB
+g400_v200 uniform_5 sparse/paper: ok total=4.50s gpu=45MB ram=1317MB
+g400_v200 uniform_6 sparse/paper: ok total=4.57s gpu=45MB ram=1316MB
+g400_v200 uniform_7 sparse/paper: ok total=4.38s gpu=45MB ram=1317MB
+g400_v200 uniform_8 sparse/paper: ok total=4.66s gpu=45MB ram=1316MB
+g400_v200 uniform_9 sparse/paper: ok total=4.26s gpu=45MB ram=1316MB
+g400_v200 uniform_1 sampling/none: ok total=3.34s gpu=220MB ram=1166MB
+g400_v200 uniform_10 sampling/none: ok total=4.68s gpu=220MB ram=1168MB
+g400_v200 uniform_2 sampling/none: ok total=3.31s gpu=220MB ram=1167MB
+g400_v200 uniform_3 sampling/none: ok total=3.38s gpu=220MB ram=1167MB
+g400_v200 uniform_4 sampling/none: ok total=3.61s gpu=220MB ram=1168MB
+g400_v200 uniform_5 sampling/none: ok total=3.66s gpu=220MB ram=1168MB
+g400_v200 uniform_6 sampling/none: ok total=3.51s gpu=220MB ram=1167MB
+g400_v200 uniform_7 sampling/none: ok total=3.44s gpu=220MB ram=1168MB
+g400_v200 uniform_8 sampling/none: ok total=3.43s gpu=220MB ram=1167MB
+g400_v200 uniform_9 sampling/none: ok total=3.71s gpu=220MB ram=1168MB
+g400_v200 uniform_1 sparse/none: ok total=4.43s gpu=45MB ram=1315MB
+g400_v200 uniform_10 sparse/none: ok total=4.55s gpu=45MB ram=1317MB
+g400_v200 uniform_2 sparse/none: ok total=4.80s gpu=45MB ram=1316MB
+g400_v200 uniform_3 sparse/none: ok total=4.89s gpu=45MB ram=1316MB
+g400_v200 uniform_4 sparse/none: ok total=4.45s gpu=45MB ram=1317MB
+g400_v200 uniform_5 sparse/none: ok total=5.76s gpu=45MB ram=1316MB
+g400_v200 uniform_6 sparse/none: ok total=4.43s gpu=45MB ram=1315MB
+g400_v200 uniform_7 sparse/none: ok total=4.62s gpu=45MB ram=1317MB
+g400_v200 uniform_8 sparse/none: ok total=4.27s gpu=45MB ram=1317MB
+g400_v200 uniform_9 sparse/none: ok total=4.34s gpu=45MB ram=1316MB
+Randomly sampled vertices for 339 polygons with more than 256 vertices in uniform_1.wkt
+    vertex subset: sampled 359 polygons; max vertices 256 -> 128
+g400_v2000 uniform_1 sampling/paper: ok total=3.44s gpu=220MB ram=1167MB
+Randomly sampled vertices for 344 polygons with more than 256 vertices in uniform_10.wkt
+    vertex subset: sampled 373 polygons; max vertices 256 -> 128
+g400_v2000 uniform_10 sampling/paper: ok total=3.54s gpu=220MB ram=1168MB
+Randomly sampled vertices for 355 polygons with more than 256 vertices in uniform_2.wkt
+    vertex subset: sampled 376 polygons; max vertices 256 -> 128
+g400_v2000 uniform_2 sampling/paper: ok total=4.04s gpu=220MB ram=1167MB
+Randomly sampled vertices for 355 polygons with more than 256 vertices in uniform_3.wkt
+    vertex subset: sampled 376 polygons; max vertices 256 -> 128
+g400_v2000 uniform_3 sampling/paper: ok total=4.15s gpu=220MB ram=1168MB
+Randomly sampled vertices for 346 polygons with more than 256 vertices in uniform_4.wkt
+    vertex subset: sampled 374 polygons; max vertices 256 -> 128
+g400_v2000 uniform_4 sampling/paper: ok total=4.05s gpu=220MB ram=1167MB
+Randomly sampled vertices for 355 polygons with more than 256 vertices in uniform_5.wkt
+    vertex subset: sampled 374 polygons; max vertices 256 -> 128
+g400_v2000 uniform_5 sampling/paper: ok total=3.81s gpu=220MB ram=1167MB
+Randomly sampled vertices for 349 polygons with more than 256 vertices in uniform_6.wkt
+    vertex subset: sampled 372 polygons; max vertices 256 -> 128
+g400_v2000 uniform_6 sampling/paper: ok total=3.79s gpu=220MB ram=1168MB
+Randomly sampled vertices for 343 polygons with more than 256 vertices in uniform_7.wkt
+    vertex subset: sampled 367 polygons; max vertices 256 -> 128
+g400_v2000 uniform_7 sampling/paper: ok total=3.81s gpu=220MB ram=1167MB
+Randomly sampled vertices for 344 polygons with more than 256 vertices in uniform_8.wkt
+    vertex subset: sampled 374 polygons; max vertices 256 -> 128
+g400_v2000 uniform_8 sampling/paper: ok total=3.80s gpu=220MB ram=1167MB
+Randomly sampled vertices for 362 polygons with more than 256 vertices in uniform_9.wkt
+    vertex subset: sampled 382 polygons; max vertices 256 -> 128
+g400_v2000 uniform_9 sampling/paper: ok total=3.97s gpu=220MB ram=1166MB
+    vertex subset: sampled 286 polygons; max vertices 1999 -> 512
+g400_v2000 uniform_1 sparse/paper: ok total=5.37s gpu=45MB ram=1321MB
+    vertex subset: sampled 295 polygons; max vertices 1989 -> 512
+g400_v2000 uniform_10 sparse/paper: ok total=5.08s gpu=45MB ram=1320MB
+    vertex subset: sampled 311 polygons; max vertices 1984 -> 512
+g400_v2000 uniform_2 sparse/paper: ok total=4.98s gpu=45MB ram=1320MB
+    vertex subset: sampled 299 polygons; max vertices 2000 -> 512
+g400_v2000 uniform_3 sparse/paper: ok total=5.10s gpu=45MB ram=1320MB
+    vertex subset: sampled 287 polygons; max vertices 1996 -> 512
+g400_v2000 uniform_4 sparse/paper: ok total=6.13s gpu=45MB ram=1319MB
+    vertex subset: sampled 292 polygons; max vertices 1997 -> 512
+g400_v2000 uniform_5 sparse/paper: ok total=5.95s gpu=45MB ram=1320MB
+    vertex subset: sampled 298 polygons; max vertices 1995 -> 512
+g400_v2000 uniform_6 sparse/paper: ok total=5.44s gpu=45MB ram=1320MB
+    vertex subset: sampled 290 polygons; max vertices 1993 -> 512
+g400_v2000 uniform_7 sparse/paper: ok total=5.68s gpu=45MB ram=1320MB
+    vertex subset: sampled 300 polygons; max vertices 1996 -> 512
+g400_v2000 uniform_8 sparse/paper: ok total=5.82s gpu=45MB ram=1320MB
+    vertex subset: sampled 323 polygons; max vertices 1996 -> 512
+g400_v2000 uniform_9 sparse/paper: ok total=4.91s gpu=45MB ram=1319MB
+g400_v2000 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g400_v2000 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g400_v2000 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g400_v2000 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g400_v2000 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g400_v2000 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g400_v2000 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g400_v2000 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g400_v2000 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g400_v2000 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g400_v2000 uniform_1 sparse/none: ok total=7.10s gpu=140MB ram=1320MB
+g400_v2000 uniform_10 sparse/none: ok total=7.11s gpu=139MB ram=1321MB
+g400_v2000 uniform_2 sparse/none: ok total=7.31s gpu=138MB ram=1321MB
+g400_v2000 uniform_3 sparse/none: ok total=6.52s gpu=141MB ram=1320MB
+g400_v2000 uniform_4 sparse/none: ok total=6.40s gpu=140MB ram=1320MB
+g400_v2000 uniform_5 sparse/none: ok total=10.81s gpu=140MB ram=1321MB
+g400_v2000 uniform_6 sparse/none: ok total=7.74s gpu=140MB ram=1322MB
+g400_v2000 uniform_7 sparse/none: ok total=9.25s gpu=140MB ram=1322MB
+g400_v2000 uniform_8 sparse/none: ok total=7.89s gpu=140MB ram=1322MB
+g400_v2000 uniform_9 sparse/none: ok total=9.49s gpu=140MB ram=1320MB
+g1000_v5 uniform_1 sampling/paper: ok total=5.74s gpu=358MB ram=1153MB
+g1000_v5 uniform_10 sampling/paper: ok total=4.71s gpu=358MB ram=1153MB
+g1000_v5 uniform_2 sampling/paper: ok total=4.31s gpu=358MB ram=1153MB
+g1000_v5 uniform_3 sampling/paper: ok total=4.38s gpu=358MB ram=1153MB
+g1000_v5 uniform_4 sampling/paper: ok total=4.36s gpu=358MB ram=1154MB
+g1000_v5 uniform_5 sampling/paper: ok total=4.21s gpu=358MB ram=1153MB
+g1000_v5 uniform_6 sampling/paper: ok total=4.01s gpu=358MB ram=1153MB
+g1000_v5 uniform_7 sampling/paper: ok total=4.22s gpu=358MB ram=1153MB
+g1000_v5 uniform_8 sampling/paper: ok total=4.79s gpu=358MB ram=1153MB
+g1000_v5 uniform_9 sampling/paper: ok total=4.12s gpu=358MB ram=1153MB
+g1000_v5 uniform_1 sparse/paper: ok total=11.02s gpu=108MB ram=1302MB
+g1000_v5 uniform_10 sparse/paper: ok total=10.62s gpu=108MB ram=1303MB
+g1000_v5 uniform_2 sparse/paper: ok total=12.53s gpu=108MB ram=1304MB
+g1000_v5 uniform_3 sparse/paper: ok total=12.01s gpu=108MB ram=1302MB
+g1000_v5 uniform_4 sparse/paper: ok total=11.63s gpu=108MB ram=1302MB
+g1000_v5 uniform_5 sparse/paper: ok total=11.37s gpu=108MB ram=1303MB
+g1000_v5 uniform_6 sparse/paper: ok total=11.08s gpu=108MB ram=1303MB
+g1000_v5 uniform_7 sparse/paper: ok total=10.98s gpu=108MB ram=1302MB
+g1000_v5 uniform_8 sparse/paper: ok total=10.66s gpu=108MB ram=1302MB
+g1000_v5 uniform_9 sparse/paper: ok total=11.64s gpu=108MB ram=1304MB
+g1000_v5 uniform_1 sampling/none: ok total=8.97s gpu=1347MB ram=1153MB
+g1000_v5 uniform_10 sampling/none: ok total=7.93s gpu=1347MB ram=1154MB
+g1000_v5 uniform_2 sampling/none: ok total=10.06s gpu=1347MB ram=1155MB
+g1000_v5 uniform_3 sampling/none: ok total=8.80s gpu=1347MB ram=1154MB
+g1000_v5 uniform_4 sampling/none: ok total=8.44s gpu=1347MB ram=1153MB
+g1000_v5 uniform_5 sampling/none: ok total=8.84s gpu=1347MB ram=1153MB
+g1000_v5 uniform_6 sampling/none: ok total=8.19s gpu=1347MB ram=1153MB
+g1000_v5 uniform_7 sampling/none: ok total=7.83s gpu=1347MB ram=1154MB
+g1000_v5 uniform_8 sampling/none: ok total=8.77s gpu=1347MB ram=1154MB
+g1000_v5 uniform_9 sampling/none: ok total=9.44s gpu=1347MB ram=1155MB
+g1000_v5 uniform_1 sparse/none: ok total=10.84s gpu=108MB ram=1302MB
+g1000_v5 uniform_10 sparse/none: ok total=10.75s gpu=108MB ram=1303MB
+g1000_v5 uniform_2 sparse/none: ok total=11.06s gpu=108MB ram=1304MB
+g1000_v5 uniform_3 sparse/none: ok total=10.73s gpu=108MB ram=1304MB
+g1000_v5 uniform_4 sparse/none: ok total=11.13s gpu=108MB ram=1302MB
+g1000_v5 uniform_5 sparse/none: ok total=10.57s gpu=108MB ram=1304MB
+g1000_v5 uniform_6 sparse/none: ok total=12.16s gpu=108MB ram=1302MB
+g1000_v5 uniform_7 sparse/none: ok total=10.37s gpu=108MB ram=1303MB
+g1000_v5 uniform_8 sparse/none: ok total=11.71s gpu=108MB ram=1303MB
+g1000_v5 uniform_9 sparse/none: ok total=10.66s gpu=108MB ram=1304MB
+g1000_v10 uniform_1 sampling/paper: ok total=4.09s gpu=358MB ram=1167MB
+g1000_v10 uniform_10 sampling/paper: ok total=4.43s gpu=358MB ram=1167MB
+g1000_v10 uniform_2 sampling/paper: ok total=4.02s gpu=358MB ram=1167MB
+g1000_v10 uniform_3 sampling/paper: ok total=4.29s gpu=358MB ram=1154MB
+g1000_v10 uniform_4 sampling/paper: ok total=4.41s gpu=358MB ram=1168MB
+g1000_v10 uniform_5 sampling/paper: ok total=3.88s gpu=358MB ram=1167MB
+g1000_v10 uniform_6 sampling/paper: ok total=4.57s gpu=358MB ram=1168MB
+g1000_v10 uniform_7 sampling/paper: ok total=4.65s gpu=358MB ram=1166MB
+g1000_v10 uniform_8 sampling/paper: ok total=4.10s gpu=358MB ram=1166MB
+g1000_v10 uniform_9 sampling/paper: ok total=4.20s gpu=358MB ram=1167MB
+g1000_v10 uniform_1 sparse/paper: ok total=12.22s gpu=108MB ram=1318MB
+g1000_v10 uniform_10 sparse/paper: ok total=10.74s gpu=108MB ram=1318MB
+g1000_v10 uniform_2 sparse/paper: ok total=10.68s gpu=108MB ram=1318MB
+g1000_v10 uniform_3 sparse/paper: ok total=10.85s gpu=108MB ram=1318MB
+g1000_v10 uniform_4 sparse/paper: ok total=10.95s gpu=108MB ram=1318MB
+g1000_v10 uniform_5 sparse/paper: ok total=10.52s gpu=108MB ram=1318MB
+g1000_v10 uniform_6 sparse/paper: ok total=11.08s gpu=108MB ram=1319MB
+g1000_v10 uniform_7 sparse/paper: ok total=11.45s gpu=108MB ram=1318MB
+g1000_v10 uniform_8 sparse/paper: ok total=11.00s gpu=108MB ram=1318MB
+g1000_v10 uniform_9 sparse/paper: ok total=10.64s gpu=108MB ram=1318MB
+g1000_v10 uniform_1 sampling/none: ok total=8.89s gpu=1347MB ram=1169MB
+g1000_v10 uniform_10 sampling/none: ok total=8.49s gpu=1347MB ram=1170MB
+g1000_v10 uniform_2 sampling/none: ok total=8.38s gpu=1347MB ram=1169MB
+g1000_v10 uniform_3 sampling/none: ok total=8.02s gpu=1347MB ram=1170MB
+g1000_v10 uniform_4 sampling/none: ok total=8.86s gpu=1347MB ram=1169MB
+g1000_v10 uniform_5 sampling/none: ok total=8.50s gpu=1347MB ram=1169MB
+g1000_v10 uniform_6 sampling/none: ok total=8.86s gpu=1347MB ram=1169MB
+g1000_v10 uniform_7 sampling/none: ok total=8.51s gpu=1347MB ram=1169MB
+g1000_v10 uniform_8 sampling/none: ok total=9.30s gpu=1347MB ram=1169MB
+g1000_v10 uniform_9 sampling/none: ok total=9.05s gpu=1347MB ram=1169MB
+g1000_v10 uniform_1 sparse/none: ok total=10.54s gpu=108MB ram=1318MB
+g1000_v10 uniform_10 sparse/none: ok total=10.98s gpu=108MB ram=1317MB
+g1000_v10 uniform_2 sparse/none: ok total=11.40s gpu=108MB ram=1318MB
+g1000_v10 uniform_3 sparse/none: ok total=10.02s gpu=108MB ram=1318MB
+g1000_v10 uniform_4 sparse/none: ok total=10.21s gpu=108MB ram=1318MB
+g1000_v10 uniform_5 sparse/none: ok total=10.58s gpu=108MB ram=1317MB
+g1000_v10 uniform_6 sparse/none: ok total=10.39s gpu=108MB ram=1318MB
+g1000_v10 uniform_7 sparse/none: ok total=10.71s gpu=108MB ram=1319MB
+g1000_v10 uniform_8 sparse/none: ok total=10.66s gpu=108MB ram=1317MB
+g1000_v10 uniform_9 sparse/none: ok total=11.34s gpu=108MB ram=1319MB
+g1000_v20 uniform_1 sampling/paper: ok total=4.03s gpu=358MB ram=1167MB
+g1000_v20 uniform_10 sampling/paper: ok total=4.18s gpu=358MB ram=1167MB
+g1000_v20 uniform_2 sampling/paper: ok total=4.25s gpu=358MB ram=1167MB
+g1000_v20 uniform_3 sampling/paper: ok total=4.48s gpu=358MB ram=1167MB
+g1000_v20 uniform_4 sampling/paper: ok total=4.23s gpu=358MB ram=1168MB
+g1000_v20 uniform_5 sampling/paper: ok total=4.14s gpu=358MB ram=1168MB
+g1000_v20 uniform_6 sampling/paper: ok total=4.36s gpu=358MB ram=1167MB
+g1000_v20 uniform_7 sampling/paper: ok total=4.32s gpu=358MB ram=1167MB
+g1000_v20 uniform_8 sampling/paper: ok total=4.52s gpu=358MB ram=1167MB
+g1000_v20 uniform_9 sampling/paper: ok total=3.92s gpu=358MB ram=1167MB
+g1000_v20 uniform_1 sparse/paper: ok total=10.35s gpu=108MB ram=1318MB
+g1000_v20 uniform_10 sparse/paper: ok total=10.77s gpu=108MB ram=1318MB
+g1000_v20 uniform_2 sparse/paper: ok total=10.28s gpu=108MB ram=1318MB
+g1000_v20 uniform_3 sparse/paper: ok total=10.70s gpu=108MB ram=1318MB
+g1000_v20 uniform_4 sparse/paper: ok total=10.76s gpu=108MB ram=1319MB
+g1000_v20 uniform_5 sparse/paper: ok total=11.60s gpu=108MB ram=1318MB
+g1000_v20 uniform_6 sparse/paper: ok total=11.70s gpu=108MB ram=1318MB
+g1000_v20 uniform_7 sparse/paper: ok total=12.76s gpu=108MB ram=1318MB
+g1000_v20 uniform_8 sparse/paper: ok total=10.08s gpu=108MB ram=1318MB
+g1000_v20 uniform_9 sparse/paper: ok total=10.22s gpu=108MB ram=1318MB
+g1000_v20 uniform_1 sampling/none: ok total=8.67s gpu=1347MB ram=1169MB
+g1000_v20 uniform_10 sampling/none: ok total=8.54s gpu=1347MB ram=1169MB
+g1000_v20 uniform_2 sampling/none: ok total=8.26s gpu=1347MB ram=1169MB
+g1000_v20 uniform_3 sampling/none: ok total=6.75s gpu=1347MB ram=1169MB
+g1000_v20 uniform_4 sampling/none: ok total=6.54s gpu=1347MB ram=1169MB
+g1000_v20 uniform_5 sampling/none: ok total=6.51s gpu=1347MB ram=1169MB
+g1000_v20 uniform_6 sampling/none: ok total=6.86s gpu=1347MB ram=1169MB
+g1000_v20 uniform_7 sampling/none: ok total=6.45s gpu=1347MB ram=1168MB
+g1000_v20 uniform_8 sampling/none: ok total=6.58s gpu=1347MB ram=1169MB
+g1000_v20 uniform_9 sampling/none: ok total=6.66s gpu=1347MB ram=1169MB
+g1000_v20 uniform_1 sparse/none: ok total=8.09s gpu=108MB ram=1319MB
+g1000_v20 uniform_10 sparse/none: ok total=8.00s gpu=108MB ram=1319MB
+g1000_v20 uniform_2 sparse/none: ok total=7.97s gpu=108MB ram=1318MB
+g1000_v20 uniform_3 sparse/none: ok total=8.10s gpu=108MB ram=1317MB
+g1000_v20 uniform_4 sparse/none: ok total=8.10s gpu=108MB ram=1318MB
+g1000_v20 uniform_5 sparse/none: ok total=8.28s gpu=108MB ram=1319MB
+g1000_v20 uniform_6 sparse/none: ok total=8.29s gpu=108MB ram=1318MB
+g1000_v20 uniform_7 sparse/none: ok total=8.20s gpu=108MB ram=1317MB
+g1000_v20 uniform_8 sparse/none: ok total=8.13s gpu=108MB ram=1318MB
+g1000_v20 uniform_9 sparse/none: ok total=8.16s gpu=108MB ram=1318MB
+    vertex subset: sampled 186 polygons; max vertices 200 -> 128
+g1000_v200 uniform_1 sampling/paper: ok total=3.46s gpu=358MB ram=1167MB
+    vertex subset: sampled 176 polygons; max vertices 200 -> 128
+g1000_v200 uniform_10 sampling/paper: ok total=3.51s gpu=358MB ram=1169MB
+    vertex subset: sampled 175 polygons; max vertices 200 -> 128
+g1000_v200 uniform_2 sampling/paper: ok total=3.43s gpu=358MB ram=1169MB
+    vertex subset: sampled 196 polygons; max vertices 200 -> 128
+g1000_v200 uniform_3 sampling/paper: ok total=3.46s gpu=358MB ram=1168MB
+    vertex subset: sampled 172 polygons; max vertices 200 -> 128
+g1000_v200 uniform_4 sampling/paper: ok total=3.46s gpu=358MB ram=1167MB
+    vertex subset: sampled 198 polygons; max vertices 200 -> 128
+g1000_v200 uniform_5 sampling/paper: ok total=3.41s gpu=358MB ram=1169MB
+    vertex subset: sampled 175 polygons; max vertices 200 -> 128
+g1000_v200 uniform_6 sampling/paper: ok total=3.40s gpu=358MB ram=1168MB
+    vertex subset: sampled 194 polygons; max vertices 200 -> 128
+g1000_v200 uniform_7 sampling/paper: ok total=3.39s gpu=358MB ram=1170MB
+    vertex subset: sampled 202 polygons; max vertices 200 -> 128
+g1000_v200 uniform_8 sampling/paper: ok total=3.45s gpu=358MB ram=1168MB
+    vertex subset: sampled 192 polygons; max vertices 200 -> 128
+g1000_v200 uniform_9 sampling/paper: ok total=3.68s gpu=358MB ram=1168MB
+g1000_v200 uniform_1 sparse/paper: ok total=8.80s gpu=108MB ram=1319MB
+g1000_v200 uniform_10 sparse/paper: ok total=8.59s gpu=108MB ram=1320MB
+g1000_v200 uniform_2 sparse/paper: ok total=8.43s gpu=108MB ram=1320MB
+g1000_v200 uniform_3 sparse/paper: ok total=8.45s gpu=108MB ram=1320MB
+g1000_v200 uniform_4 sparse/paper: ok total=8.53s gpu=108MB ram=1318MB
+g1000_v200 uniform_5 sparse/paper: ok total=8.55s gpu=108MB ram=1320MB
+g1000_v200 uniform_6 sparse/paper: ok total=8.60s gpu=108MB ram=1320MB
+g1000_v200 uniform_7 sparse/paper: ok total=8.47s gpu=108MB ram=1320MB
+g1000_v200 uniform_8 sparse/paper: ok total=8.73s gpu=108MB ram=1320MB
+g1000_v200 uniform_9 sparse/paper: ok total=8.56s gpu=108MB ram=1319MB
+g1000_v200 uniform_1 sampling/none: ok total=6.73s gpu=1347MB ram=1170MB
+g1000_v200 uniform_10 sampling/none: ok total=6.82s gpu=1347MB ram=1171MB
+g1000_v200 uniform_2 sampling/none: ok total=6.60s gpu=1347MB ram=1172MB
+g1000_v200 uniform_3 sampling/none: ok total=6.65s gpu=1347MB ram=1169MB
+g1000_v200 uniform_4 sampling/none: ok total=6.59s gpu=1347MB ram=1170MB
+g1000_v200 uniform_5 sampling/none: ok total=6.83s gpu=1347MB ram=1171MB
+g1000_v200 uniform_6 sampling/none: ok total=6.55s gpu=1347MB ram=1170MB
+g1000_v200 uniform_7 sampling/none: ok total=6.59s gpu=1348MB ram=1170MB
+g1000_v200 uniform_8 sampling/none: ok total=6.59s gpu=1347MB ram=1170MB
+g1000_v200 uniform_9 sampling/none: ok total=6.87s gpu=1347MB ram=1170MB
+g1000_v200 uniform_1 sparse/none: ok total=8.59s gpu=108MB ram=1320MB
+g1000_v200 uniform_10 sparse/none: ok total=8.62s gpu=108MB ram=1319MB
+g1000_v200 uniform_2 sparse/none: ok total=8.51s gpu=108MB ram=1320MB
+g1000_v200 uniform_3 sparse/none: ok total=8.74s gpu=108MB ram=1319MB
+g1000_v200 uniform_4 sparse/none: ok total=8.40s gpu=108MB ram=1319MB
+g1000_v200 uniform_5 sparse/none: ok total=8.67s gpu=108MB ram=1320MB
+g1000_v200 uniform_6 sparse/none: ok total=8.57s gpu=108MB ram=1319MB
+g1000_v200 uniform_7 sparse/none: ok total=8.66s gpu=108MB ram=1321MB
+g1000_v200 uniform_8 sparse/none: ok total=8.47s gpu=108MB ram=1320MB
+g1000_v200 uniform_9 sparse/none: ok total=8.60s gpu=108MB ram=1319MB
+Randomly sampled vertices for 893 polygons with more than 256 vertices in uniform_1.wkt
+    vertex subset: sampled 481 polygons; max vertices 256 -> 128
+g1000_v2000 uniform_1 sampling/paper: ok total=4.60s gpu=358MB ram=1170MB
+Randomly sampled vertices for 857 polygons with more than 256 vertices in uniform_10.wkt
+    vertex subset: sampled 478 polygons; max vertices 256 -> 128
+g1000_v2000 uniform_10 sampling/paper: ok total=4.49s gpu=358MB ram=1169MB
+Randomly sampled vertices for 890 polygons with more than 256 vertices in uniform_2.wkt
     vertex subset: sampled 487 polygons; max vertices 256 -> 128
-g1000_v2000 uniform_3 sampling/paper: ok total=4.83s gpu=358MB ram=1170MB
-    vertex subset: sampled 745 polygons; max vertices 1998 -> 512
-g1000_v2000 uniform_1 sparse/paper: ok total=10.44s gpu=108MB ram=1330MB
-    vertex subset: sampled 756 polygons; max vertices 2000 -> 512
-g1000_v2000 uniform_2 sparse/paper: ok total=10.44s gpu=108MB ram=1330MB
-    vertex subset: sampled 754 polygons; max vertices 2000 -> 512
-g1000_v2000 uniform_3 sparse/paper: ok total=10.47s gpu=108MB ram=1330MB
-g1000_v2000 uniform_1 sampling/none: timeout total=nans gpu=nanMB ram=nanMB
+g1000_v2000 uniform_2 sampling/paper: ok total=4.46s gpu=358MB ram=1169MB
+Randomly sampled vertices for 872 polygons with more than 256 vertices in uniform_3.wkt
+    vertex subset: sampled 476 polygons; max vertices 256 -> 128
+g1000_v2000 uniform_3 sampling/paper: ok total=4.67s gpu=358MB ram=1169MB
+Randomly sampled vertices for 860 polygons with more than 256 vertices in uniform_4.wkt
+    vertex subset: sampled 474 polygons; max vertices 256 -> 128
+g1000_v2000 uniform_4 sampling/paper: ok total=4.40s gpu=358MB ram=1170MB
+Randomly sampled vertices for 883 polygons with more than 256 vertices in uniform_5.wkt
+    vertex subset: sampled 473 polygons; max vertices 256 -> 128
+g1000_v2000 uniform_5 sampling/paper: ok total=4.64s gpu=358MB ram=1170MB
+Randomly sampled vertices for 871 polygons with more than 256 vertices in uniform_6.wkt
+    vertex subset: sampled 479 polygons; max vertices 256 -> 128
+g1000_v2000 uniform_6 sampling/paper: ok total=4.63s gpu=358MB ram=1170MB
+Randomly sampled vertices for 869 polygons with more than 256 vertices in uniform_7.wkt
+    vertex subset: sampled 482 polygons; max vertices 256 -> 128
+g1000_v2000 uniform_7 sampling/paper: ok total=4.31s gpu=358MB ram=1170MB
+Randomly sampled vertices for 868 polygons with more than 256 vertices in uniform_8.wkt
+    vertex subset: sampled 481 polygons; max vertices 256 -> 128
+g1000_v2000 uniform_8 sampling/paper: ok total=4.36s gpu=358MB ram=1169MB
+Randomly sampled vertices for 869 polygons with more than 256 vertices in uniform_9.wkt
+    vertex subset: sampled 481 polygons; max vertices 256 -> 128
+g1000_v2000 uniform_9 sampling/paper: ok total=4.46s gpu=358MB ram=1170MB
+    vertex subset: sampled 760 polygons; max vertices 1995 -> 512
+g1000_v2000 uniform_1 sparse/paper: ok total=9.25s gpu=108MB ram=1331MB
+    vertex subset: sampled 730 polygons; max vertices 1997 -> 512
+g1000_v2000 uniform_10 sparse/paper: ok total=9.48s gpu=108MB ram=1332MB
+    vertex subset: sampled 748 polygons; max vertices 1999 -> 512
+g1000_v2000 uniform_2 sparse/paper: ok total=9.69s gpu=108MB ram=1331MB
+    vertex subset: sampled 738 polygons; max vertices 1999 -> 512
+g1000_v2000 uniform_3 sparse/paper: ok total=9.24s gpu=108MB ram=1331MB
+    vertex subset: sampled 733 polygons; max vertices 1999 -> 512
+g1000_v2000 uniform_4 sparse/paper: ok total=9.28s gpu=108MB ram=1331MB
+    vertex subset: sampled 753 polygons; max vertices 2000 -> 512
+g1000_v2000 uniform_5 sparse/paper: ok total=9.42s gpu=108MB ram=1331MB
+    vertex subset: sampled 741 polygons; max vertices 1994 -> 512
+g1000_v2000 uniform_6 sparse/paper: ok total=9.52s gpu=108MB ram=1331MB
+    vertex subset: sampled 746 polygons; max vertices 1998 -> 512
+g1000_v2000 uniform_7 sparse/paper: ok total=9.69s gpu=108MB ram=1330MB
+    vertex subset: sampled 737 polygons; max vertices 1998 -> 512
+g1000_v2000 uniform_8 sparse/paper: ok total=9.65s gpu=108MB ram=1330MB
+    vertex subset: sampled 737 polygons; max vertices 2000 -> 512
+g1000_v2000 uniform_9 sparse/paper: ok total=9.60s gpu=108MB ram=1331MB
+g1000_v2000 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g1000_v2000 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g1000_v2000 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g1000_v2000 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
-g1000_v2000 uniform_1 sparse/none: ok total=16.36s gpu=141MB ram=1329MB
-g1000_v2000 uniform_2 sparse/none: ok total=17.35s gpu=140MB ram=1330MB
-g1000_v2000 uniform_3 sparse/none: ok total=17.14s gpu=140MB ram=1330MB
-g10000_v5 uniform_1 sampling/paper: ok total=4.96s gpu=358MB ram=1163MB
-g10000_v5 uniform_2 sampling/paper: ok total=4.81s gpu=358MB ram=1163MB
-g10000_v5 uniform_3 sampling/paper: ok total=4.87s gpu=358MB ram=1163MB
-g10000_v5 uniform_1 sparse/paper: ok total=12.56s gpu=108MB ram=1314MB
-g10000_v5 uniform_2 sparse/paper: ok total=11.61s gpu=108MB ram=1313MB
-g10000_v5 uniform_3 sparse/paper: ok total=11.21s gpu=108MB ram=1313MB
-g10000_v5 uniform_1 sampling/none: oom_gpu total=nans gpu=3836MB ram=3997MB
+g1000_v2000 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g1000_v2000 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g1000_v2000 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g1000_v2000 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g1000_v2000 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g1000_v2000 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g1000_v2000 uniform_1 sparse/none: ok total=13.72s gpu=140MB ram=1330MB
+g1000_v2000 uniform_10 sparse/none: ok total=13.66s gpu=140MB ram=1330MB
+g1000_v2000 uniform_2 sparse/none: ok total=14.09s gpu=140MB ram=1331MB
+g1000_v2000 uniform_3 sparse/none: ok total=14.33s gpu=140MB ram=1330MB
+g1000_v2000 uniform_4 sparse/none: ok total=14.07s gpu=141MB ram=1330MB
+g1000_v2000 uniform_5 sparse/none: ok total=14.36s gpu=140MB ram=1330MB
+g1000_v2000 uniform_6 sparse/none: ok total=14.42s gpu=140MB ram=1330MB
+g1000_v2000 uniform_7 sparse/none: ok total=14.23s gpu=140MB ram=1330MB
+g1000_v2000 uniform_8 sparse/none: ok total=13.75s gpu=140MB ram=1329MB
+g1000_v2000 uniform_9 sparse/none: ok total=13.96s gpu=140MB ram=1330MB
+g2000_v5 uniform_1 sampling/paper: ok total=4.23s gpu=358MB ram=1154MB
+g2000_v5 uniform_10 sampling/paper: ok total=4.12s gpu=358MB ram=1153MB
+g2000_v5 uniform_2 sampling/paper: ok total=3.83s gpu=358MB ram=1152MB
+g2000_v5 uniform_3 sampling/paper: ok total=3.75s gpu=358MB ram=1153MB
+g2000_v5 uniform_4 sampling/paper: ok total=3.72s gpu=358MB ram=1154MB
+g2000_v5 uniform_5 sampling/paper: ok total=4.04s gpu=358MB ram=1154MB
+g2000_v5 uniform_6 sampling/paper: ok total=3.94s gpu=358MB ram=1152MB
+g2000_v5 uniform_7 sampling/paper: ok total=3.83s gpu=358MB ram=1154MB
+g2000_v5 uniform_8 sampling/paper: ok total=4.00s gpu=358MB ram=1154MB
+g2000_v5 uniform_9 sampling/paper: ok total=3.73s gpu=358MB ram=1152MB
+g2000_v5 uniform_1 sparse/paper: ok total=10.10s gpu=108MB ram=1306MB
+g2000_v5 uniform_10 sparse/paper: ok total=10.04s gpu=108MB ram=1304MB
+g2000_v5 uniform_2 sparse/paper: ok total=9.63s gpu=108MB ram=1304MB
+g2000_v5 uniform_3 sparse/paper: ok total=9.94s gpu=108MB ram=1304MB
+g2000_v5 uniform_4 sparse/paper: ok total=10.16s gpu=108MB ram=1305MB
+g2000_v5 uniform_5 sparse/paper: ok total=9.91s gpu=108MB ram=1305MB
+g2000_v5 uniform_6 sparse/paper: ok total=9.98s gpu=108MB ram=1304MB
+g2000_v5 uniform_7 sparse/paper: ok total=10.40s gpu=108MB ram=1305MB
+g2000_v5 uniform_8 sparse/paper: ok total=9.98s gpu=108MB ram=1305MB
+g2000_v5 uniform_9 sparse/paper: ok total=9.63s gpu=108MB ram=1304MB
+g2000_v5 uniform_1 sampling/none: oom_gpu total=nans gpu=3412MB ram=1174MB
+g2000_v5 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v5 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v5 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v5 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v5 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v5 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v5 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v5 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v5 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v5 uniform_1 sparse/none: ok total=19.94s gpu=207MB ram=1307MB
+g2000_v5 uniform_10 sparse/none: ok total=18.88s gpu=207MB ram=1308MB
+g2000_v5 uniform_2 sparse/none: ok total=18.78s gpu=207MB ram=1308MB
+g2000_v5 uniform_3 sparse/none: ok total=19.18s gpu=207MB ram=1308MB
+g2000_v5 uniform_4 sparse/none: ok total=18.79s gpu=207MB ram=1308MB
+g2000_v5 uniform_5 sparse/none: ok total=20.09s gpu=207MB ram=1306MB
+g2000_v5 uniform_6 sparse/none: ok total=19.38s gpu=207MB ram=1307MB
+g2000_v5 uniform_7 sparse/none: ok total=18.53s gpu=207MB ram=1309MB
+g2000_v5 uniform_8 sparse/none: ok total=18.89s gpu=207MB ram=1308MB
+g2000_v5 uniform_9 sparse/none: ok total=19.60s gpu=207MB ram=1307MB
+g2000_v10 uniform_1 sampling/paper: ok total=3.86s gpu=358MB ram=1168MB
+g2000_v10 uniform_10 sampling/paper: ok total=3.70s gpu=358MB ram=1168MB
+g2000_v10 uniform_2 sampling/paper: ok total=4.15s gpu=358MB ram=1169MB
+g2000_v10 uniform_3 sampling/paper: ok total=4.00s gpu=358MB ram=1168MB
+g2000_v10 uniform_4 sampling/paper: ok total=3.89s gpu=358MB ram=1168MB
+g2000_v10 uniform_5 sampling/paper: ok total=3.97s gpu=358MB ram=1169MB
+g2000_v10 uniform_6 sampling/paper: ok total=3.87s gpu=358MB ram=1168MB
+g2000_v10 uniform_7 sampling/paper: ok total=3.87s gpu=358MB ram=1168MB
+g2000_v10 uniform_8 sampling/paper: ok total=3.84s gpu=358MB ram=1168MB
+g2000_v10 uniform_9 sampling/paper: ok total=3.75s gpu=358MB ram=1168MB
+g2000_v10 uniform_1 sparse/paper: ok total=9.78s gpu=108MB ram=1319MB
+g2000_v10 uniform_10 sparse/paper: ok total=9.52s gpu=108MB ram=1320MB
+g2000_v10 uniform_2 sparse/paper: ok total=9.82s gpu=108MB ram=1318MB
+g2000_v10 uniform_3 sparse/paper: ok total=9.71s gpu=108MB ram=1320MB
+g2000_v10 uniform_4 sparse/paper: ok total=10.22s gpu=108MB ram=1318MB
+g2000_v10 uniform_5 sparse/paper: ok total=9.91s gpu=108MB ram=1319MB
+g2000_v10 uniform_6 sparse/paper: ok total=9.99s gpu=108MB ram=1319MB
+g2000_v10 uniform_7 sparse/paper: ok total=9.69s gpu=108MB ram=1320MB
+g2000_v10 uniform_8 sparse/paper: ok total=10.04s gpu=108MB ram=1319MB
+g2000_v10 uniform_9 sparse/paper: ok total=10.05s gpu=108MB ram=1317MB
+g2000_v10 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v10 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v10 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v10 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v10 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v10 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v10 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v10 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v10 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v10 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v10 uniform_1 sparse/none: ok total=19.02s gpu=207MB ram=1322MB
+g2000_v10 uniform_10 sparse/none: ok total=19.70s gpu=207MB ram=1322MB
+g2000_v10 uniform_2 sparse/none: ok total=19.13s gpu=207MB ram=1323MB
+g2000_v10 uniform_3 sparse/none: ok total=19.49s gpu=207MB ram=1322MB
+g2000_v10 uniform_4 sparse/none: ok total=18.21s gpu=207MB ram=1321MB
+g2000_v10 uniform_5 sparse/none: ok total=22.21s gpu=207MB ram=1321MB
+g2000_v10 uniform_6 sparse/none: ok total=21.34s gpu=207MB ram=1322MB
+g2000_v10 uniform_7 sparse/none: ok total=20.78s gpu=207MB ram=1321MB
+g2000_v10 uniform_8 sparse/none: ok total=20.87s gpu=207MB ram=1321MB
+g2000_v10 uniform_9 sparse/none: ok total=21.29s gpu=207MB ram=1320MB
+g2000_v20 uniform_1 sampling/paper: ok total=4.21s gpu=358MB ram=1168MB
+g2000_v20 uniform_10 sampling/paper: ok total=4.17s gpu=358MB ram=1169MB
+g2000_v20 uniform_2 sampling/paper: ok total=4.21s gpu=358MB ram=1168MB
+g2000_v20 uniform_3 sampling/paper: ok total=4.50s gpu=358MB ram=1168MB
+g2000_v20 uniform_4 sampling/paper: ok total=4.18s gpu=358MB ram=1168MB
+g2000_v20 uniform_5 sampling/paper: ok total=4.20s gpu=358MB ram=1169MB
+g2000_v20 uniform_6 sampling/paper: ok total=4.20s gpu=358MB ram=1168MB
+g2000_v20 uniform_7 sampling/paper: ok total=4.14s gpu=358MB ram=1168MB
+g2000_v20 uniform_8 sampling/paper: ok total=4.23s gpu=358MB ram=1169MB
+g2000_v20 uniform_9 sampling/paper: ok total=4.20s gpu=358MB ram=1168MB
+g2000_v20 uniform_1 sparse/paper: ok total=11.41s gpu=108MB ram=1320MB
+g2000_v20 uniform_10 sparse/paper: ok total=10.76s gpu=108MB ram=1319MB
+g2000_v20 uniform_2 sparse/paper: ok total=10.59s gpu=108MB ram=1320MB
+g2000_v20 uniform_3 sparse/paper: ok total=10.60s gpu=108MB ram=1318MB
+g2000_v20 uniform_4 sparse/paper: ok total=10.64s gpu=108MB ram=1319MB
+g2000_v20 uniform_5 sparse/paper: ok total=10.72s gpu=108MB ram=1307MB
+g2000_v20 uniform_6 sparse/paper: ok total=10.74s gpu=108MB ram=1319MB
+g2000_v20 uniform_7 sparse/paper: ok total=10.65s gpu=108MB ram=1319MB
+g2000_v20 uniform_8 sparse/paper: ok total=10.84s gpu=108MB ram=1317MB
+g2000_v20 uniform_9 sparse/paper: ok total=11.46s gpu=108MB ram=1319MB
+g2000_v20 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v20 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v20 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v20 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v20 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v20 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v20 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v20 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v20 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v20 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v20 uniform_1 sparse/none: ok total=21.12s gpu=207MB ram=1322MB
+g2000_v20 uniform_10 sparse/none: ok total=21.37s gpu=207MB ram=1322MB
+g2000_v20 uniform_2 sparse/none: ok total=23.58s gpu=207MB ram=1323MB
+g2000_v20 uniform_3 sparse/none: ok total=24.84s gpu=207MB ram=1322MB
+g2000_v20 uniform_4 sparse/none: ok total=21.25s gpu=207MB ram=1321MB
+g2000_v20 uniform_5 sparse/none: ok total=21.37s gpu=207MB ram=1323MB
+g2000_v20 uniform_6 sparse/none: ok total=21.54s gpu=207MB ram=1321MB
+g2000_v20 uniform_7 sparse/none: ok total=21.97s gpu=207MB ram=1321MB
+g2000_v20 uniform_8 sparse/none: ok total=21.64s gpu=207MB ram=1322MB
+g2000_v20 uniform_9 sparse/none: ok total=21.64s gpu=207MB ram=1321MB
+    vertex subset: sampled 175 polygons; max vertices 200 -> 128
+g2000_v200 uniform_1 sampling/paper: ok total=4.86s gpu=358MB ram=1171MB
+    vertex subset: sampled 175 polygons; max vertices 200 -> 128
+g2000_v200 uniform_10 sampling/paper: ok total=4.86s gpu=358MB ram=1169MB
+    vertex subset: sampled 184 polygons; max vertices 199 -> 128
+g2000_v200 uniform_2 sampling/paper: ok total=4.46s gpu=358MB ram=1170MB
+    vertex subset: sampled 163 polygons; max vertices 200 -> 128
+g2000_v200 uniform_3 sampling/paper: ok total=4.42s gpu=358MB ram=1170MB
+    vertex subset: sampled 182 polygons; max vertices 200 -> 128
+g2000_v200 uniform_4 sampling/paper: ok total=4.70s gpu=358MB ram=1169MB
+    vertex subset: sampled 194 polygons; max vertices 200 -> 128
+g2000_v200 uniform_5 sampling/paper: ok total=4.49s gpu=358MB ram=1168MB
+    vertex subset: sampled 184 polygons; max vertices 200 -> 128
+g2000_v200 uniform_6 sampling/paper: ok total=4.50s gpu=358MB ram=1169MB
+    vertex subset: sampled 181 polygons; max vertices 200 -> 128
+g2000_v200 uniform_7 sampling/paper: ok total=4.35s gpu=358MB ram=1170MB
+    vertex subset: sampled 189 polygons; max vertices 200 -> 128
+g2000_v200 uniform_8 sampling/paper: ok total=4.40s gpu=358MB ram=1170MB
+    vertex subset: sampled 199 polygons; max vertices 200 -> 128
+g2000_v200 uniform_9 sampling/paper: ok total=4.43s gpu=358MB ram=1170MB
+g2000_v200 uniform_1 sparse/paper: ok total=11.05s gpu=108MB ram=1321MB
+g2000_v200 uniform_10 sparse/paper: ok total=11.90s gpu=108MB ram=1320MB
+g2000_v200 uniform_2 sparse/paper: ok total=11.98s gpu=108MB ram=1321MB
+g2000_v200 uniform_3 sparse/paper: ok total=11.56s gpu=108MB ram=1321MB
+g2000_v200 uniform_4 sparse/paper: ok total=11.11s gpu=108MB ram=1321MB
+g2000_v200 uniform_5 sparse/paper: ok total=11.14s gpu=108MB ram=1321MB
+g2000_v200 uniform_6 sparse/paper: ok total=11.13s gpu=108MB ram=1321MB
+g2000_v200 uniform_7 sparse/paper: ok total=11.57s gpu=108MB ram=1321MB
+g2000_v200 uniform_8 sparse/paper: ok total=11.60s gpu=108MB ram=1322MB
+g2000_v200 uniform_9 sparse/paper: ok total=11.18s gpu=108MB ram=1321MB
+g2000_v200 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v200 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v200 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v200 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v200 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v200 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v200 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v200 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v200 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v200 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v200 uniform_1 sparse/none: ok total=22.32s gpu=207MB ram=1324MB
+g2000_v200 uniform_10 sparse/none: ok total=22.02s gpu=207MB ram=1325MB
+g2000_v200 uniform_2 sparse/none: ok total=21.67s gpu=207MB ram=1324MB
+g2000_v200 uniform_3 sparse/none: ok total=21.72s gpu=207MB ram=1325MB
+g2000_v200 uniform_4 sparse/none: ok total=21.59s gpu=207MB ram=1325MB
+g2000_v200 uniform_5 sparse/none: ok total=22.28s gpu=207MB ram=1324MB
+g2000_v200 uniform_6 sparse/none: ok total=21.42s gpu=207MB ram=1326MB
+g2000_v200 uniform_7 sparse/none: ok total=22.76s gpu=207MB ram=1324MB
+g2000_v200 uniform_8 sparse/none: ok total=22.20s gpu=207MB ram=1326MB
+g2000_v200 uniform_9 sparse/none: ok total=21.73s gpu=207MB ram=1325MB
+Randomly sampled vertices for 1759 polygons with more than 256 vertices in uniform_1.wkt
+    vertex subset: sampled 489 polygons; max vertices 256 -> 128
+g2000_v2000 uniform_1 sampling/paper: ok total=7.07s gpu=358MB ram=1170MB
+Randomly sampled vertices for 1770 polygons with more than 256 vertices in uniform_10.wkt
+    vertex subset: sampled 487 polygons; max vertices 256 -> 128
+g2000_v2000 uniform_10 sampling/paper: ok total=7.03s gpu=358MB ram=1170MB
+Randomly sampled vertices for 1780 polygons with more than 256 vertices in uniform_2.wkt
+    vertex subset: sampled 491 polygons; max vertices 256 -> 128
+g2000_v2000 uniform_2 sampling/paper: ok total=6.61s gpu=358MB ram=1170MB
+Randomly sampled vertices for 1754 polygons with more than 256 vertices in uniform_3.wkt
+    vertex subset: sampled 481 polygons; max vertices 256 -> 128
+g2000_v2000 uniform_3 sampling/paper: ok total=6.97s gpu=358MB ram=1171MB
+Randomly sampled vertices for 1756 polygons with more than 256 vertices in uniform_4.wkt
+    vertex subset: sampled 484 polygons; max vertices 256 -> 128
+g2000_v2000 uniform_4 sampling/paper: ok total=7.29s gpu=358MB ram=1171MB
+Randomly sampled vertices for 1772 polygons with more than 256 vertices in uniform_5.wkt
+    vertex subset: sampled 477 polygons; max vertices 256 -> 128
+g2000_v2000 uniform_5 sampling/paper: ok total=7.24s gpu=358MB ram=1168MB
+Randomly sampled vertices for 1720 polygons with more than 256 vertices in uniform_6.wkt
+    vertex subset: sampled 460 polygons; max vertices 256 -> 128
+g2000_v2000 uniform_6 sampling/paper: ok total=6.79s gpu=358MB ram=1170MB
+Randomly sampled vertices for 1786 polygons with more than 256 vertices in uniform_7.wkt
+    vertex subset: sampled 482 polygons; max vertices 256 -> 128
+g2000_v2000 uniform_7 sampling/paper: ok total=6.94s gpu=358MB ram=1170MB
+Randomly sampled vertices for 1756 polygons with more than 256 vertices in uniform_8.wkt
+    vertex subset: sampled 486 polygons; max vertices 256 -> 128
+g2000_v2000 uniform_8 sampling/paper: ok total=6.49s gpu=358MB ram=1171MB
+Randomly sampled vertices for 1739 polygons with more than 256 vertices in uniform_9.wkt
+    vertex subset: sampled 481 polygons; max vertices 256 -> 128
+g2000_v2000 uniform_9 sampling/paper: ok total=6.51s gpu=358MB ram=1170MB
+    vertex subset: sampled 786 polygons; max vertices 1999 -> 512
+g2000_v2000 uniform_1 sparse/paper: ok total=13.00s gpu=108MB ram=1339MB
+    vertex subset: sampled 777 polygons; max vertices 2000 -> 512
+g2000_v2000 uniform_10 sparse/paper: ok total=12.96s gpu=108MB ram=1339MB
+    vertex subset: sampled 803 polygons; max vertices 1995 -> 512
+g2000_v2000 uniform_2 sparse/paper: ok total=13.02s gpu=108MB ram=1340MB
+    vertex subset: sampled 782 polygons; max vertices 1995 -> 512
+g2000_v2000 uniform_3 sparse/paper: ok total=13.26s gpu=108MB ram=1340MB
+    vertex subset: sampled 802 polygons; max vertices 2000 -> 512
+g2000_v2000 uniform_4 sparse/paper: ok total=13.02s gpu=108MB ram=1340MB
+    vertex subset: sampled 776 polygons; max vertices 1997 -> 512
+g2000_v2000 uniform_5 sparse/paper: ok total=13.80s gpu=108MB ram=1340MB
+    vertex subset: sampled 750 polygons; max vertices 2000 -> 512
+g2000_v2000 uniform_6 sparse/paper: ok total=13.81s gpu=108MB ram=1339MB
+    vertex subset: sampled 777 polygons; max vertices 1998 -> 512
+g2000_v2000 uniform_7 sparse/paper: ok total=12.95s gpu=108MB ram=1340MB
+    vertex subset: sampled 800 polygons; max vertices 1993 -> 512
+g2000_v2000 uniform_8 sparse/paper: ok total=13.69s gpu=108MB ram=1340MB
+    vertex subset: sampled 782 polygons; max vertices 1994 -> 512
+g2000_v2000 uniform_9 sparse/paper: ok total=13.52s gpu=108MB ram=1340MB
+g2000_v2000 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v2000 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v2000 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v2000 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v2000 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v2000 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v2000 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v2000 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v2000 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v2000 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g2000_v2000 uniform_1 sparse/none: ok total=29.42s gpu=207MB ram=1344MB
+g2000_v2000 uniform_10 sparse/none: ok total=30.07s gpu=207MB ram=1344MB
+g2000_v2000 uniform_2 sparse/none: ok total=31.02s gpu=207MB ram=1345MB
+g2000_v2000 uniform_3 sparse/none: ok total=29.68s gpu=207MB ram=1345MB
+g2000_v2000 uniform_4 sparse/none: ok total=29.29s gpu=207MB ram=1345MB
+g2000_v2000 uniform_5 sparse/none: ok total=29.39s gpu=207MB ram=1345MB
+g2000_v2000 uniform_6 sparse/none: ok total=30.06s gpu=207MB ram=1344MB
+g2000_v2000 uniform_7 sparse/none: ok total=29.86s gpu=207MB ram=1345MB
+g2000_v2000 uniform_8 sparse/none: ok total=29.47s gpu=207MB ram=1343MB
+g2000_v2000 uniform_9 sparse/none: ok total=29.09s gpu=207MB ram=1344MB
+g4000_v5 uniform_1 sampling/paper: ok total=4.26s gpu=358MB ram=1156MB
+g4000_v5 uniform_10 sampling/paper: ok total=4.53s gpu=358MB ram=1156MB
+g4000_v5 uniform_2 sampling/paper: ok total=4.20s gpu=358MB ram=1155MB
+g4000_v5 uniform_3 sampling/paper: ok total=4.47s gpu=358MB ram=1157MB
+g4000_v5 uniform_4 sampling/paper: ok total=4.21s gpu=358MB ram=1155MB
+g4000_v5 uniform_5 sampling/paper: ok total=4.22s gpu=358MB ram=1154MB
+g4000_v5 uniform_6 sampling/paper: ok total=4.53s gpu=358MB ram=1155MB
+g4000_v5 uniform_7 sampling/paper: ok total=4.43s gpu=358MB ram=1155MB
+g4000_v5 uniform_8 sampling/paper: ok total=4.13s gpu=358MB ram=1155MB
+g4000_v5 uniform_9 sampling/paper: ok total=4.25s gpu=358MB ram=1155MB
+g4000_v5 uniform_1 sparse/paper: ok total=10.92s gpu=108MB ram=1306MB
+g4000_v5 uniform_10 sparse/paper: ok total=10.74s gpu=108MB ram=1305MB
+g4000_v5 uniform_2 sparse/paper: ok total=10.58s gpu=108MB ram=1306MB
+g4000_v5 uniform_3 sparse/paper: ok total=11.01s gpu=108MB ram=1306MB
+g4000_v5 uniform_4 sparse/paper: ok total=11.38s gpu=108MB ram=1306MB
+g4000_v5 uniform_5 sparse/paper: ok total=10.68s gpu=108MB ram=1306MB
+g4000_v5 uniform_6 sparse/paper: ok total=10.78s gpu=108MB ram=1306MB
+g4000_v5 uniform_7 sparse/paper: ok total=11.19s gpu=108MB ram=1306MB
+g4000_v5 uniform_8 sparse/paper: ok total=11.05s gpu=108MB ram=1306MB
+g4000_v5 uniform_9 sparse/paper: ok total=11.03s gpu=108MB ram=1305MB
+g4000_v5 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v5 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v5 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v5 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v5 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v5 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v5 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v5 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v5 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v5 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v5 uniform_1 sparse/none: ok total=42.43s gpu=412MB ram=1318MB
+g4000_v5 uniform_10 sparse/none: ok total=42.20s gpu=412MB ram=1318MB
+g4000_v5 uniform_2 sparse/none: ok total=43.04s gpu=412MB ram=1317MB
+g4000_v5 uniform_3 sparse/none: ok total=44.05s gpu=412MB ram=1318MB
+g4000_v5 uniform_4 sparse/none: ok total=42.74s gpu=412MB ram=1318MB
+g4000_v5 uniform_5 sparse/none: ok total=43.33s gpu=412MB ram=1317MB
+g4000_v5 uniform_6 sparse/none: ok total=42.96s gpu=412MB ram=1317MB
+g4000_v5 uniform_7 sparse/none: ok total=43.96s gpu=412MB ram=1318MB
+g4000_v5 uniform_8 sparse/none: ok total=39.30s gpu=412MB ram=1318MB
+g4000_v5 uniform_9 sparse/none: ok total=38.69s gpu=412MB ram=1318MB
+g4000_v10 uniform_1 sampling/paper: ok total=4.21s gpu=358MB ram=1171MB
+g4000_v10 uniform_10 sampling/paper: ok total=4.11s gpu=358MB ram=1171MB
+g4000_v10 uniform_2 sampling/paper: ok total=3.93s gpu=358MB ram=1170MB
+g4000_v10 uniform_3 sampling/paper: ok total=3.91s gpu=358MB ram=1169MB
+g4000_v10 uniform_4 sampling/paper: ok total=3.82s gpu=358MB ram=1170MB
+g4000_v10 uniform_5 sampling/paper: ok total=4.23s gpu=358MB ram=1171MB
+g4000_v10 uniform_6 sampling/paper: ok total=3.90s gpu=358MB ram=1171MB
+g4000_v10 uniform_7 sampling/paper: ok total=3.91s gpu=358MB ram=1170MB
+g4000_v10 uniform_8 sampling/paper: ok total=3.96s gpu=358MB ram=1172MB
+g4000_v10 uniform_9 sampling/paper: ok total=4.24s gpu=358MB ram=1171MB
+g4000_v10 uniform_1 sparse/paper: ok total=10.11s gpu=108MB ram=1322MB
+g4000_v10 uniform_10 sparse/paper: ok total=10.18s gpu=108MB ram=1321MB
+g4000_v10 uniform_2 sparse/paper: ok total=9.99s gpu=108MB ram=1322MB
+g4000_v10 uniform_3 sparse/paper: ok total=9.79s gpu=108MB ram=1322MB
+g4000_v10 uniform_4 sparse/paper: ok total=10.54s gpu=108MB ram=1321MB
+g4000_v10 uniform_5 sparse/paper: ok total=10.29s gpu=108MB ram=1322MB
+g4000_v10 uniform_6 sparse/paper: ok total=10.17s gpu=108MB ram=1322MB
+g4000_v10 uniform_7 sparse/paper: ok total=9.83s gpu=108MB ram=1321MB
+g4000_v10 uniform_8 sparse/paper: ok total=9.83s gpu=108MB ram=1321MB
+g4000_v10 uniform_9 sparse/paper: ok total=10.04s gpu=108MB ram=1322MB
+g4000_v10 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v10 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v10 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v10 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v10 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v10 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v10 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v10 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v10 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v10 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v10 uniform_1 sparse/none: ok total=38.89s gpu=412MB ram=1332MB
+g4000_v10 uniform_10 sparse/none: ok total=38.82s gpu=412MB ram=1331MB
+g4000_v10 uniform_2 sparse/none: ok total=39.82s gpu=412MB ram=1332MB
+g4000_v10 uniform_3 sparse/none: ok total=37.63s gpu=412MB ram=1332MB
+g4000_v10 uniform_4 sparse/none: ok total=37.57s gpu=412MB ram=1331MB
+g4000_v10 uniform_5 sparse/none: ok total=39.06s gpu=412MB ram=1332MB
+g4000_v10 uniform_6 sparse/none: ok total=39.37s gpu=412MB ram=1333MB
+g4000_v10 uniform_7 sparse/none: ok total=39.00s gpu=412MB ram=1266MB
+g4000_v10 uniform_8 sparse/none: ok total=36.98s gpu=412MB ram=1332MB
+g4000_v10 uniform_9 sparse/none: ok total=38.23s gpu=412MB ram=1332MB
+g4000_v20 uniform_1 sampling/paper: ok total=4.11s gpu=358MB ram=1171MB
+g4000_v20 uniform_10 sampling/paper: ok total=3.99s gpu=358MB ram=1171MB
+g4000_v20 uniform_2 sampling/paper: ok total=3.98s gpu=358MB ram=1171MB
+g4000_v20 uniform_3 sampling/paper: ok total=3.91s gpu=358MB ram=1170MB
+g4000_v20 uniform_4 sampling/paper: ok total=3.85s gpu=358MB ram=1171MB
+g4000_v20 uniform_5 sampling/paper: ok total=4.04s gpu=358MB ram=1172MB
+g4000_v20 uniform_6 sampling/paper: ok total=4.05s gpu=358MB ram=1172MB
+g4000_v20 uniform_7 sampling/paper: ok total=3.96s gpu=358MB ram=1171MB
+g4000_v20 uniform_8 sampling/paper: ok total=3.91s gpu=358MB ram=1171MB
+g4000_v20 uniform_9 sampling/paper: ok total=3.89s gpu=358MB ram=1171MB
+g4000_v20 uniform_1 sparse/paper: ok total=10.12s gpu=108MB ram=1319MB
+g4000_v20 uniform_10 sparse/paper: ok total=9.92s gpu=108MB ram=1321MB
+g4000_v20 uniform_2 sparse/paper: ok total=10.43s gpu=108MB ram=1320MB
+g4000_v20 uniform_3 sparse/paper: ok total=9.78s gpu=108MB ram=1320MB
+g4000_v20 uniform_4 sparse/paper: ok total=10.05s gpu=108MB ram=1321MB
+g4000_v20 uniform_5 sparse/paper: ok total=9.98s gpu=108MB ram=1321MB
+g4000_v20 uniform_6 sparse/paper: ok total=10.53s gpu=108MB ram=1319MB
+g4000_v20 uniform_7 sparse/paper: ok total=10.81s gpu=108MB ram=1321MB
+g4000_v20 uniform_8 sparse/paper: ok total=10.17s gpu=108MB ram=1321MB
+g4000_v20 uniform_9 sparse/paper: ok total=10.15s gpu=108MB ram=1321MB
+g4000_v20 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v20 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v20 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v20 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v20 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v20 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v20 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v20 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v20 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v20 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v20 uniform_1 sparse/none: ok total=39.24s gpu=412MB ram=1332MB
+g4000_v20 uniform_10 sparse/none: ok total=39.39s gpu=412MB ram=1332MB
+g4000_v20 uniform_2 sparse/none: ok total=39.93s gpu=412MB ram=1332MB
+g4000_v20 uniform_3 sparse/none: ok total=39.48s gpu=412MB ram=1332MB
+g4000_v20 uniform_4 sparse/none: ok total=38.97s gpu=412MB ram=1332MB
+g4000_v20 uniform_5 sparse/none: ok total=40.85s gpu=412MB ram=1333MB
+g4000_v20 uniform_6 sparse/none: ok total=39.03s gpu=412MB ram=1332MB
+g4000_v20 uniform_7 sparse/none: ok total=38.46s gpu=412MB ram=1332MB
+g4000_v20 uniform_8 sparse/none: ok total=38.94s gpu=412MB ram=1333MB
+g4000_v20 uniform_9 sparse/none: ok total=38.76s gpu=412MB ram=1333MB
+    vertex subset: sampled 197 polygons; max vertices 200 -> 128
+g4000_v200 uniform_1 sampling/paper: ok total=4.66s gpu=358MB ram=1174MB
+    vertex subset: sampled 168 polygons; max vertices 200 -> 128
+g4000_v200 uniform_10 sampling/paper: ok total=4.51s gpu=358MB ram=1174MB
+    vertex subset: sampled 198 polygons; max vertices 200 -> 128
+g4000_v200 uniform_2 sampling/paper: ok total=4.36s gpu=358MB ram=1174MB
+    vertex subset: sampled 190 polygons; max vertices 200 -> 128
+g4000_v200 uniform_3 sampling/paper: ok total=4.41s gpu=358MB ram=1174MB
+    vertex subset: sampled 187 polygons; max vertices 200 -> 128
+g4000_v200 uniform_4 sampling/paper: ok total=4.46s gpu=358MB ram=1174MB
+    vertex subset: sampled 195 polygons; max vertices 199 -> 128
+g4000_v200 uniform_5 sampling/paper: ok total=4.28s gpu=358MB ram=1174MB
+    vertex subset: sampled 177 polygons; max vertices 200 -> 128
+g4000_v200 uniform_6 sampling/paper: ok total=4.53s gpu=358MB ram=1174MB
+    vertex subset: sampled 181 polygons; max vertices 200 -> 128
+g4000_v200 uniform_7 sampling/paper: ok total=4.62s gpu=358MB ram=1174MB
+    vertex subset: sampled 184 polygons; max vertices 200 -> 128
+g4000_v200 uniform_8 sampling/paper: ok total=4.38s gpu=358MB ram=1173MB
+    vertex subset: sampled 194 polygons; max vertices 200 -> 128
+g4000_v200 uniform_9 sampling/paper: ok total=4.35s gpu=358MB ram=1175MB
+g4000_v200 uniform_1 sparse/paper: ok total=10.24s gpu=108MB ram=1324MB
+g4000_v200 uniform_10 sparse/paper: ok total=10.72s gpu=108MB ram=1324MB
+g4000_v200 uniform_2 sparse/paper: ok total=11.25s gpu=108MB ram=1324MB
+g4000_v200 uniform_3 sparse/paper: ok total=10.65s gpu=108MB ram=1312MB
+g4000_v200 uniform_4 sparse/paper: ok total=11.13s gpu=108MB ram=1324MB
+g4000_v200 uniform_5 sparse/paper: ok total=10.38s gpu=108MB ram=1324MB
+g4000_v200 uniform_6 sparse/paper: ok total=11.26s gpu=108MB ram=1324MB
+g4000_v200 uniform_7 sparse/paper: ok total=10.92s gpu=108MB ram=1325MB
+g4000_v200 uniform_8 sparse/paper: ok total=10.40s gpu=108MB ram=1325MB
+g4000_v200 uniform_9 sparse/paper: ok total=10.60s gpu=108MB ram=1324MB
+g4000_v200 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v200 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v200 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v200 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v200 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v200 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v200 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v200 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v200 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v200 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v200 uniform_1 sparse/none: ok total=39.80s gpu=412MB ram=1337MB
+g4000_v200 uniform_10 sparse/none: ok total=39.84s gpu=412MB ram=1337MB
+g4000_v200 uniform_2 sparse/none: ok total=39.62s gpu=412MB ram=1337MB
+g4000_v200 uniform_3 sparse/none: ok total=41.34s gpu=412MB ram=1337MB
+g4000_v200 uniform_4 sparse/none: ok total=44.87s gpu=412MB ram=1337MB
+g4000_v200 uniform_5 sparse/none: ok total=44.41s gpu=412MB ram=1337MB
+g4000_v200 uniform_6 sparse/none: ok total=45.07s gpu=412MB ram=1338MB
+g4000_v200 uniform_7 sparse/none: ok total=43.75s gpu=412MB ram=1337MB
+g4000_v200 uniform_8 sparse/none: ok total=43.51s gpu=412MB ram=1337MB
+g4000_v200 uniform_9 sparse/none: ok total=43.35s gpu=412MB ram=1337MB
+Randomly sampled vertices for 3486 polygons with more than 256 vertices in uniform_1.wkt
+    vertex subset: sampled 476 polygons; max vertices 256 -> 128
+g4000_v2000 uniform_1 sampling/paper: ok total=9.81s gpu=358MB ram=1176MB
+Randomly sampled vertices for 3460 polygons with more than 256 vertices in uniform_10.wkt
+    vertex subset: sampled 486 polygons; max vertices 256 -> 128
+g4000_v2000 uniform_10 sampling/paper: ok total=10.05s gpu=358MB ram=1177MB
+Randomly sampled vertices for 3483 polygons with more than 256 vertices in uniform_2.wkt
+    vertex subset: sampled 472 polygons; max vertices 256 -> 128
+g4000_v2000 uniform_2 sampling/paper: ok total=9.07s gpu=358MB ram=1177MB
+Randomly sampled vertices for 3511 polygons with more than 256 vertices in uniform_3.wkt
+    vertex subset: sampled 467 polygons; max vertices 256 -> 128
+g4000_v2000 uniform_3 sampling/paper: ok total=9.02s gpu=358MB ram=1175MB
+Randomly sampled vertices for 3492 polygons with more than 256 vertices in uniform_4.wkt
+    vertex subset: sampled 479 polygons; max vertices 256 -> 128
+g4000_v2000 uniform_4 sampling/paper: ok total=8.96s gpu=358MB ram=1177MB
+Randomly sampled vertices for 3518 polygons with more than 256 vertices in uniform_5.wkt
+    vertex subset: sampled 472 polygons; max vertices 256 -> 128
+g4000_v2000 uniform_5 sampling/paper: ok total=8.88s gpu=358MB ram=1176MB
+Randomly sampled vertices for 3481 polygons with more than 256 vertices in uniform_6.wkt
+    vertex subset: sampled 482 polygons; max vertices 256 -> 128
+g4000_v2000 uniform_6 sampling/paper: ok total=9.04s gpu=358MB ram=1175MB
+Randomly sampled vertices for 3501 polygons with more than 256 vertices in uniform_7.wkt
+    vertex subset: sampled 479 polygons; max vertices 256 -> 128
+g4000_v2000 uniform_7 sampling/paper: ok total=9.02s gpu=358MB ram=1176MB
+Randomly sampled vertices for 3500 polygons with more than 256 vertices in uniform_8.wkt
+    vertex subset: sampled 477 polygons; max vertices 256 -> 128
+g4000_v2000 uniform_8 sampling/paper: ok total=8.99s gpu=358MB ram=1175MB
+Randomly sampled vertices for 3487 polygons with more than 256 vertices in uniform_9.wkt
+    vertex subset: sampled 482 polygons; max vertices 256 -> 128
+g4000_v2000 uniform_9 sampling/paper: ok total=8.97s gpu=358MB ram=1176MB
+    vertex subset: sampled 773 polygons; max vertices 2000 -> 512
+g4000_v2000 uniform_1 sparse/paper: ok total=15.79s gpu=108MB ram=1357MB
+    vertex subset: sampled 770 polygons; max vertices 1999 -> 512
+g4000_v2000 uniform_10 sparse/paper: ok total=15.08s gpu=108MB ram=1357MB
+    vertex subset: sampled 767 polygons; max vertices 1994 -> 512
+g4000_v2000 uniform_2 sparse/paper: ok total=15.45s gpu=108MB ram=1358MB
+    vertex subset: sampled 759 polygons; max vertices 1996 -> 512
+g4000_v2000 uniform_3 sparse/paper: ok total=15.16s gpu=108MB ram=1357MB
+    vertex subset: sampled 753 polygons; max vertices 1995 -> 512
+g4000_v2000 uniform_4 sparse/paper: ok total=15.16s gpu=108MB ram=1356MB
+    vertex subset: sampled 765 polygons; max vertices 1996 -> 512
+g4000_v2000 uniform_5 sparse/paper: ok total=15.04s gpu=108MB ram=1357MB
+    vertex subset: sampled 743 polygons; max vertices 2000 -> 512
+g4000_v2000 uniform_6 sparse/paper: ok total=15.46s gpu=108MB ram=1357MB
+    vertex subset: sampled 760 polygons; max vertices 1996 -> 512
+g4000_v2000 uniform_7 sparse/paper: ok total=15.49s gpu=108MB ram=1357MB
+    vertex subset: sampled 760 polygons; max vertices 2000 -> 512
+g4000_v2000 uniform_8 sparse/paper: ok total=15.49s gpu=108MB ram=1356MB
+    vertex subset: sampled 763 polygons; max vertices 1999 -> 512
+g4000_v2000 uniform_9 sparse/paper: ok total=16.39s gpu=108MB ram=1358MB
+g4000_v2000 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v2000 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v2000 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v2000 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v2000 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v2000 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v2000 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v2000 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v2000 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v2000 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g4000_v2000 uniform_1 sparse/none: ok total=58.65s gpu=413MB ram=1365MB
+g4000_v2000 uniform_10 sparse/none: ok total=58.98s gpu=413MB ram=1371MB
+g4000_v2000 uniform_2 sparse/none: ok total=60.48s gpu=413MB ram=1370MB
+g4000_v2000 uniform_3 sparse/none: ok total=59.02s gpu=413MB ram=1371MB
+g4000_v2000 uniform_4 sparse/none: ok total=60.88s gpu=412MB ram=1370MB
+g4000_v2000 uniform_5 sparse/none: ok total=59.65s gpu=413MB ram=1370MB
+g4000_v2000 uniform_6 sparse/none: ok total=59.21s gpu=413MB ram=1371MB
+g4000_v2000 uniform_7 sparse/none: ok total=59.23s gpu=414MB ram=1370MB
+g4000_v2000 uniform_8 sparse/none: ok total=59.31s gpu=412MB ram=1371MB
+g4000_v2000 uniform_9 sparse/none: ok total=60.11s gpu=413MB ram=1371MB
+g10000_v5 uniform_1 sampling/paper: ok total=4.66s gpu=358MB ram=1165MB
+g10000_v5 uniform_10 sampling/paper: ok total=4.57s gpu=358MB ram=1163MB
+g10000_v5 uniform_2 sampling/paper: ok total=4.56s gpu=358MB ram=1164MB
+g10000_v5 uniform_3 sampling/paper: ok total=4.53s gpu=358MB ram=1163MB
+g10000_v5 uniform_4 sampling/paper: ok total=4.54s gpu=358MB ram=1164MB
+g10000_v5 uniform_5 sampling/paper: ok total=5.61s gpu=358MB ram=1164MB
+g10000_v5 uniform_6 sampling/paper: ok total=4.41s gpu=358MB ram=1163MB
+g10000_v5 uniform_7 sampling/paper: ok total=4.31s gpu=358MB ram=1163MB
+g10000_v5 uniform_8 sampling/paper: ok total=4.36s gpu=358MB ram=1163MB
+g10000_v5 uniform_9 sampling/paper: ok total=5.46s gpu=358MB ram=1164MB
+g10000_v5 uniform_1 sparse/paper: ok total=11.23s gpu=108MB ram=1314MB
+g10000_v5 uniform_10 sparse/paper: ok total=10.98s gpu=108MB ram=1313MB
+g10000_v5 uniform_2 sparse/paper: ok total=11.14s gpu=108MB ram=1314MB
+g10000_v5 uniform_3 sparse/paper: ok total=14.37s gpu=108MB ram=1313MB
+g10000_v5 uniform_4 sparse/paper: ok total=11.61s gpu=108MB ram=1313MB
+g10000_v5 uniform_5 sparse/paper: ok total=12.00s gpu=108MB ram=1314MB
+g10000_v5 uniform_6 sparse/paper: ok total=12.25s gpu=108MB ram=1314MB
+g10000_v5 uniform_7 sparse/paper: ok total=12.30s gpu=108MB ram=1314MB
+g10000_v5 uniform_8 sparse/paper: ok total=12.06s gpu=108MB ram=1315MB
+g10000_v5 uniform_9 sparse/paper: ok total=12.02s gpu=108MB ram=1313MB
+g10000_v5 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v5 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g10000_v5 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g10000_v5 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
-g10000_v5 uniform_1 sparse/none: ok total=102.65s gpu=1017MB ram=1258MB
-g10000_v5 uniform_2 sparse/none: ok total=101.99s gpu=1017MB ram=1347MB
-g10000_v5 uniform_3 sparse/none: ok total=111.31s gpu=1017MB ram=1347MB
-g10000_v10 uniform_1 sampling/paper: ok total=4.74s gpu=358MB ram=1178MB
-g10000_v10 uniform_2 sampling/paper: ok total=4.70s gpu=358MB ram=1177MB
-g10000_v10 uniform_3 sampling/paper: ok total=4.59s gpu=358MB ram=1177MB
-g10000_v10 uniform_1 sparse/paper: ok total=14.06s gpu=108MB ram=1327MB
-g10000_v10 uniform_2 sparse/paper: ok total=13.50s gpu=108MB ram=1327MB
-g10000_v10 uniform_3 sparse/paper: ok total=14.27s gpu=108MB ram=1327MB
+g10000_v5 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v5 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v5 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v5 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v5 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v5 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v5 uniform_1 sparse/none: ok total=112.31s gpu=1017MB ram=1347MB
+g10000_v5 uniform_10 sparse/none: ok total=110.53s gpu=1017MB ram=1347MB
+g10000_v5 uniform_2 sparse/none: ok total=117.08s gpu=1017MB ram=1347MB
+g10000_v5 uniform_3 sparse/none: ok total=111.96s gpu=1017MB ram=1347MB
+g10000_v5 uniform_4 sparse/none: ok total=114.98s gpu=1017MB ram=1347MB
+g10000_v5 uniform_5 sparse/none: ok total=118.42s gpu=1017MB ram=1347MB
+g10000_v5 uniform_6 sparse/none: ok total=115.16s gpu=1017MB ram=1347MB
+g10000_v5 uniform_7 sparse/none: ok total=116.82s gpu=1017MB ram=1261MB
+g10000_v5 uniform_8 sparse/none: ok total=115.55s gpu=1017MB ram=1347MB
+g10000_v5 uniform_9 sparse/none: ok total=120.30s gpu=1017MB ram=1347MB
+g10000_v10 uniform_1 sampling/paper: ok total=5.08s gpu=358MB ram=1177MB
+g10000_v10 uniform_10 sampling/paper: ok total=5.34s gpu=358MB ram=1177MB
+g10000_v10 uniform_2 sampling/paper: ok total=5.38s gpu=358MB ram=1178MB
+g10000_v10 uniform_3 sampling/paper: ok total=5.15s gpu=358MB ram=1178MB
+g10000_v10 uniform_4 sampling/paper: ok total=5.54s gpu=358MB ram=1177MB
+g10000_v10 uniform_5 sampling/paper: ok total=5.76s gpu=358MB ram=1177MB
+g10000_v10 uniform_6 sampling/paper: ok total=5.13s gpu=358MB ram=1178MB
+g10000_v10 uniform_7 sampling/paper: ok total=5.07s gpu=358MB ram=1178MB
+g10000_v10 uniform_8 sampling/paper: ok total=5.11s gpu=358MB ram=1178MB
+g10000_v10 uniform_9 sampling/paper: ok total=5.17s gpu=358MB ram=1177MB
+g10000_v10 uniform_1 sparse/paper: ok total=12.87s gpu=108MB ram=1328MB
+g10000_v10 uniform_10 sparse/paper: ok total=12.47s gpu=108MB ram=1327MB
+g10000_v10 uniform_2 sparse/paper: ok total=12.42s gpu=108MB ram=1328MB
+g10000_v10 uniform_3 sparse/paper: ok total=12.60s gpu=108MB ram=1328MB
+g10000_v10 uniform_4 sparse/paper: ok total=13.12s gpu=108MB ram=1328MB
+g10000_v10 uniform_5 sparse/paper: ok total=12.94s gpu=108MB ram=1329MB
+g10000_v10 uniform_6 sparse/paper: ok total=12.47s gpu=108MB ram=1328MB
+g10000_v10 uniform_7 sparse/paper: ok total=12.87s gpu=108MB ram=1329MB
+g10000_v10 uniform_8 sparse/paper: ok total=12.88s gpu=108MB ram=1328MB
+g10000_v10 uniform_9 sparse/paper: ok total=12.57s gpu=108MB ram=1329MB
 g10000_v10 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v10 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g10000_v10 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g10000_v10 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
-g10000_v10 uniform_1 sparse/none: ok total=113.09s gpu=1017MB ram=1361MB
-g10000_v10 uniform_2 sparse/none: ok total=104.13s gpu=1017MB ram=1362MB
-g10000_v10 uniform_3 sparse/none: ok total=103.22s gpu=1017MB ram=1361MB
-g10000_v20 uniform_1 sampling/paper: ok total=4.65s gpu=358MB ram=1177MB
-g10000_v20 uniform_2 sampling/paper: ok total=4.68s gpu=358MB ram=1177MB
-g10000_v20 uniform_3 sampling/paper: ok total=4.76s gpu=358MB ram=1178MB
-g10000_v20 uniform_1 sparse/paper: ok total=11.61s gpu=108MB ram=1328MB
-g10000_v20 uniform_2 sparse/paper: ok total=11.03s gpu=108MB ram=1328MB
-g10000_v20 uniform_3 sparse/paper: ok total=11.46s gpu=108MB ram=1329MB
+g10000_v10 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v10 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v10 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v10 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v10 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v10 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v10 uniform_1 sparse/none: ok total=116.76s gpu=1017MB ram=1361MB
+g10000_v10 uniform_10 sparse/none: ok total=109.67s gpu=1017MB ram=1361MB
+g10000_v10 uniform_2 sparse/none: ok total=112.34s gpu=1017MB ram=1361MB
+g10000_v10 uniform_3 sparse/none: ok total=115.58s gpu=1017MB ram=1362MB
+g10000_v10 uniform_4 sparse/none: ok total=111.88s gpu=1017MB ram=1362MB
+g10000_v10 uniform_5 sparse/none: ok total=109.66s gpu=1017MB ram=1362MB
+g10000_v10 uniform_6 sparse/none: ok total=102.47s gpu=1017MB ram=1362MB
+g10000_v10 uniform_7 sparse/none: ok total=97.05s gpu=1017MB ram=1362MB
+g10000_v10 uniform_8 sparse/none: ok total=100.47s gpu=1017MB ram=1362MB
+g10000_v10 uniform_9 sparse/none: ok total=95.71s gpu=1017MB ram=1362MB
+g10000_v20 uniform_1 sampling/paper: ok total=4.45s gpu=358MB ram=1179MB
+g10000_v20 uniform_10 sampling/paper: ok total=4.42s gpu=358MB ram=1179MB
+g10000_v20 uniform_2 sampling/paper: ok total=4.44s gpu=358MB ram=1178MB
+g10000_v20 uniform_3 sampling/paper: ok total=4.59s gpu=358MB ram=1179MB
+g10000_v20 uniform_4 sampling/paper: ok total=4.41s gpu=358MB ram=1178MB
+g10000_v20 uniform_5 sampling/paper: ok total=4.48s gpu=358MB ram=1178MB
+g10000_v20 uniform_6 sampling/paper: ok total=4.32s gpu=358MB ram=1177MB
+g10000_v20 uniform_7 sampling/paper: ok total=4.53s gpu=358MB ram=1180MB
+g10000_v20 uniform_8 sampling/paper: ok total=4.49s gpu=358MB ram=1179MB
+g10000_v20 uniform_9 sampling/paper: ok total=4.71s gpu=358MB ram=1180MB
+g10000_v20 uniform_1 sparse/paper: ok total=10.61s gpu=108MB ram=1329MB
+g10000_v20 uniform_10 sparse/paper: ok total=10.93s gpu=108MB ram=1328MB
+g10000_v20 uniform_2 sparse/paper: ok total=10.50s gpu=108MB ram=1328MB
+g10000_v20 uniform_3 sparse/paper: ok total=11.02s gpu=108MB ram=1329MB
+g10000_v20 uniform_4 sparse/paper: ok total=11.10s gpu=108MB ram=1277MB
+g10000_v20 uniform_5 sparse/paper: ok total=10.44s gpu=108MB ram=1328MB
+g10000_v20 uniform_6 sparse/paper: ok total=10.91s gpu=108MB ram=1329MB
+g10000_v20 uniform_7 sparse/paper: ok total=10.47s gpu=108MB ram=1328MB
+g10000_v20 uniform_8 sparse/paper: ok total=10.86s gpu=108MB ram=1328MB
+g10000_v20 uniform_9 sparse/paper: ok total=10.20s gpu=108MB ram=1329MB
 g10000_v20 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v20 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g10000_v20 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g10000_v20 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
-g10000_v20 uniform_1 sparse/none: ok total=106.20s gpu=1017MB ram=1295MB
-g10000_v20 uniform_2 sparse/none: ok total=106.70s gpu=1017MB ram=1362MB
-g10000_v20 uniform_3 sparse/none: ok total=104.82s gpu=1017MB ram=1361MB
-    vertex subset: sampled 190 polygons; max vertices 200 -> 128
-g10000_v200 uniform_1 sampling/paper: ok total=7.23s gpu=358MB ram=1185MB
+g10000_v20 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v20 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v20 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v20 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v20 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v20 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v20 uniform_1 sparse/none: ok total=102.58s gpu=1017MB ram=1362MB
+g10000_v20 uniform_10 sparse/none: ok total=104.04s gpu=1017MB ram=1362MB
+g10000_v20 uniform_2 sparse/none: ok total=111.59s gpu=1017MB ram=1362MB
+g10000_v20 uniform_3 sparse/none: ok total=107.68s gpu=1017MB ram=1362MB
+g10000_v20 uniform_4 sparse/none: ok total=111.17s gpu=1017MB ram=1362MB
+g10000_v20 uniform_5 sparse/none: ok total=106.89s gpu=1017MB ram=1362MB
+g10000_v20 uniform_6 sparse/none: ok total=110.77s gpu=1017MB ram=1362MB
+g10000_v20 uniform_7 sparse/none: ok total=109.38s gpu=1017MB ram=1361MB
+g10000_v20 uniform_8 sparse/none: ok total=107.02s gpu=1017MB ram=1362MB
+g10000_v20 uniform_9 sparse/none: ok total=102.49s gpu=1017MB ram=1362MB
+    vertex subset: sampled 194 polygons; max vertices 200 -> 128
+g10000_v200 uniform_1 sampling/paper: ok total=5.72s gpu=358MB ram=1186MB
+    vertex subset: sampled 192 polygons; max vertices 200 -> 128
+g10000_v200 uniform_10 sampling/paper: ok total=5.45s gpu=358MB ram=1187MB
+    vertex subset: sampled 202 polygons; max vertices 200 -> 128
+g10000_v200 uniform_2 sampling/paper: ok total=5.38s gpu=358MB ram=1186MB
+    vertex subset: sampled 181 polygons; max vertices 200 -> 128
+g10000_v200 uniform_3 sampling/paper: ok total=5.97s gpu=358MB ram=1186MB
+    vertex subset: sampled 189 polygons; max vertices 200 -> 128
+g10000_v200 uniform_4 sampling/paper: ok total=6.03s gpu=358MB ram=1186MB
+    vertex subset: sampled 158 polygons; max vertices 199 -> 128
+g10000_v200 uniform_5 sampling/paper: ok total=6.45s gpu=358MB ram=1187MB
     vertex subset: sampled 184 polygons; max vertices 200 -> 128
-g10000_v200 uniform_2 sampling/paper: ok total=6.08s gpu=358MB ram=1186MB
+g10000_v200 uniform_6 sampling/paper: ok total=5.96s gpu=358MB ram=1187MB
     vertex subset: sampled 205 polygons; max vertices 200 -> 128
-g10000_v200 uniform_3 sampling/paper: ok total=5.84s gpu=358MB ram=1187MB
-g10000_v200 uniform_1 sparse/paper: ok total=13.96s gpu=108MB ram=1336MB
-g10000_v200 uniform_2 sparse/paper: ok total=13.85s gpu=108MB ram=1336MB
-g10000_v200 uniform_3 sparse/paper: ok total=13.32s gpu=108MB ram=1337MB
+g10000_v200 uniform_7 sampling/paper: ok total=6.77s gpu=358MB ram=1186MB
+    vertex subset: sampled 199 polygons; max vertices 200 -> 128
+g10000_v200 uniform_8 sampling/paper: ok total=6.00s gpu=358MB ram=1186MB
+    vertex subset: sampled 203 polygons; max vertices 200 -> 128
+g10000_v200 uniform_9 sampling/paper: ok total=6.94s gpu=358MB ram=1186MB
+g10000_v200 uniform_1 sparse/paper: ok total=13.77s gpu=108MB ram=1338MB
+g10000_v200 uniform_10 sparse/paper: ok total=13.32s gpu=108MB ram=1337MB
+g10000_v200 uniform_2 sparse/paper: ok total=13.22s gpu=108MB ram=1337MB
+g10000_v200 uniform_3 sparse/paper: ok total=12.35s gpu=108MB ram=1337MB
+g10000_v200 uniform_4 sparse/paper: ok total=13.47s gpu=108MB ram=1337MB
+g10000_v200 uniform_5 sparse/paper: ok total=12.51s gpu=108MB ram=1337MB
+g10000_v200 uniform_6 sparse/paper: ok total=13.49s gpu=108MB ram=1336MB
+g10000_v200 uniform_7 sparse/paper: ok total=12.56s gpu=108MB ram=1337MB
+g10000_v200 uniform_8 sparse/paper: ok total=13.12s gpu=108MB ram=1337MB
+g10000_v200 uniform_9 sparse/paper: ok total=12.91s gpu=108MB ram=1337MB
 g10000_v200 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v200 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g10000_v200 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g10000_v200 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
-g10000_v200 uniform_1 sparse/none: ok total=117.40s gpu=1017MB ram=1371MB
-g10000_v200 uniform_2 sparse/none: ok total=113.36s gpu=1017MB ram=1371MB
-g10000_v200 uniform_3 sparse/none: ok total=114.36s gpu=1017MB ram=1370MB
-Randomly sampled vertices for 8772 polygons with more than 256 vertices in uniform_1.wkt
-    vertex subset: sampled 488 polygons; max vertices 256 -> 128
-g10000_v2000 uniform_1 sampling/paper: ok total=17.70s gpu=358MB ram=1185MB
-Randomly sampled vertices for 8745 polygons with more than 256 vertices in uniform_2.wkt
+g10000_v200 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v200 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v200 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v200 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v200 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v200 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v200 uniform_1 sparse/none: ok total=114.51s gpu=1017MB ram=1371MB
+g10000_v200 uniform_10 sparse/none: ok total=109.45s gpu=1017MB ram=1371MB
+g10000_v200 uniform_2 sparse/none: ok total=105.14s gpu=1017MB ram=1371MB
+g10000_v200 uniform_3 sparse/none: ok total=107.34s gpu=1017MB ram=1370MB
+g10000_v200 uniform_4 sparse/none: ok total=117.09s gpu=1017MB ram=1370MB
+g10000_v200 uniform_5 sparse/none: ok total=121.32s gpu=1017MB ram=1371MB
+g10000_v200 uniform_6 sparse/none: ok total=113.85s gpu=1017MB ram=1371MB
+g10000_v200 uniform_7 sparse/none: ok total=107.78s gpu=1017MB ram=1370MB
+g10000_v200 uniform_8 sparse/none: ok total=114.44s gpu=1017MB ram=1371MB
+g10000_v200 uniform_9 sparse/none: ok total=110.85s gpu=1017MB ram=1371MB
+Randomly sampled vertices for 8695 polygons with more than 256 vertices in uniform_1.wkt
+    vertex subset: sampled 470 polygons; max vertices 256 -> 128
+g10000_v2000 uniform_1 sampling/paper: ok total=16.28s gpu=358MB ram=1187MB
+Randomly sampled vertices for 8737 polygons with more than 256 vertices in uniform_10.wkt
+    vertex subset: sampled 486 polygons; max vertices 256 -> 128
+g10000_v2000 uniform_10 sampling/paper: ok total=16.50s gpu=358MB ram=1186MB
+Randomly sampled vertices for 8724 polygons with more than 256 vertices in uniform_2.wkt
+    vertex subset: sampled 477 polygons; max vertices 256 -> 128
+g10000_v2000 uniform_2 sampling/paper: ok total=16.15s gpu=358MB ram=1188MB
+Randomly sampled vertices for 8706 polygons with more than 256 vertices in uniform_3.wkt
+    vertex subset: sampled 484 polygons; max vertices 256 -> 128
+g10000_v2000 uniform_3 sampling/paper: ok total=16.22s gpu=358MB ram=1186MB
+Randomly sampled vertices for 8671 polygons with more than 256 vertices in uniform_4.wkt
+    vertex subset: sampled 483 polygons; max vertices 256 -> 128
+g10000_v2000 uniform_4 sampling/paper: ok total=15.46s gpu=358MB ram=1186MB
+Randomly sampled vertices for 8732 polygons with more than 256 vertices in uniform_5.wkt
+    vertex subset: sampled 474 polygons; max vertices 256 -> 128
+g10000_v2000 uniform_5 sampling/paper: ok total=15.84s gpu=358MB ram=1189MB
+Randomly sampled vertices for 8716 polygons with more than 256 vertices in uniform_6.wkt
+    vertex subset: sampled 480 polygons; max vertices 256 -> 128
+g10000_v2000 uniform_6 sampling/paper: ok total=15.67s gpu=358MB ram=1185MB
+Randomly sampled vertices for 8740 polygons with more than 256 vertices in uniform_7.wkt
     vertex subset: sampled 482 polygons; max vertices 256 -> 128
-g10000_v2000 uniform_2 sampling/paper: ok total=17.49s gpu=358MB ram=1185MB
-Randomly sampled vertices for 8771 polygons with more than 256 vertices in uniform_3.wkt
-    vertex subset: sampled 476 polygons; max vertices 256 -> 128
-g10000_v2000 uniform_3 sampling/paper: ok total=17.31s gpu=358MB ram=1185MB
-    vertex subset: sampled 771 polygons; max vertices 2000 -> 512
-g10000_v2000 uniform_1 sparse/paper: ok total=22.91s gpu=108MB ram=1409MB
-    vertex subset: sampled 774 polygons; max vertices 1998 -> 512
-g10000_v2000 uniform_2 sparse/paper: ok total=23.46s gpu=108MB ram=1407MB
-    vertex subset: sampled 775 polygons; max vertices 1999 -> 512
-g10000_v2000 uniform_3 sparse/paper: ok total=24.04s gpu=108MB ram=1409MB
+g10000_v2000 uniform_7 sampling/paper: ok total=16.41s gpu=358MB ram=1187MB
+Randomly sampled vertices for 8773 polygons with more than 256 vertices in uniform_8.wkt
+    vertex subset: sampled 477 polygons; max vertices 256 -> 128
+g10000_v2000 uniform_8 sampling/paper: ok total=15.77s gpu=358MB ram=1186MB
+Randomly sampled vertices for 8717 polygons with more than 256 vertices in uniform_9.wkt
+    vertex subset: sampled 492 polygons; max vertices 256 -> 128
+g10000_v2000 uniform_9 sampling/paper: ok total=16.09s gpu=358MB ram=1186MB
+    vertex subset: sampled 735 polygons; max vertices 1999 -> 512
+g10000_v2000 uniform_1 sparse/paper: ok total=21.17s gpu=108MB ram=1408MB
+    vertex subset: sampled 762 polygons; max vertices 2000 -> 512
+g10000_v2000 uniform_10 sparse/paper: ok total=20.78s gpu=108MB ram=1411MB
+    vertex subset: sampled 785 polygons; max vertices 1997 -> 512
+g10000_v2000 uniform_2 sparse/paper: ok total=20.69s gpu=108MB ram=1408MB
+    vertex subset: sampled 779 polygons; max vertices 1996 -> 512
+g10000_v2000 uniform_3 sparse/paper: ok total=20.73s gpu=108MB ram=1411MB
+    vertex subset: sampled 745 polygons; max vertices 2000 -> 512
+g10000_v2000 uniform_4 sparse/paper: ok total=21.08s gpu=108MB ram=1410MB
+    vertex subset: sampled 761 polygons; max vertices 2000 -> 512
+g10000_v2000 uniform_5 sparse/paper: ok total=23.69s gpu=108MB ram=1412MB
+    vertex subset: sampled 757 polygons; max vertices 1998 -> 512
+g10000_v2000 uniform_6 sparse/paper: ok total=21.19s gpu=108MB ram=1406MB
+    vertex subset: sampled 756 polygons; max vertices 1998 -> 512
+g10000_v2000 uniform_7 sparse/paper: ok total=21.68s gpu=108MB ram=1408MB
+    vertex subset: sampled 744 polygons; max vertices 2000 -> 512
+g10000_v2000 uniform_8 sparse/paper: ok total=21.27s gpu=108MB ram=1407MB
+    vertex subset: sampled 764 polygons; max vertices 2000 -> 512
+g10000_v2000 uniform_9 sparse/paper: ok total=21.30s gpu=108MB ram=1408MB
 g10000_v2000 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v2000 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g10000_v2000 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
 g10000_v2000 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
-g10000_v2000 uniform_1 sparse/none: ok total=158.08s gpu=1017MB ram=1422MB
-g10000_v2000 uniform_2 sparse/none: ok total=150.92s gpu=1018MB ram=1449MB
-g10000_v2000 uniform_3 sparse/none: ok total=150.59s gpu=1017MB ram=1450MB
-g100000_v5: no datasets, skipped
-g100000_v10: no datasets, skipped
-g100000_v20: no datasets, skipped
-g100000_v200: no datasets, skipped
-g100000_v2000: no datasets, skipped
+g10000_v2000 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v2000 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v2000 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v2000 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v2000 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v2000 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g10000_v2000 uniform_1 sparse/none: ok total=149.46s gpu=1018MB ram=1449MB
+g10000_v2000 uniform_10 sparse/none: ok total=151.43s gpu=1017MB ram=1450MB
+g10000_v2000 uniform_2 sparse/none: ok total=150.38s gpu=1017MB ram=1451MB
+g10000_v2000 uniform_3 sparse/none: ok total=146.81s gpu=1017MB ram=1450MB
+g10000_v2000 uniform_4 sparse/none: ok total=144.05s gpu=1017MB ram=1449MB
+g10000_v2000 uniform_5 sparse/none: ok total=154.98s gpu=1017MB ram=1449MB
+g10000_v2000 uniform_6 sparse/none: ok total=149.70s gpu=1018MB ram=1449MB
+g10000_v2000 uniform_7 sparse/none: ok total=151.09s gpu=1017MB ram=1450MB
+g10000_v2000 uniform_8 sparse/none: ok total=150.38s gpu=1018MB ram=1450MB
+g10000_v2000 uniform_9 sparse/none: ok total=147.50s gpu=1018MB ram=1418MB
+g20000_v5 uniform_1 sampling/paper: ok total=5.12s gpu=358MB ram=1178MB
+g20000_v5 uniform_10 sampling/paper: ok total=4.88s gpu=358MB ram=1178MB
+g20000_v5 uniform_2 sampling/paper: ok total=5.25s gpu=358MB ram=1177MB
+g20000_v5 uniform_3 sampling/paper: ok total=5.90s gpu=358MB ram=1177MB
+g20000_v5 uniform_4 sampling/paper: ok total=5.14s gpu=358MB ram=1178MB
+g20000_v5 uniform_5 sampling/paper: ok total=6.87s gpu=358MB ram=1177MB
+g20000_v5 uniform_6 sampling/paper: ok total=5.45s gpu=358MB ram=1178MB
+g20000_v5 uniform_7 sampling/paper: ok total=5.34s gpu=358MB ram=1177MB
+g20000_v5 uniform_8 sampling/paper: ok total=5.42s gpu=358MB ram=1176MB
+g20000_v5 uniform_9 sampling/paper: ok total=5.25s gpu=358MB ram=1178MB
+g20000_v5 uniform_1 sparse/paper: ok total=12.02s gpu=108MB ram=1328MB
+g20000_v5 uniform_10 sparse/paper: ok total=11.97s gpu=108MB ram=1328MB
+g20000_v5 uniform_2 sparse/paper: ok total=12.55s gpu=108MB ram=1327MB
+g20000_v5 uniform_3 sparse/paper: ok total=11.53s gpu=108MB ram=1327MB
+g20000_v5 uniform_4 sparse/paper: ok total=12.56s gpu=108MB ram=1327MB
+g20000_v5 uniform_5 sparse/paper: ok total=12.71s gpu=108MB ram=1327MB
+g20000_v5 uniform_6 sparse/paper: ok total=12.47s gpu=108MB ram=1328MB
+g20000_v5 uniform_7 sparse/paper: ok total=12.51s gpu=108MB ram=1327MB
+g20000_v5 uniform_8 sparse/paper: ok total=12.85s gpu=108MB ram=1327MB
+g20000_v5 uniform_9 sparse/paper: ok total=13.71s gpu=108MB ram=1326MB
+g20000_v5 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v5 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v5 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v5 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v5 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v5 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v5 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v5 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v5 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v5 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v5 uniform_1 sparse/none: ok total=239.67s gpu=2032MB ram=1396MB
+g20000_v5 uniform_10 sparse/none: ok total=212.40s gpu=2032MB ram=1395MB
+g20000_v5 uniform_2 sparse/none: ok total=193.74s gpu=2032MB ram=1395MB
+g20000_v5 uniform_3 sparse/none: ok total=192.96s gpu=2032MB ram=1396MB
+g20000_v5 uniform_4 sparse/none: ok total=211.23s gpu=2032MB ram=1301MB
+g20000_v5 uniform_5 sparse/none: ok total=200.83s gpu=2032MB ram=1396MB
+g20000_v5 uniform_6 sparse/none: ok total=202.56s gpu=2032MB ram=1395MB
+g20000_v5 uniform_7 sparse/none: ok total=221.22s gpu=2032MB ram=1395MB
+g20000_v5 uniform_8 sparse/none: ok total=221.27s gpu=2032MB ram=1397MB
+g20000_v5 uniform_9 sparse/none: ok total=223.59s gpu=2032MB ram=1396MB
+g20000_v10 uniform_1 sampling/paper: ok total=5.03s gpu=358MB ram=1192MB
+g20000_v10 uniform_10 sampling/paper: ok total=5.12s gpu=358MB ram=1192MB
+g20000_v10 uniform_2 sampling/paper: ok total=5.07s gpu=358MB ram=1192MB
+g20000_v10 uniform_3 sampling/paper: ok total=5.41s gpu=358MB ram=1192MB
+g20000_v10 uniform_4 sampling/paper: ok total=5.00s gpu=358MB ram=1191MB
+g20000_v10 uniform_5 sampling/paper: ok total=4.86s gpu=358MB ram=1191MB
+g20000_v10 uniform_6 sampling/paper: ok total=4.74s gpu=358MB ram=1193MB
+g20000_v10 uniform_7 sampling/paper: ok total=5.18s gpu=358MB ram=1192MB
+g20000_v10 uniform_8 sampling/paper: ok total=4.74s gpu=358MB ram=1192MB
+g20000_v10 uniform_9 sampling/paper: ok total=5.23s gpu=358MB ram=1192MB
+g20000_v10 uniform_1 sparse/paper: ok total=11.27s gpu=108MB ram=1342MB
+g20000_v10 uniform_10 sparse/paper: ok total=11.16s gpu=108MB ram=1343MB
+g20000_v10 uniform_2 sparse/paper: ok total=11.89s gpu=108MB ram=1342MB
+g20000_v10 uniform_3 sparse/paper: ok total=12.68s gpu=108MB ram=1343MB
+g20000_v10 uniform_4 sparse/paper: ok total=13.33s gpu=108MB ram=1342MB
+g20000_v10 uniform_5 sparse/paper: ok total=13.77s gpu=108MB ram=1343MB
+g20000_v10 uniform_6 sparse/paper: ok total=12.15s gpu=108MB ram=1342MB
+g20000_v10 uniform_7 sparse/paper: ok total=12.46s gpu=108MB ram=1343MB
+g20000_v10 uniform_8 sparse/paper: ok total=13.71s gpu=108MB ram=1343MB
+g20000_v10 uniform_9 sparse/paper: ok total=13.11s gpu=108MB ram=1342MB
+g20000_v10 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v10 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v10 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v10 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v10 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v10 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v10 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v10 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v10 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v10 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v10 uniform_1 sparse/none: ok total=212.36s gpu=2032MB ram=1411MB
+g20000_v10 uniform_10 sparse/none: ok total=210.83s gpu=2032MB ram=1410MB
+g20000_v10 uniform_2 sparse/none: ok total=209.73s gpu=2032MB ram=1410MB
+g20000_v10 uniform_3 sparse/none: ok total=217.83s gpu=2032MB ram=1410MB
+g20000_v10 uniform_4 sparse/none: ok total=218.46s gpu=2032MB ram=1409MB
+g20000_v10 uniform_5 sparse/none: ok total=220.92s gpu=2032MB ram=1410MB
+g20000_v10 uniform_6 sparse/none: ok total=201.07s gpu=2032MB ram=1410MB
+g20000_v10 uniform_7 sparse/none: ok total=197.77s gpu=2032MB ram=1409MB
+g20000_v10 uniform_8 sparse/none: ok total=203.01s gpu=2032MB ram=1410MB
+g20000_v10 uniform_9 sparse/none: ok total=199.64s gpu=2032MB ram=1411MB
+g20000_v20 uniform_1 sampling/paper: ok total=5.08s gpu=358MB ram=1193MB
+g20000_v20 uniform_10 sampling/paper: ok total=4.91s gpu=358MB ram=1192MB
+g20000_v20 uniform_2 sampling/paper: ok total=5.08s gpu=358MB ram=1192MB
+g20000_v20 uniform_3 sampling/paper: ok total=4.93s gpu=358MB ram=1192MB
+g20000_v20 uniform_4 sampling/paper: ok total=5.00s gpu=358MB ram=1192MB
+g20000_v20 uniform_5 sampling/paper: ok total=4.95s gpu=358MB ram=1192MB
+g20000_v20 uniform_6 sampling/paper: ok total=5.03s gpu=358MB ram=1193MB
+g20000_v20 uniform_7 sampling/paper: ok total=4.88s gpu=358MB ram=1193MB
+g20000_v20 uniform_8 sampling/paper: ok total=4.99s gpu=358MB ram=1192MB
+g20000_v20 uniform_9 sampling/paper: ok total=4.91s gpu=358MB ram=1193MB
+g20000_v20 uniform_1 sparse/paper: ok total=11.40s gpu=108MB ram=1344MB
+g20000_v20 uniform_10 sparse/paper: ok total=11.48s gpu=108MB ram=1343MB
+g20000_v20 uniform_2 sparse/paper: ok total=11.09s gpu=108MB ram=1342MB
+g20000_v20 uniform_3 sparse/paper: ok total=11.25s gpu=108MB ram=1343MB
+g20000_v20 uniform_4 sparse/paper: ok total=11.20s gpu=108MB ram=1343MB
+g20000_v20 uniform_5 sparse/paper: ok total=11.48s gpu=108MB ram=1343MB
+g20000_v20 uniform_6 sparse/paper: ok total=11.40s gpu=108MB ram=1342MB
+g20000_v20 uniform_7 sparse/paper: ok total=10.80s gpu=108MB ram=1342MB
+g20000_v20 uniform_8 sparse/paper: ok total=11.63s gpu=108MB ram=1343MB
+g20000_v20 uniform_9 sparse/paper: ok total=10.79s gpu=108MB ram=1344MB
+g20000_v20 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v20 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v20 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v20 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v20 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v20 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v20 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v20 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v20 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v20 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v20 uniform_1 sparse/none: ok total=198.92s gpu=2032MB ram=1410MB
+g20000_v20 uniform_10 sparse/none: ok total=208.03s gpu=2032MB ram=1321MB
+g20000_v20 uniform_2 sparse/none: ok total=206.44s gpu=2032MB ram=1411MB
+g20000_v20 uniform_3 sparse/none: ok total=198.57s gpu=2032MB ram=1411MB
+g20000_v20 uniform_4 sparse/none: ok total=186.73s gpu=2032MB ram=1411MB
+g20000_v20 uniform_5 sparse/none: ok total=185.78s gpu=2032MB ram=1412MB
+g20000_v20 uniform_6 sparse/none: ok total=188.30s gpu=2032MB ram=1310MB
+g20000_v20 uniform_7 sparse/none: ok total=194.05s gpu=2032MB ram=1410MB
+g20000_v20 uniform_8 sparse/none: ok total=229.49s gpu=2032MB ram=1411MB
+g20000_v20 uniform_9 sparse/none: ok total=221.75s gpu=2032MB ram=1410MB
+    vertex subset: sampled 177 polygons; max vertices 200 -> 128
+g20000_v200 uniform_1 sampling/paper: ok total=7.73s gpu=358MB ram=1205MB
+    vertex subset: sampled 188 polygons; max vertices 200 -> 128
+g20000_v200 uniform_10 sampling/paper: ok total=8.23s gpu=358MB ram=1203MB
+    vertex subset: sampled 182 polygons; max vertices 200 -> 128
+g20000_v200 uniform_2 sampling/paper: ok total=7.81s gpu=358MB ram=1204MB
+    vertex subset: sampled 198 polygons; max vertices 200 -> 128
+g20000_v200 uniform_3 sampling/paper: ok total=7.68s gpu=358MB ram=1208MB
+    vertex subset: sampled 183 polygons; max vertices 200 -> 128
+g20000_v200 uniform_4 sampling/paper: ok total=7.48s gpu=358MB ram=1204MB
+    vertex subset: sampled 198 polygons; max vertices 200 -> 128
+g20000_v200 uniform_5 sampling/paper: ok total=8.04s gpu=358MB ram=1207MB
+    vertex subset: sampled 176 polygons; max vertices 200 -> 128
+g20000_v200 uniform_6 sampling/paper: ok total=7.74s gpu=358MB ram=1203MB
+    vertex subset: sampled 194 polygons; max vertices 200 -> 128
+g20000_v200 uniform_7 sampling/paper: ok total=7.90s gpu=358MB ram=1204MB
+    vertex subset: sampled 197 polygons; max vertices 200 -> 128
+g20000_v200 uniform_8 sampling/paper: ok total=8.75s gpu=358MB ram=1204MB
+    vertex subset: sampled 189 polygons; max vertices 200 -> 128
+g20000_v200 uniform_9 sampling/paper: ok total=7.61s gpu=358MB ram=1204MB
+g20000_v200 uniform_1 sparse/paper: ok total=15.70s gpu=108MB ram=1356MB
+g20000_v200 uniform_10 sparse/paper: ok total=14.82s gpu=108MB ram=1357MB
+g20000_v200 uniform_2 sparse/paper: ok total=15.07s gpu=108MB ram=1358MB
+g20000_v200 uniform_3 sparse/paper: ok total=15.56s gpu=108MB ram=1357MB
+g20000_v200 uniform_4 sparse/paper: ok total=15.61s gpu=108MB ram=1357MB
+g20000_v200 uniform_5 sparse/paper: ok total=15.63s gpu=108MB ram=1357MB
+g20000_v200 uniform_6 sparse/paper: ok total=15.98s gpu=108MB ram=1357MB
+g20000_v200 uniform_7 sparse/paper: ok total=14.81s gpu=108MB ram=1358MB
+g20000_v200 uniform_8 sparse/paper: ok total=15.06s gpu=108MB ram=1359MB
+g20000_v200 uniform_9 sparse/paper: ok total=16.65s gpu=108MB ram=1358MB
+g20000_v200 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v200 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v200 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v200 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v200 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v200 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v200 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v200 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v200 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v200 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v200 uniform_1 sparse/none: ok total=245.20s gpu=2032MB ram=1427MB
+g20000_v200 uniform_10 sparse/none: ok total=225.75s gpu=2032MB ram=1426MB
+g20000_v200 uniform_2 sparse/none: ok total=245.13s gpu=2032MB ram=1427MB
+g20000_v200 uniform_3 sparse/none: ok total=243.15s gpu=2032MB ram=1426MB
+g20000_v200 uniform_4 sparse/none: ok total=225.36s gpu=2032MB ram=1427MB
+g20000_v200 uniform_5 sparse/none: ok total=240.81s gpu=2032MB ram=1427MB
+g20000_v200 uniform_6 sparse/none: ok total=235.52s gpu=2032MB ram=1427MB
+g20000_v200 uniform_7 sparse/none: ok total=233.71s gpu=2032MB ram=1427MB
+g20000_v200 uniform_8 sparse/none: ok total=236.52s gpu=2032MB ram=1426MB
+g20000_v200 uniform_9 sparse/none: ok total=242.76s gpu=2032MB ram=1427MB
+Randomly sampled vertices for 17480 polygons with more than 256 vertices in uniform_1.wkt
+    vertex subset: sampled 485 polygons; max vertices 256 -> 128
+g20000_v2000 uniform_1 sampling/paper: ok total=29.01s gpu=358MB ram=1207MB
+Randomly sampled vertices for 17424 polygons with more than 256 vertices in uniform_10.wkt
+    vertex subset: sampled 474 polygons; max vertices 256 -> 128
+g20000_v2000 uniform_10 sampling/paper: ok total=31.69s gpu=358MB ram=1213MB
+Randomly sampled vertices for 17427 polygons with more than 256 vertices in uniform_2.wkt
+    vertex subset: sampled 486 polygons; max vertices 256 -> 128
+g20000_v2000 uniform_2 sampling/paper: ok total=32.50s gpu=358MB ram=1208MB
+Randomly sampled vertices for 17476 polygons with more than 256 vertices in uniform_3.wkt
+    vertex subset: sampled 466 polygons; max vertices 256 -> 128
+g20000_v2000 uniform_3 sampling/paper: ok total=33.05s gpu=358MB ram=1209MB
+Randomly sampled vertices for 17507 polygons with more than 256 vertices in uniform_4.wkt
+    vertex subset: sampled 485 polygons; max vertices 256 -> 128
+g20000_v2000 uniform_4 sampling/paper: ok total=31.43s gpu=358MB ram=1208MB
+Randomly sampled vertices for 17446 polygons with more than 256 vertices in uniform_5.wkt
+    vertex subset: sampled 473 polygons; max vertices 256 -> 128
+g20000_v2000 uniform_5 sampling/paper: ok total=31.69s gpu=358MB ram=1212MB
+Randomly sampled vertices for 17460 polygons with more than 256 vertices in uniform_6.wkt
+    vertex subset: sampled 481 polygons; max vertices 256 -> 128
+g20000_v2000 uniform_6 sampling/paper: ok total=31.06s gpu=358MB ram=1213MB
+Randomly sampled vertices for 17446 polygons with more than 256 vertices in uniform_7.wkt
+    vertex subset: sampled 476 polygons; max vertices 256 -> 128
+g20000_v2000 uniform_7 sampling/paper: ok total=29.91s gpu=358MB ram=1209MB
+Randomly sampled vertices for 17380 polygons with more than 256 vertices in uniform_8.wkt
+    vertex subset: sampled 480 polygons; max vertices 256 -> 128
+g20000_v2000 uniform_8 sampling/paper: ok total=32.32s gpu=358MB ram=1208MB
+Randomly sampled vertices for 17416 polygons with more than 256 vertices in uniform_9.wkt
+    vertex subset: sampled 475 polygons; max vertices 256 -> 128
+g20000_v2000 uniform_9 sampling/paper: ok total=31.49s gpu=358MB ram=1209MB
+    vertex subset: sampled 740 polygons; max vertices 2000 -> 512
+g20000_v2000 uniform_1 sparse/paper: ok total=35.49s gpu=108MB ram=1506MB
+    vertex subset: sampled 752 polygons; max vertices 1999 -> 512
+g20000_v2000 uniform_10 sparse/paper: ok total=34.93s gpu=108MB ram=1498MB
+    vertex subset: sampled 755 polygons; max vertices 1998 -> 512
+g20000_v2000 uniform_2 sparse/paper: ok total=36.56s gpu=108MB ram=1499MB
+    vertex subset: sampled 749 polygons; max vertices 2000 -> 512
+g20000_v2000 uniform_3 sparse/paper: ok total=34.69s gpu=108MB ram=1493MB
+    vertex subset: sampled 759 polygons; max vertices 1997 -> 512
+g20000_v2000 uniform_4 sparse/paper: ok total=37.96s gpu=108MB ram=1505MB
+    vertex subset: sampled 794 polygons; max vertices 1998 -> 512
+g20000_v2000 uniform_5 sparse/paper: ok total=36.49s gpu=108MB ram=1506MB
+    vertex subset: sampled 775 polygons; max vertices 2000 -> 512
+g20000_v2000 uniform_6 sparse/paper: ok total=36.59s gpu=108MB ram=1506MB
+    vertex subset: sampled 772 polygons; max vertices 1999 -> 512
+g20000_v2000 uniform_7 sparse/paper: ok total=36.00s gpu=108MB ram=1505MB
+    vertex subset: sampled 768 polygons; max vertices 1999 -> 512
+g20000_v2000 uniform_8 sparse/paper: ok total=35.27s gpu=108MB ram=1493MB
+    vertex subset: sampled 757 polygons; max vertices 2000 -> 512
+g20000_v2000 uniform_9 sparse/paper: ok total=36.16s gpu=108MB ram=1500MB
+g20000_v2000 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v2000 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v2000 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v2000 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v2000 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v2000 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v2000 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v2000 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v2000 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v2000 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g20000_v2000 uniform_1 sparse/none: ok total=308.24s gpu=2032MB ram=1539MB
+g20000_v2000 uniform_10 sparse/none: ok total=310.42s gpu=2032MB ram=1582MB
+g20000_v2000 uniform_2 sparse/none: ok total=295.54s gpu=2032MB ram=1580MB
+g20000_v2000 uniform_3 sparse/none: ok total=287.19s gpu=2032MB ram=1537MB
+g20000_v2000 uniform_4 sparse/none: ok total=308.57s gpu=2032MB ram=1583MB
+g20000_v2000 uniform_5 sparse/none: ok total=300.14s gpu=2032MB ram=1583MB
+g20000_v2000 uniform_6 sparse/none: ok total=291.09s gpu=2033MB ram=1537MB
+g20000_v2000 uniform_7 sparse/none: ok total=289.84s gpu=2033MB ram=1582MB
+g20000_v2000 uniform_8 sparse/none: ok total=298.59s gpu=2033MB ram=1582MB
+g20000_v2000 uniform_9 sparse/none: ok total=304.33s gpu=2032MB ram=1538MB
+g40000_v5 uniform_1 sampling/paper: ok total=7.01s gpu=358MB ram=1206MB
+g40000_v5 uniform_10 sampling/paper: ok total=6.70s gpu=358MB ram=1205MB
+g40000_v5 uniform_2 sampling/paper: ok total=6.82s gpu=358MB ram=1206MB
+g40000_v5 uniform_3 sampling/paper: ok total=6.63s gpu=358MB ram=1205MB
+g40000_v5 uniform_4 sampling/paper: ok total=6.35s gpu=358MB ram=1205MB
+g40000_v5 uniform_5 sampling/paper: ok total=6.88s gpu=358MB ram=1205MB
+g40000_v5 uniform_6 sampling/paper: ok total=6.97s gpu=358MB ram=1205MB
+g40000_v5 uniform_7 sampling/paper: ok total=7.31s gpu=358MB ram=1205MB
+g40000_v5 uniform_8 sampling/paper: ok total=6.36s gpu=358MB ram=1206MB
+g40000_v5 uniform_9 sampling/paper: ok total=6.08s gpu=358MB ram=1205MB
+g40000_v5 uniform_1 sparse/paper: ok total=13.09s gpu=108MB ram=1358MB
+g40000_v5 uniform_10 sparse/paper: ok total=14.19s gpu=108MB ram=1357MB
+g40000_v5 uniform_2 sparse/paper: ok total=13.58s gpu=108MB ram=1357MB
+g40000_v5 uniform_3 sparse/paper: ok total=12.98s gpu=108MB ram=1357MB
+g40000_v5 uniform_4 sparse/paper: ok total=13.75s gpu=108MB ram=1357MB
+g40000_v5 uniform_5 sparse/paper: ok total=13.32s gpu=108MB ram=1357MB
+g40000_v5 uniform_6 sparse/paper: ok total=14.30s gpu=108MB ram=1357MB
+g40000_v5 uniform_7 sparse/paper: ok total=13.34s gpu=108MB ram=1358MB
+g40000_v5 uniform_8 sparse/paper: ok total=13.15s gpu=108MB ram=1358MB
+g40000_v5 uniform_9 sparse/paper: ok total=13.58s gpu=108MB ram=1357MB
+g40000_v5 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_1 sparse/none: oom_gpu total=nans gpu=2284MB ram=1506MB
+g40000_v5 uniform_10 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_2 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_3 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_4 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_5 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_6 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_7 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_8 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v5 uniform_9 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_1 sampling/paper: ok total=6.53s gpu=358MB ram=1220MB
+g40000_v10 uniform_10 sampling/paper: ok total=7.45s gpu=358MB ram=1220MB
+g40000_v10 uniform_2 sampling/paper: ok total=7.05s gpu=358MB ram=1220MB
+g40000_v10 uniform_3 sampling/paper: ok total=6.49s gpu=358MB ram=1220MB
+g40000_v10 uniform_4 sampling/paper: ok total=6.95s gpu=358MB ram=1220MB
+g40000_v10 uniform_5 sampling/paper: ok total=6.97s gpu=358MB ram=1220MB
+g40000_v10 uniform_6 sampling/paper: ok total=6.77s gpu=358MB ram=1219MB
+g40000_v10 uniform_7 sampling/paper: ok total=6.49s gpu=358MB ram=1218MB
+g40000_v10 uniform_8 sampling/paper: ok total=6.42s gpu=358MB ram=1220MB
+g40000_v10 uniform_9 sampling/paper: ok total=7.27s gpu=358MB ram=1221MB
+g40000_v10 uniform_1 sparse/paper: ok total=13.10s gpu=108MB ram=1372MB
+g40000_v10 uniform_10 sparse/paper: ok total=13.16s gpu=108MB ram=1372MB
+g40000_v10 uniform_2 sparse/paper: ok total=13.00s gpu=108MB ram=1372MB
+g40000_v10 uniform_3 sparse/paper: ok total=14.72s gpu=108MB ram=1371MB
+g40000_v10 uniform_4 sparse/paper: ok total=13.91s gpu=108MB ram=1372MB
+g40000_v10 uniform_5 sparse/paper: ok total=13.40s gpu=108MB ram=1371MB
+g40000_v10 uniform_6 sparse/paper: ok total=14.60s gpu=108MB ram=1372MB
+g40000_v10 uniform_7 sparse/paper: ok total=13.15s gpu=108MB ram=1372MB
+g40000_v10 uniform_8 sparse/paper: ok total=12.97s gpu=108MB ram=1372MB
+g40000_v10 uniform_9 sparse/paper: ok total=12.92s gpu=108MB ram=1371MB
+g40000_v10 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_1 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_10 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_2 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_3 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_4 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_5 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_6 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_7 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_8 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v10 uniform_9 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_1 sampling/paper: ok total=7.70s gpu=358MB ram=1221MB
+g40000_v20 uniform_10 sampling/paper: ok total=7.76s gpu=358MB ram=1222MB
+g40000_v20 uniform_2 sampling/paper: ok total=6.84s gpu=358MB ram=1222MB
+g40000_v20 uniform_3 sampling/paper: ok total=7.17s gpu=358MB ram=1221MB
+g40000_v20 uniform_4 sampling/paper: ok total=7.25s gpu=358MB ram=1221MB
+g40000_v20 uniform_5 sampling/paper: ok total=6.97s gpu=358MB ram=1221MB
+g40000_v20 uniform_6 sampling/paper: ok total=6.81s gpu=358MB ram=1221MB
+g40000_v20 uniform_7 sampling/paper: ok total=6.96s gpu=358MB ram=1220MB
+g40000_v20 uniform_8 sampling/paper: ok total=7.33s gpu=358MB ram=1222MB
+g40000_v20 uniform_9 sampling/paper: ok total=6.91s gpu=358MB ram=1221MB
+g40000_v20 uniform_1 sparse/paper: ok total=13.99s gpu=108MB ram=1373MB
+g40000_v20 uniform_10 sparse/paper: ok total=13.83s gpu=108MB ram=1373MB
+g40000_v20 uniform_2 sparse/paper: ok total=13.54s gpu=108MB ram=1373MB
+g40000_v20 uniform_3 sparse/paper: ok total=14.14s gpu=108MB ram=1373MB
+g40000_v20 uniform_4 sparse/paper: ok total=13.73s gpu=108MB ram=1373MB
+g40000_v20 uniform_5 sparse/paper: ok total=14.35s gpu=108MB ram=1373MB
+g40000_v20 uniform_6 sparse/paper: ok total=13.70s gpu=108MB ram=1373MB
+g40000_v20 uniform_7 sparse/paper: ok total=13.33s gpu=108MB ram=1374MB
+g40000_v20 uniform_8 sparse/paper: ok total=13.85s gpu=108MB ram=1373MB
+g40000_v20 uniform_9 sparse/paper: ok total=14.25s gpu=108MB ram=1372MB
+g40000_v20 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_1 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_10 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_2 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_3 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_4 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_5 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_6 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_7 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_8 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v20 uniform_9 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+    vertex subset: sampled 187 polygons; max vertices 200 -> 128
+g40000_v200 uniform_1 sampling/paper: ok total=11.96s gpu=358MB ram=1243MB
+    vertex subset: sampled 182 polygons; max vertices 200 -> 128
+g40000_v200 uniform_10 sampling/paper: ok total=11.59s gpu=358MB ram=1250MB
+    vertex subset: sampled 197 polygons; max vertices 200 -> 128
+g40000_v200 uniform_2 sampling/paper: ok total=11.23s gpu=358MB ram=1245MB
+    vertex subset: sampled 191 polygons; max vertices 200 -> 128
+g40000_v200 uniform_3 sampling/paper: ok total=11.38s gpu=358MB ram=1245MB
+    vertex subset: sampled 172 polygons; max vertices 200 -> 128
+g40000_v200 uniform_4 sampling/paper: ok total=12.10s gpu=358MB ram=1249MB
+    vertex subset: sampled 180 polygons; max vertices 200 -> 128
+g40000_v200 uniform_5 sampling/paper: ok total=11.34s gpu=358MB ram=1250MB
+    vertex subset: sampled 203 polygons; max vertices 200 -> 128
+g40000_v200 uniform_6 sampling/paper: ok total=12.86s gpu=358MB ram=1250MB
+    vertex subset: sampled 186 polygons; max vertices 200 -> 128
+g40000_v200 uniform_7 sampling/paper: ok total=11.47s gpu=358MB ram=1249MB
+    vertex subset: sampled 168 polygons; max vertices 200 -> 128
+g40000_v200 uniform_8 sampling/paper: ok total=12.51s gpu=358MB ram=1244MB
+    vertex subset: sampled 191 polygons; max vertices 200 -> 128
+g40000_v200 uniform_9 sampling/paper: ok total=11.26s gpu=358MB ram=1250MB
+g40000_v200 uniform_1 sparse/paper: ok total=18.30s gpu=108MB ram=1403MB
+g40000_v200 uniform_10 sparse/paper: ok total=18.69s gpu=108MB ram=1403MB
+g40000_v200 uniform_2 sparse/paper: ok total=19.77s gpu=108MB ram=1403MB
+g40000_v200 uniform_3 sparse/paper: ok total=17.93s gpu=108MB ram=1404MB
+g40000_v200 uniform_4 sparse/paper: ok total=19.07s gpu=108MB ram=1404MB
+g40000_v200 uniform_5 sparse/paper: ok total=18.68s gpu=108MB ram=1402MB
+g40000_v200 uniform_6 sparse/paper: ok total=19.33s gpu=108MB ram=1403MB
+g40000_v200 uniform_7 sparse/paper: ok total=19.87s gpu=108MB ram=1403MB
+g40000_v200 uniform_8 sparse/paper: ok total=18.46s gpu=108MB ram=1403MB
+g40000_v200 uniform_9 sparse/paper: ok total=22.59s gpu=108MB ram=1400MB
+g40000_v200 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_1 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_10 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_2 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_3 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_4 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_5 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_6 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_7 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_8 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v200 uniform_9 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+Randomly sampled vertices for 34816 polygons with more than 256 vertices in uniform_1.wkt
+    vertex subset: sampled 473 polygons; max vertices 256 -> 128
+g40000_v2000 uniform_1 sampling/paper: ok total=61.36s gpu=358MB ram=1254MB
+Randomly sampled vertices for 34893 polygons with more than 256 vertices in uniform_10.wkt
+    vertex subset: sampled 482 polygons; max vertices 256 -> 128
+g40000_v2000 uniform_10 sampling/paper: ok total=62.02s gpu=358MB ram=1253MB
+Randomly sampled vertices for 34885 polygons with more than 256 vertices in uniform_2.wkt
+    vertex subset: sampled 483 polygons; max vertices 256 -> 128
+g40000_v2000 uniform_2 sampling/paper: ok total=59.87s gpu=358MB ram=1254MB
+Randomly sampled vertices for 34879 polygons with more than 256 vertices in uniform_3.wkt
+    vertex subset: sampled 477 polygons; max vertices 256 -> 128
+g40000_v2000 uniform_3 sampling/paper: ok total=60.21s gpu=358MB ram=1255MB
+Randomly sampled vertices for 34862 polygons with more than 256 vertices in uniform_4.wkt
+    vertex subset: sampled 479 polygons; max vertices 256 -> 128
+g40000_v2000 uniform_4 sampling/paper: ok total=60.55s gpu=358MB ram=1254MB
+Randomly sampled vertices for 35007 polygons with more than 256 vertices in uniform_5.wkt
+    vertex subset: sampled 475 polygons; max vertices 256 -> 128
+g40000_v2000 uniform_5 sampling/paper: ok total=57.97s gpu=358MB ram=1255MB
+Randomly sampled vertices for 35125 polygons with more than 256 vertices in uniform_6.wkt
+    vertex subset: sampled 472 polygons; max vertices 256 -> 128
+g40000_v2000 uniform_6 sampling/paper: ok total=60.04s gpu=358MB ram=1254MB
+Randomly sampled vertices for 34906 polygons with more than 256 vertices in uniform_7.wkt
+    vertex subset: sampled 480 polygons; max vertices 256 -> 128
+g40000_v2000 uniform_7 sampling/paper: ok total=57.24s gpu=358MB ram=1254MB
+Randomly sampled vertices for 34992 polygons with more than 256 vertices in uniform_8.wkt
+    vertex subset: sampled 485 polygons; max vertices 256 -> 128
+g40000_v2000 uniform_8 sampling/paper: ok total=60.09s gpu=358MB ram=1254MB
+Randomly sampled vertices for 34890 polygons with more than 256 vertices in uniform_9.wkt
+    vertex subset: sampled 485 polygons; max vertices 256 -> 128
+g40000_v2000 uniform_9 sampling/paper: ok total=58.43s gpu=358MB ram=1255MB
+    vertex subset: sampled 751 polygons; max vertices 1998 -> 512
+g40000_v2000 uniform_1 sparse/paper: ok total=59.30s gpu=108MB ram=1703MB
+    vertex subset: sampled 763 polygons; max vertices 2000 -> 512
+g40000_v2000 uniform_10 sparse/paper: ok total=59.79s gpu=108MB ram=1693MB
+    vertex subset: sampled 748 polygons; max vertices 1999 -> 512
+g40000_v2000 uniform_2 sparse/paper: ok total=62.19s gpu=108MB ram=1691MB
+    vertex subset: sampled 769 polygons; max vertices 1999 -> 512
+g40000_v2000 uniform_3 sparse/paper: ok total=60.47s gpu=108MB ram=1689MB
+    vertex subset: sampled 775 polygons; max vertices 1992 -> 512
+g40000_v2000 uniform_4 sparse/paper: ok total=61.30s gpu=108MB ram=1681MB
+    vertex subset: sampled 767 polygons; max vertices 1997 -> 512
+g40000_v2000 uniform_5 sparse/paper: ok total=62.90s gpu=108MB ram=1677MB
+    vertex subset: sampled 761 polygons; max vertices 2000 -> 512
+g40000_v2000 uniform_6 sparse/paper: ok total=63.31s gpu=108MB ram=1697MB
+    vertex subset: sampled 782 polygons; max vertices 2000 -> 512
+g40000_v2000 uniform_7 sparse/paper: ok total=64.72s gpu=108MB ram=1681MB
+    vertex subset: sampled 778 polygons; max vertices 1999 -> 512
+g40000_v2000 uniform_8 sparse/paper: ok total=51.96s gpu=108MB ram=1683MB
+    vertex subset: sampled 747 polygons; max vertices 2000 -> 512
+g40000_v2000 uniform_9 sparse/paper: ok total=55.31s gpu=108MB ram=1700MB
+g40000_v2000 uniform_1 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_10 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_2 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_3 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_4 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_5 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_6 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_7 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_8 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_9 sampling/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_1 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_10 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_2 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_3 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_4 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_5 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_6 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_7 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_8 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
+g40000_v2000 uniform_9 sparse/none: skipped total=nans gpu=nanMB ram=nanMB
 Saved benchmark results to: outputs_benchmark\embedding_benchmark.csv

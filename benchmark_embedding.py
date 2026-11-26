@@ -7,8 +7,8 @@ compute_frozen_embeddings in train_selectivity_opt1_opt2.py:
 
     read_polygons -> geometry/vertex caps -> PolygonEncoder -> DatasetEncoder -> z_D
 
-Encoders keep the paper configuration and random weights (the cost does not
-depend on the weights). Each measurement runs in its own process, so the RAM
+Encoders keep the paper configuration and random weights.
+Each measurement runs in its own process, so the RAM
 peak belongs to that measurement only and an out-of-memory error does not stop
 the benchmark.
 
